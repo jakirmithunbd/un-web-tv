@@ -1,5 +1,29 @@
 
 
+@media only screen and (max-width: 1355px) {
+    .page-area {
+
+        &.social-media {
+
+            .social-media-wrapper {
+
+                ul {
+
+                    li {
+
+                        img {
+                            max-width: 40%;
+                        }
+
+                        &:not(:last-child) {
+                            margin-bottom: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media only screen and (max-width: 1220px) {
     .navbar-toggle {
         margin-right: 0;
@@ -220,6 +244,16 @@
         }
     }
 
+    .page-area {
+
+        &.social-media {
+
+            .align-center {
+                display: inherit;
+            }
+        }
+    }
+
     .footer {
         padding: 30px 0;
 
@@ -263,6 +297,26 @@
 
         .banner-content {
             position: inherit;
+        }
+    }
+
+    .page-area{
+
+        &.social-media {
+
+            .social-media-wrapper {
+
+                ul {
+
+                    li {
+
+                        img {
+                            max-width: 100%;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
