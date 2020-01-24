@@ -23,6 +23,57 @@
             }
         }
     }
+
+    .live-area {
+
+        .live-slider-wrapper {
+
+            .slick-slider {
+
+                .hover-content {
+
+                    p {
+                        padding: 25px;
+                    }
+                }
+
+                &:hover, &:focus {
+
+                    .hover-content {
+
+                        img {
+                            transform: scale(.6);
+                        }
+                    }
+                }
+            }
+        }
+
+        .slider-wrapper {
+
+            .slick-slider {
+
+                .hover-content {
+
+                    img {
+                        bottom: 38%;
+                    }
+
+                    p {
+                        padding-bottom: 7px;
+
+                        .border {
+                            margin-top: 7px;
+                        }
+
+                        span {
+                            margin-top: 7px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media only screen and (max-width: 1220px) {
     .navbar-toggle {
