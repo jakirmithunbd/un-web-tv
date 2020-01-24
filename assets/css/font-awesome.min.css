@@ -204,6 +204,10 @@ readers do not read off random characters that represent icons */
     content: "\f104";
 }
 
+.fa-angle-double-right:before {
+    content: "\f101";
+}
+
 .fa-cart-arrow-down:before {
   content: "\f218"; }
 
@@ -412,6 +416,9 @@ content: "\f14a"; }
     content: "\f067";
 }
 
+.fa-play-circle:before {
+    content: "\f144";
+}
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
