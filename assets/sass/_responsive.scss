@@ -147,6 +147,27 @@
                 }
             }
         }
+
+        .navbar-wrapper {
+
+            .navbar-nav {
+
+                li {
+
+                    &.dropdown {
+
+                        .dropdown-menu {
+                            columns: inherit;
+                            width: inherit;
+                            height: 400px;
+                            right: 0;
+                            min-width: 300px;
+                            overflow-y: auto; 
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .banner {
@@ -160,6 +181,23 @@
 
             p {
                 @include em(18px, 0, 22px);
+            }
+        }
+    }
+
+    .live-area {
+
+        .live-slider-wrapper {
+
+            .slick-slider {
+
+                .hover-content {
+
+                    p {
+                        padding: 15px;
+                        font-size: 1rem;
+                    }
+                }
             }
         }
     }

@@ -59,6 +59,12 @@
         arrows: true,
         responsive: [
         {
+          breakpoint: 1250,
+          settings: {
+            slidesToShow: 3
+          }
+        },
+        {
           breakpoint: 900,
           settings: {
             slidesToShow: 3
@@ -93,19 +99,19 @@
         arrows: true,
         responsive: [
         {
-          breakpoint: 900,
+          breakpoint: 1300,
           settings: {
             slidesToShow: 3
           }
         },
         {
-          breakpoint: 800,
+          breakpoint: 1000,
           settings: {
             slidesToShow: 2
           }
         },
         {
-          breakpoint: 500,
+          breakpoint: 700,
           settings: {
             slidesToShow: 1
           }
