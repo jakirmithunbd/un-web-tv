@@ -185,6 +185,10 @@ margin-right: .3em; }
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
 readers do not read off random characters that represent icons */
 
+.fa-circle:before {
+    content: "\f111";
+}
+
 .fa-video:before {
     content: "\f03d";
 }
@@ -193,11 +197,17 @@ readers do not read off random characters that represent icons */
     content: "\f3c9";
 }
 
+
+
 .fa-home:before {
     content: "\f015";
 }
 .fa-angle-right:before {
     content: "\f105";
+}
+
+.fa-check:before {
+    content: "\f00c";
 }
 
 .fa-angle-left:before {

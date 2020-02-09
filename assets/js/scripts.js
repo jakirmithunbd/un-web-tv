@@ -53,11 +53,17 @@
         // dots: true,
         infinite: false,
         draggable: true,
-        slidesToShow: 4,
+        slidesToShow: 5,
         // autoplay: true,
         slidesToScroll: 1,
         arrows: true,
         responsive: [
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 4
+          }
+        },
         {
           breakpoint: 1250,
           settings: {
@@ -93,11 +99,17 @@
         // dots: true,
         infinite: false,
         draggable: true,
-        slidesToShow: 4,
+        slidesToShow: 5,
         // autoplay: true,
         slidesToScroll: 1,
         arrows: true,
         responsive: [
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 4
+          }
+        },
         {
           breakpoint: 1300,
           settings: {
@@ -122,6 +134,46 @@
       ]
     });
 
+     // Mobile package Silder
+    $(".ul-for-date").slick({
+        // dots: true,
+        infinite: false,
+        draggable: true,
+        slidesToShow: 13,
+        // autoplay: true,
+        slidesToScroll: 1,
+        arrows: false,
+        responsive: [
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 13
+          }
+        },
+        {
+          breakpoint: 1300,
+          settings: {
+            slidesToShow: 13
+          }
+        },
+        {
+          breakpoint: 1000,
+          settings: {
+            slidesToShow: 10
+          }
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 7
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+
     $('a[href*="#"]').on('click', function(e) {
       e.preventDefault();
 
@@ -133,6 +185,21 @@
     $('.hidden-cat-item').on('click', function(){
       $(this).parent().toggleClass('ShowSubCate');
 
+    });
+
+    // on filter click
+    $('#schedule-list').mixItUp({
+      
+    });
+
+    // filter for mobile
+    $('#country-list').on('change', function(){
+        $('#schedule-list').mixItUp('filter', this.value);
+    });
+
+    $('#Change_Color').on('click', function(){
+      $(this).toggleClass('Color-Right');
+      $('.advance-search-area').slideToggle();
     });
 
 })(jQuery);
