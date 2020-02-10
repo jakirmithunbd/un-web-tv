@@ -294,7 +294,7 @@ select {
         right: 0;
         height: 100%;
         top: 0;
-        width: 90px;
+        width: 60px;
         background: #6f5344;
         display: flex;
         transition: all .3s ease;
@@ -1819,6 +1819,10 @@ select {
         align-items: center;
         justify-content: flex-end;
 
+        &:before {
+            content: none;
+        }
+
         .date-search {
             max-width: 152px;
             position: relative;
@@ -1841,6 +1845,10 @@ select {
         .advance-search {
             display: flex;
             align-items: center;
+
+            &:before {
+                content: none;
+            }
         }
 
         h4 {
@@ -1856,22 +1864,24 @@ select {
             height: 25px;
             border: 2px solid $primary;
             border-radius: 30px;
+            text-align: right;
             transition: all .3s ease;
 
             span {
-                color: $primary;
+                color: #ddd;
                 transition: all .3s ease;
                 position: relative;
                 top: -4px;
-                left: -2px;
+                right: -5px;
             }
 
             &.Color-Right {
-                text-align: right;
+                text-align: left;
 
                 span {
-                    color: #ddd;
-                    right: -2px;
+                    color: $primary;
+                    left: -2px;
+                    right: inherit;
                 }
             }
         }
@@ -1880,10 +1890,10 @@ select {
 
 .advance-search-area {
     background: #333333;
-    padding: 30px 0;
     height: 0;
     transition: all .3s ease;
-    height: auto;
+    visibility: visible;
+    opacity: 0;
 
     h4 {
         color: #fff;
@@ -1973,6 +1983,29 @@ select {
             }
         }
     }
+
+    .search-button {
+        max-width: 380px;
+        margin: 35px auto 0;
+        display: block;
+
+        .btn {
+            padding: 10px 30px;
+            text-align: left;
+
+            span {
+                background-color: $primary;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    &.ShowAdvanceFields {
+        height: auto;
+        visibility: visible;
+        opacity: 1;
+        padding: 30px 0;
+    }
 }
 
 .search-filter-area {
@@ -2019,7 +2052,7 @@ select {
                                 font-family: "Font Awesome 5 Free";
                                 font-weight: 900;
                                 position: absolute;
-                                right: 0px;
+                                right: 15px;
                                 color: $primary;
                             } 
 
@@ -2036,10 +2069,57 @@ select {
                     
                     .form-checkbox {
 
+                        &.datefilter-wrapper {
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            &:before {
+                                content: none;
+                            }
+
+                            .date-filter {
+                                width: 48%;
+                                position: relative;
+
+                                .calendarImg {
+                                    position: absolute;
+                                    top: calc(50% - 14px);
+                                    right: 15px;
+                                    max-width: 24px;
+                                    cursor: pointer;
+                                }
+
+                                &:not(:last-child) {
+                                    margin-right: 2%;
+                                }
+                            }
+                        }
+
                         label {
                             @include em(18px, 25, 24px);
                             color: #fff;
                             font-weight: 300;
+                        }
+
+                        .form-control {
+                            height: inherit;
+                            color: #666666;
+                            @include placeholder(#666666, 18px, 400);
+                            @include em(18px, 0, 24px);
+                            background-color: #fff;
+                            border-color: #fff;
+                            margin: 5px 0;
+                        }
+
+                        p {
+                            @include em(18px, 0, 24px);
+                            color: #fff;
+                            margin: 5px 0;
+                            font-weight: 300;
+
+                            span {
+                                color: $primary;
+                            }
                         }
 
                         input {
@@ -2076,6 +2156,176 @@ select {
                                     opacity: 1;
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .selected-search {
+        display: flex;
+        align-items: center;
+        margin-bottom: 35px;
+
+        p {
+            color: #fff;
+            margin-bottom: 0;
+        }
+
+        .filter-btn {
+            color: #666666;
+            font-weight: 300;
+            border-radius: 3px;
+            background-color: #fff;
+            padding: 11px 17px;
+            margin: 0 5px;
+            @include em(18px, 25, 24px);
+
+            span {
+                color: red;
+                font-weight: 900;
+            }
+        }
+
+        .clearFilter {
+            @include em(18px, 25, 24px);
+            color: $primary;
+        }
+    }
+
+    .search-items {
+
+        .search-item {
+            margin-bottom: 75px;
+            justify-content: space-between;
+
+            .video-thumb {
+                width: 32%;
+                position: relative;
+
+                img {
+                    width: 100%;
+                }
+
+                .hover-content {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background-color: rgba(0, 150, 208, .9);
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    padding: 5px;
+                    justify-content: space-between;
+
+                    p {
+                        color: #fff;
+                        margin-bottom: 0;
+
+                        span {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+
+            .search-item-content {
+                width: 64%;
+                margin-left: 2%;
+
+                .title {
+                    font-weight: 700;
+                    @include em(24px, 25, 30px);
+                    color: $primary;
+                }
+
+                .top-title {
+                    @include em(20px, 25, 24px);
+                    color: #fff;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+
+                p {
+                    @include em(18px, 25, 24px);
+                    margin: 0;
+                    font-weight: 300;
+                    color: #fff;
+
+                    i {
+
+                        &:before {
+                            font-weight: 900;
+                        }
+                    }
+                }
+            }
+
+            &.microphone {
+
+                .video-thumb {
+
+                    .hover-content {
+                        background-color: rgba(0,34,132,.9);
+                    }
+                }
+            }
+        }
+
+        .pagination-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .paginations {
+
+                a {
+                    color: #fff;
+                    border: 2px solid $primary;
+                    border-radius: 3px;
+                    @include em(18px, 25, 24px);
+                    transition: all .3s ease;
+                    height: 40px;
+                    width: 40px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &.active, &:hover, &:focus {
+                        background-color: $primary;
+                    }
+                }
+            }
+
+            .result-show-perpage {
+                display: flex;
+                align-items: center;
+
+                span {
+                    font-weight: 7000;
+                    color: #fff;
+                    @include em(18px, 25, 24px);
+                }
+
+                .dropdown-select {
+                    margin-left: 30px;
+
+                    .form-control {
+                        width: 90px;
+                        @include em(18px, 25, 24px);
+                        border-color: $primary;
+                        color: #fff;
+                        padding: 8px 20px;
+                        background-color: transparent;
+
+                        option {
+                            color: #000;
+                            @include em(18px, 25, 24px);
                         }
                     }
                 }

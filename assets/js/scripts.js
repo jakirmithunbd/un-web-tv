@@ -199,7 +199,7 @@
 
     $('#Change_Color').on('click', function(){
       $(this).toggleClass('Color-Right');
-      $('.advance-search-area').slideToggle();
+      $('.advance-search-area').toggleClass('ShowAdvanceFields');
     });
 
 })(jQuery);

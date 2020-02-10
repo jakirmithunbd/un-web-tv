@@ -124,14 +124,14 @@
     <section class="search-top">
     	<div class="container">
     		<div class="row align-center">
-    			<div class="col-md-6">
+    			<div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
     				<div class="search-result">
     					<h3>6 Results for <span>“Human Rights”</span></h3>
     					<div class="border"></div>
     				</div>
     			</div>
 
-    			<div class="col-md-6">
+    			<div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
     				<div class="sort-by">
 	    				<h4>Sort by</h4>
 	    				<div class="date-search dropdown-select">
@@ -228,320 +228,457 @@
 
     <div class="search-filter-area">
     	<div class="container">
-    		<div class="row col-md-4">
-    			<div class="search-filter-sidebar">
-    				<h4>REFINE BY</h4>
-    				<div class="panel-group">
-    					<div class="panel panel-default">
-	                        <div class="panel-heading" id="headingTwo">
-	                            <h4 class="panel-title">
-	                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Media Type:</a>
-	                            </h4>
-	                        </div>
+    		<div class="row">
+                <div class="col-md-3">
+        			<div class="search-filter-sidebar">
+        				<h4>REFINE BY</h4>
+        				<div class="panel-group">
+        					<div class="panel panel-default">
+    	                        <div class="panel-heading" id="headingTwo">
+    	                            <h4 class="panel-title">
+    	                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Date Range :</a>
+    	                            </h4>
+    	                        </div>
 
-	                        <div id="collapseTwo" class="panel-collapse collapse in">
-	                            <div class="panel-body">
-	                            	<div class="form-checkbox">
-									    <input checked type="checkbox" id="media_1">
-									    <label for="media_1">Video</label> </br>
-									    <input type="checkbox" id="media_2">
-									    <label for="media_2">Audio</label></br>
-									    <input type="checkbox" id="media_3">
-									    <label for="media_3">All</label>
-									</div>
-	                            </div>
-	                        </div>
-	                    </div>
-    					<div class="panel panel-default">
-	                        <div class="panel-heading" id="headingThree">
-	                            <h4 class="panel-title">
-	                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Language:</a>
-	                            </h4>
-	                        </div>
+    	                        <div id="collapseTwo" class="panel-collapse collapse in">
+    	                            <div class="panel-body">
+    	                            	<div class="form-checkbox datefilter-wrapper">
+    									    <div class="date-filter">
+                                                <input class="form-control" placeholder="From:" type="text">
+                                                <img class="calendarImg" src="../assets/images/Calander_Date_Time_Schedule_Timeline-128.png" alt="">                     
+                                            </div>
+                                            <div class="date-filter">
+                                                <input class="form-control" placeholder="To:" type="text">
+                                                <img class="calendarImg" src="../assets/images/Calander_Date_Time_Schedule_Timeline-128.png" alt="">                     
+                                            </div>
+    									</div>
+    	                            </div>
+    	                        </div>
+    	                    </div>
 
-	                        <div id="collapseThree" class="panel-collapse collapse in">
-	                            <div class="panel-body">
-	                            	<div class="form-checkbox">
-									    <input checked type="checkbox" id="Arabic">
-									    <label for="Arabic">Arabic</label> </br>
-									    <input type="checkbox" id="Chinese">
-									    <label for="Chinese">Chinese</label></br>
-									    <input type="checkbox" id="English">
-									    <label for="English">English</label></br>
-									    <input type="checkbox" id="French">
-									    <label for="French">French</label></br>
-									    <input type="checkbox" id="Spanish">
-									    <label for="Spanish">Spanish</label></br>
-									    <input type="checkbox" id="Russian">
-									    <label for="Russian">Russian</label></br>
-									    <input type="checkbox" id="Original">
-									    <label for="Original">Original</label>
-									</div>
-	                            </div>
-	                        </div>
-	                    </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Media Type:</a>
+                                    </h4>
+                                </div>
 
-    					<div class="panel panel-default">
-	                        <div class="panel-heading" id="headingfour">
-	                            <h4 class="panel-title">
-	                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefour">Category:</a>
-	                            </h4>
-	                        </div>
+                                <div id="collapseTwo" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <div class="form-checkbox">
+                                            <input checked type="checkbox" id="media_1">
+                                            <label for="media_1">Video</label> </br>
+                                            <input type="checkbox" id="media_2">
+                                            <label for="media_2">Audio</label></br>
+                                            <input type="checkbox" id="media_3">
+                                            <label for="media_3">All</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-	                        <div id="collapsefour" class="panel-collapse collapse">
-	                            <div class="panel-body">
-	                            	<div class="form-checkbox">
-									    <input checked type="checkbox" id="stories">
-									    <label for="stories">News stories</label> </br>
-									    <input type="checkbox" id="Features">
-									    <label for="Features">Features</label></br>
-									    <input type="checkbox" id="Security-Council">
-									    <label for="Security-Council">Security Council</label></br>
-									    <input type="checkbox" id="General-Assembly">
-									    <label for="General-Assembly">General Assembly</label></br>
-									    <input type="checkbox" id="Economic-Council">
-									    <label for="Economic-Council">Economic and Social Council</label></br>
-									    <input type="checkbox" id="International Court-Justice">
-									    <label for="International Court-Justice">International Court of Justice (ICJ)</label></br>
-									    <input type="checkbox" id="Human-Council">
-									    <label for="Human-Council">Human Rights Council</label> </br>
-									    <input type="checkbox" id="Human-Bodies">
-									    <label for="Human-Bodies">Human Rights Treaty Bodies</label> </br>
-									    <input type="checkbox" id="Trusteeship">
-									    <label for="Trusteeship">Trusteeship Council</label> </br>
-									    <input type="checkbox" id="Conferences">
-									    <label for="Conferences">Conferences Conferences</label> </br>
-									    <input type="checkbox" id="Media-Stakeouts">
-									    <label for="Media-Stakeouts">Media Stakeouts</label> </br>
-									    <input type="checkbox" id="Press-Conferences">
-									    <label for="Press-Conferences">Press Conferences</label> </br>
-									    <input type="checkbox" id="Secretary-General">
-									    <label for="Secretary-General">UN Secretary-General</label> </br>
-									    <input type="checkbox" id="Deputy-Secretary">
-									    <label for="Deputy-Secretary">Deputy-Secretary General</label> </br>
-									    <input type="checkbox" id="President-Assembly">
-									    <label for="President-Assembly">President of the General Assembly</label> </br>
-									    <input type="checkbox" id="High-level">
-									    <label for="High-level">High level</label> </br>
-									    <input type="checkbox" id="Side-Events">
-									    <label for="Side-Events">Side Events</label> </br>
-									    <input type="checkbox" id="Concerts">
-									    <label for="Concerts">Concerts</label> </br>
-									    <input type="checkbox" id="Messages">
-									    <label for="Messages">Messages</label> </br>
-									    <input type="checkbox" id="Interviews">
-									    <label for="Interviews">Interviews</label> </br>
-									    <input type="checkbox" id="B-Compilations">
-									    <label for="B-Compilations">B-Rolls and Compilations</label> </br>
-									    <input type="checkbox" id="Field Operations">
-									    <label for="Field Operations">Field Operations</label> </br>
-									    <input type="checkbox" id="UNHeadquarters">
-									    <label for="UNHeadquarters">UN Headquarters</label> </br>
-									    <input type="checkbox" id="UNOffices">
-									    <label for="UNOffices">UN Offices</label> </br>
-									    <input type="checkbox" id="PhotoOpportunities">
-									    <label for="PhotoOpportunities">Photo Opportunities</label> </br>
-									    <input type="checkbox" id="Portraits">
-									    <label for="Portraits">Portraits</label> </br>
-									</div>
-	                            </div>
-	                        </div>
-	                    </div>
+        					<div class="panel panel-default">
+    	                        <div class="panel-heading" id="headingThree">
+    	                            <h4 class="panel-title">
+    	                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Language:</a>
+    	                            </h4>
+    	                        </div>
 
-	                    <div class="panel panel-default">
-	                        <div class="panel-heading" id="headingfive">
-	                            <h4 class="panel-title">
-	                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefive">Sub Categories:</a>
-	                            </h4>
-	                        </div>
+    	                        <div id="collapseThree" class="panel-collapse collapse in">
+    	                            <div class="panel-body">
+    	                            	<div class="form-checkbox">
+    									    <input checked type="checkbox" id="Arabic">
+    									    <label for="Arabic">Arabic</label> </br>
+    									    <input type="checkbox" id="Chinese">
+    									    <label for="Chinese">Chinese</label></br>
+    									    <input type="checkbox" id="English">
+    									    <label for="English">English</label></br>
+    									    <input type="checkbox" id="French">
+    									    <label for="French">French</label></br>
+    									    <input type="checkbox" id="Spanish">
+    									    <label for="Spanish">Spanish</label></br>
+    									    <input type="checkbox" id="Russian">
+    									    <label for="Russian">Russian</label></br>
+    									    <input type="checkbox" id="Original">
+    									    <label for="Original">Original</label>
+    									</div>
+    	                            </div>
+    	                        </div>
+    	                    </div>
 
-	                        <div id="collapsefive" class="panel-collapse collapse">
-	                            <div class="panel-body">
-	                            	<div class="form-checkbox">
-									    <input checked type="checkbox" id="Africa">
-									    <label for="Africa">AfAfricarica</label> </br>
-									    <input type="checkbox" id="Americas">
-									    <label for="Americas">Americas</label></br>
-									    <input type="checkbox" id="Asia">
-									    <label for="Asia">Asia</label></br>
-									    <input type="checkbox" id="Europe">
-									    <label for="Europe">Europe</label></br>
-									    <input type="checkbox" id="Middle-East">
-									    <label for="Middle-East">Middle East</label></br>
-									    <input type="checkbox" id="ThematicDebate">
-									    <label for="ThematicDebate">Thematic Debate</label>
-									</div>
-	                            </div>
-	                        </div>
-	                    </div>
+        					<div class="panel panel-default">
+    	                        <div class="panel-heading" id="headingfour">
+    	                            <h4 class="panel-title">
+    	                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefour">Category:</a>
+    	                            </h4>
+    	                        </div>
 
-	                    <div class="panel panel-default">
-	                        <div class="panel-heading" id="headingsix">
-	                            <h4 class="panel-title">
-	                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsesix">Subject - Topic:</a>
-	                            </h4>
-	                        </div>
+    	                        <div id="collapsefour" class="panel-collapse collapse">
+    	                            <div class="panel-body">
+    	                            	<div class="form-checkbox">
+    									    <input checked type="checkbox" id="stories">
+    									    <label for="stories">News stories</label> </br>
+    									    <input type="checkbox" id="Features">
+    									    <label for="Features">Features</label></br>
+    									    <input type="checkbox" id="Security-Council">
+    									    <label for="Security-Council">Security Council</label></br>
+    									    <input type="checkbox" id="General-Assembly">
+    									    <label for="General-Assembly">General Assembly</label></br>
+    									    <input type="checkbox" id="Economic-Council">
+    									    <label for="Economic-Council">Economic and Social Council</label></br>
+    									    <input type="checkbox" id="International Court-Justice">
+    									    <label for="International Court-Justice">International Court of Justice (ICJ)</label></br>
+    									    <input type="checkbox" id="Human-Council">
+    									    <label for="Human-Council">Human Rights Council</label> </br>
+    									    <input type="checkbox" id="Human-Bodies">
+    									    <label for="Human-Bodies">Human Rights Treaty Bodies</label> </br>
+    									    <input type="checkbox" id="Trusteeship">
+    									    <label for="Trusteeship">Trusteeship Council</label> </br>
+    									    <input type="checkbox" id="Conferences">
+    									    <label for="Conferences">Conferences Conferences</label> </br>
+    									    <input type="checkbox" id="Media-Stakeouts">
+    									    <label for="Media-Stakeouts">Media Stakeouts</label> </br>
+    									    <input type="checkbox" id="Press-Conferences">
+    									    <label for="Press-Conferences">Press Conferences</label> </br>
+    									    <input type="checkbox" id="Secretary-General">
+    									    <label for="Secretary-General">UN Secretary-General</label> </br>
+    									    <input type="checkbox" id="Deputy-Secretary">
+    									    <label for="Deputy-Secretary">Deputy-Secretary General</label> </br>
+    									    <input type="checkbox" id="President-Assembly">
+    									    <label for="President-Assembly">President of the General Assembly</label> </br>
+    									    <input type="checkbox" id="High-level">
+    									    <label for="High-level">High level</label> </br>
+    									    <input type="checkbox" id="Side-Events">
+    									    <label for="Side-Events">Side Events</label> </br>
+    									    <input type="checkbox" id="Concerts">
+    									    <label for="Concerts">Concerts</label> </br>
+    									    <input type="checkbox" id="Messages">
+    									    <label for="Messages">Messages</label> </br>
+    									    <input type="checkbox" id="Interviews">
+    									    <label for="Interviews">Interviews</label> </br>
+    									    <input type="checkbox" id="B-Compilations">
+    									    <label for="B-Compilations">B-Rolls and Compilations</label> </br>
+    									    <input type="checkbox" id="Field Operations">
+    									    <label for="Field Operations">Field Operations</label> </br>
+    									    <input type="checkbox" id="UNHeadquarters">
+    									    <label for="UNHeadquarters">UN Headquarters</label> </br>
+    									    <input type="checkbox" id="UNOffices">
+    									    <label for="UNOffices">UN Offices</label> </br>
+    									    <input type="checkbox" id="PhotoOpportunities">
+    									    <label for="PhotoOpportunities">Photo Opportunities</label> </br>
+    									    <input type="checkbox" id="Portraits">
+    									    <label for="Portraits">Portraits</label> </br>
+    									</div>
+    	                            </div>
+    	                        </div>
+    	                    </div>
 
-	                        <div id="collapsesix" class="panel-collapse collapse">
-	                            <div class="panel-body">
-	                            	<div class="form-checkbox">
-	                            		<input class="form-control" type="text" placeholder="Search Topic">
-	                            		<p>Climate Change <span>5,325</span></p>
-	                            		<p>Children <span>3,967</span></p>
-	                            		<a class="toggle-Hide" href="#">Show all Subject </a>
-									</div>
-	                            </div>
-	                        </div>
-	                    </div>
+    	                    <div class="panel panel-default">
+    	                        <div class="panel-heading" id="headingfive">
+    	                            <h4 class="panel-title">
+    	                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefive">Sub Categories:</a>
+    	                            </h4>
+    	                        </div>
 
-	                    <div class="panel panel-default">
-	                        <div class="panel-heading" id="headingsaven">
-	                            <h4 class="panel-title">
-	                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsesaven">Subject - Geographic:</a>
-	                            </h4>
-	                        </div>
+    	                        <div id="collapsefive" class="panel-collapse collapse">
+    	                            <div class="panel-body">
+    	                            	<div class="form-checkbox">
+    									    <input checked type="checkbox" id="Africa">
+    									    <label for="Africa">AfAfricarica</label> </br>
+    									    <input type="checkbox" id="Americas">
+    									    <label for="Americas">Americas</label></br>
+    									    <input type="checkbox" id="Asia">
+    									    <label for="Asia">Asia</label></br>
+    									    <input type="checkbox" id="Europe">
+    									    <label for="Europe">Europe</label></br>
+    									    <input type="checkbox" id="Middle-East">
+    									    <label for="Middle-East">Middle East</label></br>
+    									    <input type="checkbox" id="ThematicDebate">
+    									    <label for="ThematicDebate">Thematic Debate</label>
+    									</div>
+    	                            </div>
+    	                        </div>
+    	                    </div>
 
-	                        <div id="collapsesaven" class="panel-collapse collapse">
-	                            <div class="panel-body">
-	                            	<div class="form-checkbox">
-	                            		<input class="form-control" type="text" placeholder="Search Topic">
-	                            		<p>Climate Change <span>5,325</span></p>
-	                            		<p>Children <span>3,967</span></p>
-	                            		<p>Children <span>3,967</span></p>
-	                            		<p>Children <span>3,967</span></p>
-	                            		<a class="toggle-Hide" href="#">Show all Subject </a>
-									</div>
-	                            </div>
-	                        </div>
-	                    </div>
+    	                    <div class="panel panel-default">
+    	                        <div class="panel-heading" id="headingsix">
+    	                            <h4 class="panel-title">
+    	                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsesix">Subject - Topic:</a>
+    	                            </h4>
+    	                        </div>
 
-	                    <div class="panel panel-default">
-	                        <div class="panel-heading" id="headingeigjt">
-	                            <h4 class="panel-title">
-	                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseeigjt">Subject - Corporate:</a>
-	                            </h4>
-	                        </div>
+    	                        <div id="collapsesix" class="panel-collapse collapse">
+    	                            <div class="panel-body">
+    	                            	<div class="form-checkbox">
+    	                            		<input class="form-control" type="text" placeholder="Search Topic">
+    	                            		<p>Climate Change <span>5,325</span></p>
+    	                            		<p>Children <span>3,967</span></p>
+    	                            		<a class="toggle-Hide" href="#">Show all Subject </a>
+    									</div>
+    	                            </div>
+    	                        </div>
+    	                    </div>
 
-	                        <div id="collapseeigjt" class="panel-collapse collapse">
-	                            <div class="panel-body">
-	                            	<div class="form-checkbox">
-	                            		<input class="form-control" type="text" placeholder="Search Corporate">
-	                            		<p>Climate Change <span>5,325</span></p>
-	                            		<p>Children <span>3,967</span></p>
-	                            		<p>Children <span>3,967</span></p>
-	                            		<p>Children <span>3,967</span></p>
-	                            		<a class="toggle-Hide" href="#">Show all Subject </a>
-									</div>
-	                            </div>
-	                        </div>
-	                    </div>
+    	                    <div class="panel panel-default">
+    	                        <div class="panel-heading" id="headingsaven">
+    	                            <h4 class="panel-title">
+    	                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsesaven">Subject - Geographic:</a>
+    	                            </h4>
+    	                        </div>
 
-	                    <div class="panel panel-default">
-	                        <div class="panel-heading" id="headinnine">
-	                            <h4 class="panel-title">
-	                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsnine">Event Location: Country:</a>
-	                            </h4>
-	                        </div>
+    	                        <div id="collapsesaven" class="panel-collapse collapse">
+    	                            <div class="panel-body">
+    	                            	<div class="form-checkbox">
+    	                            		<input class="form-control" type="text" placeholder="Search Topic">
+    	                            		<p>Climate Change <span>5,325</span></p>
+    	                            		<p>Children <span>3,967</span></p>
+    	                            		<p>Children <span>3,967</span></p>
+    	                            		<p>Children <span>3,967</span></p>
+    	                            		<a class="toggle-Hide" href="#">Show all Subject </a>
+    									</div>
+    	                            </div>
+    	                        </div>
+    	                    </div>
 
-	                        <div id="collapsnine" class="panel-collapse collapse">
-	                            <div class="panel-body">
-	                            	<div class="form-checkbox">
-									    <input type="checkbox" id="Canada">
-									    <label for="Canada">Canada</label></br>
-									    <input type="checkbox" id="Germany">
-									    <label for="Germany">Germany</label></br>
-									    <input type="checkbox" id="UnitedKingdom">
-									    <label for="UnitedKingdom">United Kingdom</label></br>
-									    <input type="checkbox" id="Sweden">
-									    <label for="Sweden">Sweden</label></br>
-									    <input type="checkbox" id="Australia">
-									    <label for="Australia">Australia</label></br>
-									    <input type="checkbox" id="UnitedStates">
-									    <label for="UnitedStates">United States</label></br>
-									    <input type="checkbox" id="Japan">
-									    <label for="Japan">Japan</label></br>
-									    <a class="toggle-Hide" href="#">More</a>
-									</div>
-	                            </div>
-	                        </div>
-	                    </div>
+    	                    <div class="panel panel-default">
+    	                        <div class="panel-heading" id="headingeigjt">
+    	                            <h4 class="panel-title">
+    	                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseeigjt">Subject - Corporate:</a>
+    	                            </h4>
+    	                        </div>
 
-	                    <div class="panel panel-default">
-	                        <div class="panel-heading" id="headiten">
-	                            <h4 class="panel-title">
-	                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapten">Event Location: City:</a>
-	                            </h4>
-	                        </div>
+    	                        <div id="collapseeigjt" class="panel-collapse collapse">
+    	                            <div class="panel-body">
+    	                            	<div class="form-checkbox">
+    	                            		<input class="form-control" type="text" placeholder="Search Corporate">
+    	                            		<p>Climate Change <span>5,325</span></p>
+    	                            		<p>Children <span>3,967</span></p>
+    	                            		<p>Children <span>3,967</span></p>
+    	                            		<p>Children <span>3,967</span></p>
+    	                            		<a class="toggle-Hide" href="#">Show all Subject </a>
+    									</div>
+    	                            </div>
+    	                        </div>
+    	                    </div>
 
-	                        <div id="collapten" class="panel-collapse collapse">
-	                            <div class="panel-body">
-	                            	<div class="form-checkbox">
-									    <input type="checkbox" id="Canada">
-									    <label for="Canada">Canada</label></br>
-									    <input type="checkbox" id="Germany">
-									    <label for="Germany">Germany</label></br>
-									    <input type="checkbox" id="UnitedKingdom">
-									    <label for="UnitedKingdom">United Kingdom</label></br>
-									    <input type="checkbox" id="Sweden">
-									    <label for="Sweden">Sweden</label></br>
-									    <input type="checkbox" id="Australia">
-									    <label for="Australia">Australia</label></br>
-									    <input type="checkbox" id="UnitedStates">
-									    <label for="UnitedStates">United States</label></br>
-									    <input type="checkbox" id="Japan">
-									    <label for="Japan">Japan</label></br>
-									    <a class="toggle-Hide" href="#">More</a>
-									</div>
-	                            </div>
-	                        </div>
-	                    </div>
+    	                    <div class="panel panel-default">
+    	                        <div class="panel-heading" id="headinnine">
+    	                            <h4 class="panel-title">
+    	                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsnine">Event Location: Country:</a>
+    	                            </h4>
+    	                        </div>
 
-	                    <div class="panel panel-default">
-	                        <div class="panel-heading" id="headieleven">
-	                            <h4 class="panel-title">
-	                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapeleven">Digitized:</a>
-	                            </h4>
-	                        </div>
+    	                        <div id="collapsnine" class="panel-collapse collapse">
+    	                            <div class="panel-body">
+    	                            	<div class="form-checkbox">
+    									    <input type="checkbox" id="Canada">
+    									    <label for="Canada">Canada</label></br>
+    									    <input type="checkbox" id="Germany">
+    									    <label for="Germany">Germany</label></br>
+    									    <input type="checkbox" id="UnitedKingdom">
+    									    <label for="UnitedKingdom">United Kingdom</label></br>
+    									    <input type="checkbox" id="Sweden">
+    									    <label for="Sweden">Sweden</label></br>
+    									    <input type="checkbox" id="Australia">
+    									    <label for="Australia">Australia</label></br>
+    									    <input type="checkbox" id="UnitedStates">
+    									    <label for="UnitedStates">United States</label></br>
+    									    <input type="checkbox" id="Japan">
+    									    <label for="Japan">Japan</label></br>
+    									    <a class="toggle-Hide" href="#">More</a>
+    									</div>
+    	                            </div>
+    	                        </div>
+    	                    </div>
 
-	                        <div id="collapeleven" class="panel-collapse collapse">
-	                            <div class="panel-body">
-	                            	<div class="form-checkbox">
-									    <div class="form-group">
-				    						<input type="radio" name="r2" id="r1_yes">
-				       						<label for="r1_yes">Yes</label></br>
-				       						<input type="radio" name="r2" id="r1_no">
-				       						<label for="r1_no">No</label>
-				    					</div>
-									</div>
-	                            </div>
-	                        </div>
-	                    </div>
+    	                    <div class="panel panel-default">
+    	                        <div class="panel-heading" id="headiten">
+    	                            <h4 class="panel-title">
+    	                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapten">Event Location: City:</a>
+    	                            </h4>
+    	                        </div>
 
-	                    <div class="panel panel-default">
-	                        <div class="panel-heading" id="headietwelve">
-	                            <h4 class="panel-title">
-	                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapetwelve">Status:</a>
-	                            </h4>
-	                        </div>
+    	                        <div id="collapten" class="panel-collapse collapse">
+    	                            <div class="panel-body">
+    	                            	<div class="form-checkbox">
+    									    <input type="checkbox" id="Canada">
+    									    <label for="Canada">Canada</label></br>
+    									    <input type="checkbox" id="Germany">
+    									    <label for="Germany">Germany</label></br>
+    									    <input type="checkbox" id="UnitedKingdom">
+    									    <label for="UnitedKingdom">United Kingdom</label></br>
+    									    <input type="checkbox" id="Sweden">
+    									    <label for="Sweden">Sweden</label></br>
+    									    <input type="checkbox" id="Australia">
+    									    <label for="Australia">Australia</label></br>
+    									    <input type="checkbox" id="UnitedStates">
+    									    <label for="UnitedStates">United States</label></br>
+    									    <input type="checkbox" id="Japan">
+    									    <label for="Japan">Japan</label></br>
+    									    <a class="toggle-Hide" href="#">More</a>
+    									</div>
+    	                            </div>
+    	                        </div>
+    	                    </div>
 
-	                        <div id="collapetwelve" class="panel-collapse collapse">
-	                            <div class="panel-body">
-	                            	<div class="form-checkbox">
-									    <div class="form-group">
-				    						<input type="radio" name="r3" id="r1_Live">
-				       						<label for="r1_Live">Live Now</label> </br>
-				       						<input type="radio" name="r3" id="r1_Scheduled">
-				       						<label for="r1_Scheduled">Scheduled</label></br>
-				       						<input type="radio" name="r3" id="r1_On-demand">
-				       						<label for="r1_On-demand">On-demand</label>
-				    					</div>
-									</div>
-	                            </div>
-	                        </div>
-	                    </div>
+    	                    <div class="panel panel-default">
+    	                        <div class="panel-heading" id="headieleven">
+    	                            <h4 class="panel-title">
+    	                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapeleven">Digitized:</a>
+    	                            </h4>
+    	                        </div>
 
-    				</div>
-    			</div>
+    	                        <div id="collapeleven" class="panel-collapse collapse">
+    	                            <div class="panel-body">
+    	                            	<div class="form-checkbox">
+    									    <div class="form-group">
+    				    						<input type="radio" name="r2" id="r1_yes">
+    				       						<label for="r1_yes">Yes</label></br>
+    				       						<input type="radio" name="r2" id="r1_no">
+    				       						<label for="r1_no">No</label>
+    				    					</div>
+    									</div>
+    	                            </div>
+    	                        </div>
+    	                    </div>
+
+    	                    <div class="panel panel-default">
+    	                        <div class="panel-heading" id="headietwelve">
+    	                            <h4 class="panel-title">
+    	                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapetwelve">Status:</a>
+    	                            </h4>
+    	                        </div>
+
+    	                        <div id="collapetwelve" class="panel-collapse collapse">
+    	                            <div class="panel-body">
+    	                            	<div class="form-checkbox">
+    									    <div class="form-group">
+    				    						<input type="radio" name="r3" id="r1_Live">
+    				       						<label for="r1_Live">Live Now</label> </br>
+    				       						<input type="radio" name="r3" id="r1_Scheduled">
+    				       						<label for="r1_Scheduled">Scheduled</label></br>
+    				       						<input type="radio" name="r3" id="r1_On-demand">
+    				       						<label for="r1_On-demand">On-demand</label>
+    				    					</div>
+    									</div>
+    	                            </div>
+    	                        </div>
+    	                    </div>
+
+        				</div>
+        			</div>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="selected-search">
+                        <p>Your Selections: </p>
+                        <a class="filter-btn" href="#">Media Type: Video <span>X</span></a>
+                        <a class="filter-btn" href="#">Language: English <span>X</span></a>
+                        <a class="clearFilter" href="#">Clear</a>
+                    </div>
+                    <div class="search-items">
+                        <div class="search-item align-center">
+                            <div class="video-thumb">
+                                <img src="../assets/images/slide-1.jpg" class="" alt="">
+                                <a href="single-video.html" class="hover-content">
+                                    <p class="text-uppercase"><span class="fas fa-video"></span>Original</p>
+                                    <p>6 Chapters</p>
+                                </a>
+                            </div>
+
+                            <div class="search-item-content">
+                                <p class="top-title"><i><img src="../assets/images/play-white.png" alt=""></i>45min (English)<span>28 DEC 2019</span></p>
+                                <a class="title" href="single-video.html">Lorem ipsum dolor sit amet consectetur adipiscing elit</a>
+                                <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repr ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cu pidatat non proident, sunt in culpa qui officia deserunt cillum mollit anim id est laborum. Sed ut persp iciatis unde omnis iste natus erro</p>
+                            </div>
+                        </div>
+
+                        <div class="search-item align-center microphone">
+                            <div class="video-thumb">
+                                <img src="../assets/images/slide-2.jpg" class="" alt="">
+                                <a href="single-video.html" class="hover-content">
+                                    <p class="text-uppercase"><span class="fas fa-microphone-alt"></span>English</p>
+                                    <p>6 Chapters</p>
+                                </a>
+                            </div>
+
+                            <div class="search-item-content">
+                                <p class="top-title"><i><img src="../assets/images/play-white.png" alt=""></i>45min (English)<span>28 DEC 2019</span></p>
+                                <a class="title" href="single-video.html">Lorem ipsum dolor sit amet consectetur adipiscing elit</a>
+                                <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repr ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cu pidatat non proident, sunt in culpa qui officia deserunt cillum mollit anim id est laborum. Sed ut persp iciatis unde omnis iste natus erro</p>
+                            </div>
+                        </div>
+
+                        <div class="search-item align-center">
+                            <div class="video-thumb">
+                                <img src="../assets/images/slide-2.jpg" class="" alt="">
+                                <a href="single-video.html" class="hover-content">
+                                    <p class="text-uppercase"><span class="fas fa-microphone-alt"></span>Original</p>
+                                    <p>6 Chapters</p>
+                                </a>
+                            </div>
+
+                            <div class="search-item-content">
+                                <p class="top-title"><i><img src="../assets/images/play-white.png" alt=""></i>45min (English)<span>28 DEC 2019</span></p>
+                                <a class="title" href="single-video.html">Lorem ipsum dolor sit amet consectetur adipiscing elit</a>
+                                <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repr ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cu pidatat non proident, sunt in culpa qui officia deserunt cillum mollit anim id est laborum. Sed ut persp iciatis unde omnis iste natus erro</p>
+                            </div>
+                        </div>
+
+                        <div class="search-item align-center microphone">
+                            <div class="video-thumb">
+                                <img src="../assets/images/slide-2.jpg" class="" alt="">
+                                <a href="single-video.html" class="hover-content">
+                                    <p class="text-uppercase"><span class="fas fa-microphone-alt"></span>English</p>
+                                    <p>6 Chapters</p>
+                                </a>
+                            </div>
+
+                            <div class="search-item-content">
+                                <p class="top-title"><i><img src="../assets/images/play-white.png" alt=""></i>45min (English)<span>28 DEC 2019</span></p>
+                                <a class="title" href="single-video.html">Lorem ipsum dolor sit amet consectetur adipiscing elit</a>
+                                <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repr ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cu pidatat non proident, sunt in culpa qui officia deserunt cillum mollit anim id est laborum. Sed ut persp iciatis unde omnis iste natus erro</p>
+                            </div>
+                        </div>
+
+                        <div class="search-item align-center">
+                            <div class="video-thumb">
+                                <img src="../assets/images/slide-2.jpg" class="" alt="">
+                                <a href="single-video.html" class="hover-content">
+                                    <p class="text-uppercase"><span class="fas fa-microphone-alt"></span>Original</p>
+                                    <p>6 Chapters</p>
+                                </a>
+                            </div>
+
+                            <div class="search-item-content">
+                                <p class="top-title"><i><img src="../assets/images/play-white.png" alt=""></i>45min (English)<span>28 DEC 2019</span></p>
+                                <a class="title" href="single-video.html">Lorem ipsum dolor sit amet consectetur adipiscing elit</a>
+                                <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repr ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cu pidatat non proident, sunt in culpa qui officia deserunt cillum mollit anim id est laborum. Sed ut persp iciatis unde omnis iste natus erro</p>
+                            </div>
+                        </div>
+
+                        <div class="pagination-wrapper">
+                            <div class="paginations">
+                                <a class="hidden" href="#"><span class="fas fa-angle-left"></span></a>
+                                <a class="active" href="#">01</a>
+                                <a href="#">02</a>
+                                <a href="#">03</a>
+                                <a href="#"><span class="fas fa-angle-right"></span></a>
+                            </div>
+
+                            <div class="result-show-perpage">
+                                <span>Results per Page</span>
+                                <div class="dropdown-select">
+                                    <select name="" class="form-control" id="">
+                                        <option value="20" selected="selected">20</option>
+                                        <option value="30">30</option>
+                                        <option value="40">40</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
     		</div>
     	</div>
     </div>
@@ -577,7 +714,7 @@
 
     <script>
         $(function () {
-            $('#calendarImg').daterangepicker({
+            $('.calendarImg').daterangepicker({
                 singleDatePicker: true,
                 showDropdowns: false,
                 minYear: 1901,
