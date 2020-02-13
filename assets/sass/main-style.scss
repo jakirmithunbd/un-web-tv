@@ -1354,6 +1354,7 @@ button {
         ul {
             list-style: none;
             padding-left: 0;
+            text-align: center;
 
             li {
                 cursor: pointer;
@@ -1470,6 +1471,10 @@ button {
     padding: 60px 0;
 
     .schedule-item-wrapper {
+        perspective: inherit !important;
+        perspective-origin: 0 !important;
+        height: inherit !important;
+        width: inherit !important;
         
         .schedule-item {
             display: flex;
@@ -1508,7 +1513,7 @@ button {
             }
 
             .image {
-                width: 25%;
+                width: 15%;
 
                 img {
                     width: 100%;
@@ -1516,7 +1521,7 @@ button {
             }
 
             .content {
-                width: 45%;
+                width: 60%;
 
                 p {
                     font-weight: 300;
@@ -1526,8 +1531,8 @@ button {
             }
 
             &:not(:last-child) {
-                padding-bottom: 75px;
-                margin-bottom: 75px;
+                padding-bottom: 45px;
+                margin-bottom: 45px;
                 border-bottom: 1px solid $primary;
             }
         }

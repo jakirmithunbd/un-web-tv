@@ -134,46 +134,6 @@
       ]
     });
 
-     // Mobile package Silder
-    $(".ul-for-date").slick({
-        // dots: true,
-        infinite: false,
-        draggable: true,
-        slidesToShow: 13,
-        // autoplay: true,
-        slidesToScroll: 1,
-        arrows: false,
-        responsive: [
-        {
-          breakpoint: 1400,
-          settings: {
-            slidesToShow: 13
-          }
-        },
-        {
-          breakpoint: 1300,
-          settings: {
-            slidesToShow: 13
-          }
-        },
-        {
-          breakpoint: 1000,
-          settings: {
-            slidesToShow: 10
-          }
-        },
-        {
-          breakpoint: 700,
-          settings: {
-            slidesToShow: 7
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-    });
-
     $('a[href*="#"]').on('click', function(e) {
       e.preventDefault();
 
