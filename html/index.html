@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home | UN WEB TV</title>
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../assets/css/animate.min.css">
-    <link rel="stylesheet" href="../assets/css/slick.min.css">
-    <link rel="stylesheet" href="../assets/css/main-style.css">
+    <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
+	<link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" />
+      <link rel="stylesheet" href="../assets/css/animate.min.css"/>
+    <link rel="stylesheet" href="../assets/css/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../assets/css/main-style.css"/>
 
     
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -20,37 +21,64 @@
     <![endif]-->
     </head>
     <body>
-    <div class="topbar hidden-xs">
-        <div class="container">
-            <div class="row align-center">
-                <div class="col-md-6">
-                    <p><a href="index.html"><span class="fas fa-home"></span></a>Welcome to the United Nations</p>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="language-menu">
-                        <a href="#">العربية </a>
-                        <a href="#">ا中文</a>
-                        <a class="active" href="#">English</a>
-                        <a href="#">Français</a>
-                        <a href="#">Русский</a>
-                        <a href="#">Español</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    
+	<div class="topbar">
+		<div class="container position-relative topbar-max-width">
+			<div id="brand-bar" class="navbar navbar-default" role="navigation"><!-- UN global brand bar -->
+				<div class="container brandbar-header topbar-max-width">
+					<div class="row">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="col-md-3 position-absolute">
+							<a class="navbar-brand" href="/en/" style="margin-left: 0;">Welcome to the United Nations</a>
+						</div><!-- /UN global brand bar -->
+			  
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="col-md-8 language-switcher">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#language-switcher">
+							  <span class="sr-only">Toggle navigation</span>
+							  <span class="icon-bar"></span>
+							  <span class="icon-bar"></span>
+							  <span class="icon-bar"></span>
+							</button>
+							<div class="language-title visible-xs-inline">
+								<a href="javascript:void(0)" data-toggle="collapse" data-target="#language-switcher">Language:</a>
+							</div>
+					
+							<div class="navbar-collapse collapse position-language-switcher" id="language-switcher" style="height:auto">
+								<nav role="navigation">    
+									<ul class="menu nav">
+										<li class="ar leaf first"><a href="/ar/" class="language-link" xml:lang="ar">العربية</a></li>
+										<li class="zh-hans leaf"><a href="/zh/" class="language-link" xml:lang="zh-hans">中文</a></li>
+										<li class="en leaf"><a href="/en/" class="language-link active" xml:lang="en">English</a></li>
+										<li class="fr leaf"><a href="/fr/" class="language-link" xml:lang="fr">Français</a></li>
+										<li class="ru leaf"><a href="/ru/" class="language-link" xml:lang="ru">Русский</a></li>
+										<li class="es leaf"><a href="/es/" class="language-link" xml:lang="es">Español</a></li>
+									<!--	<li class="en leaf last">							
+											<a href="#" data-target="#" class="dropdown-toggle active" data-toggle="dropdown">Other</a>
+												<ul class="dropdown-menu">
+													<li class="leaf"><a href="/pt/">Português</a></li>
+													<li class="leaf"><a href="/sw/">Kiswahili</a></li>
+													<li class="leaf "><a href="">Hindi हिंदी</a></li>										
+												</ul>
+										</li>-->						
+									</ul>                
+								</nav>
+							</div>
+						</div><!-- /.navbar-collapse -->
+				  
+					</div> <!-- /.row -->
+				</div><!-- /.container -->
+			</div>
+		</div>
+	</div>
     <header class="header">
         <nav class="navbar">
-            <div class="container">
+            <div class="container topbar-max-width">
                 <div class="navbar-wrapper">
                     <div class="navbar-header">
                         
-                        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
+                        <button id="main-menu-toggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+                            <i class="fas"><span class="sr-only">Toggle main menu</span></i>
                         </button>
 
                         <div class="navbar-brand">
@@ -67,1098 +95,1157 @@
 
                         <a href="#">Advanced Search</a>
                     </div>
-
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <span class="fas fa-long-arrow-alt-right closeMenu hidden"></span>
-                        <ul class="nav navbar-nav">
-                            <li><a href="schedule.html">Live Schedule</a></li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="categories.html">Categories</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="sub-news.html">News stories</a></li>
-                                    <li><a href="sub-features.html">Features</a></li>
-                                    <li><a href="sub-security.html">Security Council</a></li>
-                                    <li><a href="sub-general.html">General Assembly</a></li>
-                                    <li><a href="sub-economic.html">Economic and Social Council</a></li>
-                                    <li><a href="sub-international.html">International Court of Justice (ICJ)</a></li>
-                                    <li><a href="sub-human.html">Human Rights Council</a></li>
-                                    <li><a href="sub-human-rights.html">Human Rights Treaty Bodies</a></li>
-                                    <li><a href="sub-trusteeship.html">Trusteeship Council</a></li>
-                                    <li><a href="sub-conferences.html">Conferences</a></li>
-                                    <li><a href="sub-media.html">Media Stakeouts</a></li>
-                                    <li><a href="sub-press.html">Press Conferences</a></li>
-                                    <li><a href="sub-secretary.html">UN Secretary-General</a></li>
-                                    <li><a href="sub-deputy.html">Deputy-Secretary General</a></li>
-                                    <li><a href="sub-president.html">President of the General Assembly</a></li>
-                                    <li><a href="sub-events.html">High-level Events</a></li>
-                                    <li><a href="sub-side-events.html">Side Events</a></li>
-                                    <li><a href="sub-concerts.html">Concerts</a></li>
-                                    <li><a href="sub-messages.html">Messages</a></li>
-                                    <li><a href="sub-interviewa.html">Interviews</a></li>
-                                    <li><a href="sub-brolls.html">B-Rolls and Compilations</a></li>
-                                    <li><a href="sub-field-operations.html">Field Operations</a></li>
-                                    <li><a href="sub-headquarters.html">UN Headquarters</a></li>
-                                    <li><a href="sub-offices.html">UN Offices</a></li>
-                                    <li><a href="sub-photo.html">Photo Opportunities</a></li>
-                                    <li><a href="sub-portraits.html">Portraits</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown social-media-menu">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="social-media.html">Social Media</a>
-                                <ul class="dropdown-menu">
-                                    <li><a target="_blank" href="http://youtube.com/unitednations">YouTube</a></li>
-                                    <li><a target="_blank" href="http://facebook.com/UNWebTV">Facebook</a></li>
-                                    <li><a target="_blank" href="http://twitter.com/UNWebTV">Twitter</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="internal.html">Internal UN Staff portal</a></li>
-                            <li><a href="subscribe.html">Contact Us</a></li>
-                            <li><a href="un-web-tv.html">UN Web TV</a></li>
-                            <li><a href="un-photo.html">UN Photo</a></li>
-                            <li><a href="audiovisual.html">UN Audiovisual Library</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </nav><!-- / navigation  -->
     </header><!-- / Header Area  -->
-    <div class="header_gutter"></div>
 
-    <section class="banner" style="background: url(../assets/images/banner.jpg);">
-    	<div class="video-wrapper" style='display: block; position: relative; max-width: 1088px; margin: 0 auto; height: 100%'>
-    		<div style='padding-top: 56.25%;'>
-    			<iframe src="https://cdnapisec.kaltura.com/p/2503451/sp/250345100/embedIframeJs/uiconf_id/43914941/partner_id/2503451?iframeembed=true&playerId=kVideoTarget&entry_id=1_weg3aoem&flashvars[streamerType]=auto" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen*; encrypted-media *" frameborder="0" style="width: 100%; height: 100%; position: absolute; top: 0px;bottom: 0px; right: 0px; left: 0px;">
-				</iframe>
+    <div class="container-fluid main-content-area">
+        <div class="row">
+            <div id="main-menu" class="col-sm-4 col-md-3 collapse width">
+                <nav>
+                    <ul>
+                        <li>
+                            <a class="menu-item-primary" href="schedule.html"><i class="fas fa-calendar"></i><span class="long-name">Live</span> Schedule</a>
+                        </li>
+                        <li>
+                            <a href="#sub-menu-123" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                            <a class="menu-item-primary" href="categories.html"><i class="fas fa-th-list"></i>Categories</a class="menu-item-primary">
+                            <ul id="sub-menu-123" class="collapse">
+                                
+                                <li>
+                                    <a href="#sub-menu-meetings" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                    <a href="#">Meetings &amp; Events</a>
+                                    <ul id="sub-menu-meetings" class="collapse">
+                                        <li><a href="#">General Assembly</a></li>
+                                        <li><a href="#">Security Council</a></li>
+                                        <li><a href="#">Economic and Social Council</a></li>
+                                        <li><a href="#">International Court of Justice</a></li>
+                                        <li><a href="#">Trusteeship Council</a></li>
+                                        <li><a href="#">Human Rights Council</a></li>
+                                        <li><a href="#">Human Rights Treaty Bodies</a></li>
+                                        <li><a href="#">High Level Events</a></li>
+                                        <li><a href="#">Side Events</a></li>
+                                        <li><a href="#">Conferences</a></li>
+                                        <li><a href="#">Concerts</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#sub-menu-media" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                    <a href="#">Media</a>
+                                    <ul id="sub-menu-media" class="collapse">
+                                        <li><a href="#">Press Conferences</a></li>
+                                        <li><a href="#">Media Stakeouts</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#sub-menu-news" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                    <a href="#">News &amp; Features</a>
+                                    <ul id="sub-menu-news" class="collapse">
+                                        <li><a href="#">News Stories</a></li>
+                                        <li><a href="#">Features</a></li>
+                                        <li><a href="#">Messages</a></li>
+                                        <li><a href="#">Interviews</a></li>
+                                        <li><a href="#">Dag Hammarskjöld Library</a></li>
+                                        <li><a href="#">B-Rolls &amp; Compilations</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#sub-menu-officials" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                    <a href="#">Officials</a>
+                                    <ul id="sub-menu-officials" class="collapse">
+                                        <li><a href="#">Secretary-General</a></li>
+                                        <li><a href="#">Deputy Secretary-General</a></li>
+                                        <li><a href="#">President of the General Assembly</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="menu-item-primary" href="internal.html"><i class="fas fa-shield-alt"></i>UN Staff Portal</a>
+                        </li>
+                        <li class="sep"></li>
+                            <li><a class="menu-item-secondary" href="about.html">About Us</a></li>
+                            <li><a class="menu-item-secondary" href="contact.html">Contact Us</a></li>
+                            <li>
+                            <a href="#sub-menu-456" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Lorem</span></i></a>
+                            <a class="menu-item-secondary">Media Sites</a>
+                            <ul id="sub-menu-456" class="collapse">
+                                <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/avlibrary/">Audiovisual Library</a></li>
+                                <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/tv/unifeed/">Unifeed</a></li>
+                                <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/photo/">UN Photo</a></li>
+                                <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/avlibrary/">UN WebTV</a></li>
+                                
+                                
+                                        
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="main-content" class="col">
+                <section class="banner">
+                    <div class="video-wrapper" style='display: block; position: relative; max-width: 1088px; height: 100%; margin:0 auto'><div style='padding-top: 56.25%;'>
+                        <!-- <div class="video-wrapper" style='display: block; position: relative; max-width: 1920px; max-height: 1080px'>
+                            <div style='padding-top: 27%;'> -->
+                                <iframe src="https://cdnapisec.kaltura.com/p/2503451/sp/250345100/embedIframeJs/uiconf_id/43914941/partner_id/2503451?iframeembed=true&playerId=kVideoTarget&entry_id=1_5pgi70w7&flashvars[streamerType]=auto" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen*; encrypted-media *" frameborder="0" style="width: 100%; height: 100%; position: absolute; top: 0px;bottom: 0px; right: 0px; left: 0px;">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="banner-content">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4>24 Hour Live and pre-recorded Programming</h4>
+                                        <p>The UN Web TV Channel is available 24 hours a day with selected live programming of United Nations meetings and events as well as with pre-recorded video features and documentaries on various global issues.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+            
+                    <section class="live-area">
+                        <div class="container">
+                            <div class="section-title">
+                                <p><span>Live</span> Now <span class="border"></span></p>
+                            </div>
+            
+                            <div class="live-slider-wrapper">
+                                <div class="slick-slider">
+                                    <img src="../assets/images/live-1.jpg" class="img-responsive" alt="">
+
+                                    <div class="live-now">Live</div>
+            
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- /live area slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/live-2.jpg" class="img-responsive" alt="">
+
+                                    <div class="live-now">Live</div>
+
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- /live area slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/live-3.jpg" class="img-responsive" alt="">
+
+                                    <div class="live-now">Live</div>
+
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- /live area slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/live-2.jpg" class="img-responsive" alt="">
+
+                                    <div class="live-now">Live</div>
+
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- /live area slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/live-1.jpg" class="img-responsive" alt="">
+
+                                    <div class="live-now">Live</div>
+
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- /live area slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/live-3.jpg" class="img-responsive" alt="">
+
+                                    <div class="live-now">Live</div>
+
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- /live area slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/live-2.jpg" class="img-responsive" alt="">
+
+                                    <div class="live-now">Live</div>
+
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- /live area slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/live-4.jpg" class="img-responsive" alt="">
+
+                                    <div class="live-now">Live</div>
+
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- /live area slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/live-1.jpg" class="img-responsive" alt="">
+
+                                    <div class="live-now">Live</div>
+
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- /live area slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/live-2.jpg" class="img-responsive" alt="">
+
+                                    <div class="live-now">Live</div>
+
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- /live area slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/live-4.jpg" class="img-responsive" alt="">
+
+                                    <div class="live-now">Live</div>
+
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- /live area slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/live-3.jpg" class="img-responsive" alt="">
+
+                                    <div class="live-now">Live</div>
+
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- /live area slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/live-1.jpg" class="img-responsive" alt="">
+
+                                    <div class="live-now">Live</div>
+
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- /live area slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/live-2.jpg" class="img-responsive" alt="">
+
+                                    <div class="live-now">Live</div>
+
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- /live area slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/live-3.jpg" class="img-responsive" alt="">
+
+                                    <div class="live-now">Live</div>
+
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- /live area slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/live-4.jpg" class="img-responsive" alt="">
+
+                                    <div class="live-now">Live</div>
+
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- /live area slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/live-1.jpg" class="img-responsive" alt="">
+
+                                    <div class="live-now">Live</div>
+
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- /live area slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/live-2.jpg" class="img-responsive" alt="">
+
+                                    <div class="live-now">Live</div>
+
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- /live area slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/live-3.jpg" class="img-responsive" alt="">
+
+                                    <div class="live-now">Live</div>
+
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- /live area slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/live-4.jpg" class="img-responsive" alt="">
+            
+                                    <a href="categories.html" class="hover-content">
+                                        <p>View More
+                                        <span class="border"></span>
+                                        </p>
+                                    </a>
+                                </div><!-- /live area slider -->
+            
+                            </div> <!-- /live area -->
+            
+                            <div class="section-title">
+                                <p>Featured<span class="border"></span></p>
+                            </div>
+            
+                            <div class="slider-wrapper">
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
+                                    <a href="categories.html" class="hover-content">
+                                        <p>View More
+                                        <span class="border"></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                            </div> <!-- / slider wrapper -->
+            
+                            <div class="section-title">
+                                <p>Trending<span class="border"></span></p>
+                            </div>
+            
+                            <div class="slider-wrapper">
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
+                                    <a href="categories.html" class="hover-content">
+                                        <p>View More
+                                        <span class="border"></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                            </div> <!-- / slider wrapper -->
+            
+                            <div class="section-title">
+                                <p>Recently Added<span class="border"></span></p>
+                            </div>
+            
+                            <div class="slider-wrapper recently-added">
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
+                                    <a href="single-video.html" class="hover-content">
+                                        <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                        <span class="border"></span>
+                                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                                <div class="slick-slider">
+                                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+            
+                                    <a href="categories.html" class="hover-content">
+                                        <p>View More
+                                        <span class="border"></span>
+                                        </p>
+                                    </a>
+                                </div><!-- / slider -->
+            
+                            </div> <!-- / slider wrapper -->
+                        </div>
+                    </section>            
+            </div>
+    
+        </div>
+
+    </div>
+	<div class="section-fluid footer-fluid">
+		<footer class="footer-un2">
+			<div class="container topbar-max-width">
+				<div class="row align-center">
+					<div class="col-md-12">
+						<div class="pull-left flip footer-brand">
+							<a href="https://www.un.org/en/" title="Home">
+								<span class="site-name">United Nations</span>
+							</a>						
+						</div>
+						<div class="pull-right flip social-media" role="navigation"><!-- social media links -->
+							<h5 class="social-media-heading"><a href="/en/sections/about-website/un-social-media/">Join the conversation:</a></h5>
+							<ul class="nav list-inline">
+								<li class="list-inline-item facebook">
+									<a href="http://www.facebook.com/unwebtv">
+										<span class="icon-text">facebook</span>
+										<span class="social-media-text">unwebtv</span>
+									</a>
+								</li>
+								<li class="list-inline-item twitter">
+									<a href="http://twitter.com/unwebtv">
+										<span class="icon-text">twitter</span>
+										<span class="social-media-text">unwebtv</span>
+									</a>
+								</li>
+								<li class="list-inline-item youtube">
+									<a href="http://www.youtube.com/unitednations">
+										<span class="icon-text">youtube</span>
+										<span class="social-media-text">United Nations</span>
+									</a>
+									</li>
+							  <!--<li class="list-inline-item flickr"><a href="http://www.flickr.com/photos/un_photo/"><span class="icon-text">flickr</span></a></li>
+							  <li class="list-inline-item instagram"><a href="http://instagram.com/unitednations"><span class="icon-text">instagram</span></a></li>-->
+							</ul> 
+						</div>					
+					</div>
+				</div>
+				<div class="row footer-links"><!-- row -->
+					<div class="divider">
+					</div><!-- top border -->
+					<div class="col-md-12">
+						<div class="pull-right flip"> 
+						   <div id="block-menu-menu-footer-links" class="block block-menu" role="navigation">
+							<ul class="nav list-inline">
+								<li class="list-inline-item ">
+									<a href="site-index.html">A-Z Site Index</a>
+								</li>
+								<li class="list-inline-item ">
+									<a href="disclaimer.html">Interpretation Disclaimer</a>
+								</li>
+								<li class="list-inline-item ">
+									<a href="copy-right.html">Copyright & Use</a>
+								</li>
+								
+								<li class="list-inline-item ">
+									<a href="privacy-notice.html">Privacy Notice</a>
+								</li>
+								<li class="list-inline-item ">
+									<a href="fraud-alert.html">Fraud Alert</a>
+								</li>						
+							</ul> 
+						  </div> 
+						</div>				
+					</div>			  
+				</div>
 			</div>
-		</div>
-        <div class="banner-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>24 Hour Live and pre-recorded Programming</h4>
-                        <p>The UN Web TV Channel is available 24 hours a day with selected live programming of United Nations meetings and events as well as with pre-recorded video features and documentaries on various global issues.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="live-area">
-        <div class="container">
-            <div class="section-title">
-                <p><span>Live</span> Now <span class="border"></span></p>
-            </div>
-
-            <div class="live-slider-wrapper">
-                <div class="slick-slider">
-                    <img src="../assets/images/live-1.jpg" class="img-responsive" alt="">
-
-                    <div class="live-now">Live</div>
-
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- /live area slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/live-2.jpg" class="img-responsive" alt="">
-
-                    <div class="live-now">Live</div>
-
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- /live area slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/live-3.jpg" class="img-responsive" alt="">
-
-                    <div class="live-now">Live</div>
-
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- /live area slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/live-2.jpg" class="img-responsive" alt="">
-
-                    <div class="live-now">Live</div>
-
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- /live area slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/live-1.jpg" class="img-responsive" alt="">
-
-                    <div class="live-now">Live</div>
-
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- /live area slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/live-3.jpg" class="img-responsive" alt="">
-
-                    <div class="live-now">Live</div>
-
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- /live area slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/live-2.jpg" class="img-responsive" alt="">
-
-                    <div class="live-now">Live</div>
-
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- /live area slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/live-4.jpg" class="img-responsive" alt="">
-
-                    <div class="live-now">Live</div>
-
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- /live area slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/live-1.jpg" class="img-responsive" alt="">
-
-                    <div class="live-now">Live</div>
-
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- /live area slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/live-2.jpg" class="img-responsive" alt="">
-
-                    <div class="live-now">Live</div>
-
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- /live area slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/live-4.jpg" class="img-responsive" alt="">
-
-                    <div class="live-now">Live</div>
-
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- /live area slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/live-3.jpg" class="img-responsive" alt="">
-
-                    <div class="live-now">Live</div>
-
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- /live area slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/live-1.jpg" class="img-responsive" alt="">
-
-                    <div class="live-now">Live</div>
-
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- /live area slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/live-2.jpg" class="img-responsive" alt="">
-
-                    <div class="live-now">Live</div>
-
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- /live area slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/live-3.jpg" class="img-responsive" alt="">
-
-                    <div class="live-now">Live</div>
-
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- /live area slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/live-4.jpg" class="img-responsive" alt="">
-
-                    <div class="live-now">Live</div>
-
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- /live area slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/live-1.jpg" class="img-responsive" alt="">
-
-                    <div class="live-now">Live</div>
-
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- /live area slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/live-2.jpg" class="img-responsive" alt="">
-
-                    <div class="live-now">Live</div>
-
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- /live area slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/live-3.jpg" class="img-responsive" alt="">
-
-                    <div class="live-now">Live</div>
-
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- /live area slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/live-4.jpg" class="img-responsive" alt="">
-
-                    <a href="categories.html" class="hover-content">
-                        <p>View More
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- /live area slider -->
-
-            </div> <!-- /live area -->
-
-            <div class="section-title">
-                <p>Featured<span class="border"></span></p>
-            </div>
-
-            <div class="slider-wrapper">
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
-                    <a href="categories.html" class="hover-content">
-                        <p>View More
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-            </div> <!-- / slider wrapper -->
-
-            <div class="section-title">
-                <p>Trending<span class="border"></span></p>
-            </div>
-
-            <div class="slider-wrapper">
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
-                    <a href="categories.html" class="hover-content">
-                        <p>View More
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-            </div> <!-- / slider wrapper -->
-
-            <div class="section-title">
-                <p>Recently Added<span class="border"></span></p>
-            </div>
-
-            <div class="slider-wrapper recently-added">
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
-                    <a href="single-video.html" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        <span style="margin-top: 15px; width: 100%; font-weight: 300; display: inline-block;">24 JAN 2020 <b style="color: #009edb; margin-left: 15px; float: right; ">02:29:37</b></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-
-                    <a href="categories.html" class="hover-content">
-                        <p>View More
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-            </div> <!-- / slider wrapper -->
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="row align-center">
-                <div class="col-md-4">
-                    <div class="footer-logo">
-                        <a href="index.html">
-                            <img src="../assets/images/footer-logo.png" class="img-responsive" alt="">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-8">
-                    <div class="footer-menu">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="site-index.html">A-Z Site Index</a></li>
-                            <li><a href="disclaimer.html">Interpretation Disclaimer</a></li>
-                            <li><a href="copy-right.html">Copyright & Use</a></li>
-                            <li><a href="privacy.html">Privacy Notice</a></li>
-                            <li><a href="fraud.html">Fraud Alert</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-                                                
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/wow.min.js"></script>
-    <script src="../assets/js/sidr.min.js"></script>
-    <script src="../assets/js/slick.min.js"></script>
+		</footer>
+	</div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/mixitup.min.js"></script>
     <script src="../assets/js/scripts.js"></script>
-    <script>
-        wow = new WOW(
-          {
-            animateClass: 'animated',
-            offset:       100,
-            callback:     function(box) {
-              console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-            }
-          }
-        );
-        wow.init();
-        document.getElementById('moar').onclick = function() {
-          var section = document.createElement('section');
-          section.className = 'section--purple wow fadeInDown';
-          this.parentNode.insertBefore(section, this);
-        };
-    </script>
-    </body>
+</body>
 </html>

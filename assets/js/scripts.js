@@ -1,63 +1,41 @@
 
-(function($){
-    var ua = window.navigator.userAgent;
-    var isIE = /MSIE|Trident/.test(ua);
+(function ($) {
+  var ua = window.navigator.userAgent;
+  var isIE = /MSIE|Trident/.test(ua);
 
-    if ( !isIE ) {
-        //IE specific code goes here
-        "use strict";
-    }
+  if (!isIE) {
+    //IE specific code goes here
+    "use strict";
+  }
 
-      /*** Sidr Menu */
-    // $('.navbar-toggle').sidr({
-    //     name: 'sidr-main',
-    //     side: 'right',
-    //     source: '#sidr',
-    //     displace: false,
-    //     renaming: false
-    // });
-
-    $('.navbar-toggle').on('click', function(){
-        $(this).toggleClass('in');
-    });
-
-    /*** Header height = gutter height */
-    function headersetGutterHeight(){
-        var footer = document.querySelector('.header'),
-            gutter = document.querySelector('.header_gutter');
-            gutter.style.height = footer.offsetHeight + 'px';
-    }
-
-    window.onload = headersetGutterHeight;
-    window.onresize = headersetGutterHeight;
-
-    $("document").on("click",function(e) { $.sidr('close','sidr-main'); });
-
-    $('.closeMenu').on('click', function(){
-        $.sidr('close', 'sidr-main');
-    });
+  $(document).ready(function () {
 
     /*** Sticky header */
-    $(window).scroll(function() {
+    $(window).scroll(function () {
 
-        if ($(window).scrollTop() > 0) {
-          $(".header").addClass("sticky");
-        } 
-        else {
-          $(".header").removeClass("sticky");
-        }
+      if ($(window).scrollTop() > 0) {
+        $(".header").addClass("sticky");
+      }
+      else {
+        $(".header").removeClass("sticky");
+      }
     });
 
-     // Mobile package Silder
+    // hide search filters initially where they are not longer column display
+    if ($(window).width() < 992) { // window size breakpoint
+      $('#search-filters').collapse('hide');
+    }
+
+    // Mobile package Silder
     $(".live-slider-wrapper").slick({
-        // dots: true,
-        infinite: false,
-        draggable: true,
-        slidesToShow: 5,
-        // autoplay: true,
-        slidesToScroll: 1,
-        arrows: true,
-        responsive: [
+      // dots: true,
+      infinite: false,
+      draggable: true,
+      slidesToShow: 5,
+      // autoplay: true,
+      slidesToScroll: 1,
+      arrows: true,
+      responsive: [
         {
           breakpoint: 1400,
           settings: {
@@ -94,16 +72,16 @@
       ]
     });
 
-     // Mobile package Silder
+    // Mobile package Silder
     $(".slider-wrapper").slick({
-        // dots: true,
-        infinite: false,
-        draggable: true,
-        slidesToShow: 5,
-        // autoplay: true,
-        slidesToScroll: 1,
-        arrows: true,
-        responsive: [
+      // dots: true,
+      infinite: false,
+      draggable: true,
+      slidesToShow: 5,
+      // autoplay: true,
+      slidesToScroll: 1,
+      arrows: true,
+      responsive: [
         {
           breakpoint: 1400,
           settings: {
@@ -134,32 +112,87 @@
       ]
     });
 
-    $('a[href*="#"]').on('click', function(e) {
-      e.preventDefault();
-
-      $('html, body').animate({
-          scrollTop: $($(this).attr('href')).offset().top - 120,
-        }, 500);
+    // Mobile package Silder
+    $(".ul-for-date").slick({
+      // dots: true,
+      infinite: false,
+      draggable: true,
+      slidesToShow: 13,
+      // autoplay: true,
+      slidesToScroll: 1,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 13
+          }
+        },
+        {
+          breakpoint: 1300,
+          settings: {
+            slidesToShow: 13
+          }
+        },
+        {
+          breakpoint: 1000,
+          settings: {
+            slidesToShow: 10
+          }
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 7
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
     });
 
-    $('.hidden-cat-item').on('click', function(){
+    $('#selected-search .filter-btn').click(function() {
+      var $el = $(this);
+      var name = $el.attr('data-filter-name');
+      var value = $el.attr('data-filter-value').trim();
+      // console.log('Name='+name+', value='+value);
+
+      // find form control and clear value
+
+      // for checkboxes/radios
+      $('#filter-'+name+'-'+value).removeAttr('checked');
+
+      // for text input
+      $('#filter-'+name).val('');
+
+      $el.remove();
+
+      $('#search-form').submit();
+    });
+
+    // Categories page sub-categories selector
+    $('.hidden-cat-item').on('click', function () {
       $(this).parent().toggleClass('ShowSubCate');
 
     });
 
     // on filter click
     $('#schedule-list').mixItUp({
-      
+
     });
 
     // filter for mobile
-    $('#country-list').on('change', function(){
-        $('#schedule-list').mixItUp('filter', this.value);
+    $('#country-list').on('change', function () {
+      $('#schedule-list').mixItUp('filter', this.value);
     });
 
-    $('#Change_Color').on('click', function(){
+    $('#Change_Color').on('click', function () {
       $(this).toggleClass('Color-Right');
       $('.advance-search-area').toggleClass('ShowAdvanceFields');
     });
+
+  });
+
 
 })(jQuery);

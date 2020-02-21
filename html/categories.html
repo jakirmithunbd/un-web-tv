@@ -20,37 +20,63 @@
     <![endif]-->
     </head>
     <body>
-    <div class="topbar hidden-xs">
-        <div class="container">
-            <div class="row align-center">
-                <div class="col-md-6">
-                    <p><a href="index.html"><span class="fas fa-home"></span></a>Welcome to the United Nations</p>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="language-menu">
-                        <a href="#">العربية </a>
-                        <a href="#">ا中文</a>
-                        <a class="active" href="#">English</a>
-                        <a href="#">Français</a>
-                        <a href="#">Русский</a>
-                        <a href="#">Español</a>
-                    </div>
-                </div>
+    <div class="topbar">
+        <div class="container position-relative topbar-max-width">
+            <div id="brand-bar" class="navbar navbar-default" role="navigation"><!-- UN global brand bar -->
+                <div class="container brandbar-header topbar-max-width">
+                    <div class="row">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="col-md-3 position-absolute">
+                            <a class="navbar-brand" href="/en/" style="margin-left: 0;">Welcome to the United Nations</a>
+                        </div><!-- /UN global brand bar -->
+              
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="col-md-8 language-switcher">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#language-switcher">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                            </button>
+                            <div class="language-title visible-xs-inline">
+                                <a href="javascript:void(0)" data-toggle="collapse" data-target="#language-switcher">Language:</a>
+                            </div>
+                    
+                            <div class="navbar-collapse collapse position-language-switcher" id="language-switcher" style="height:auto">
+                                <nav role="navigation">    
+                                    <ul class="menu nav">
+                                        <li class="ar leaf first"><a href="/ar/" class="language-link" xml:lang="ar">العربية</a></li>
+                                        <li class="zh-hans leaf"><a href="/zh/" class="language-link" xml:lang="zh-hans">中文</a></li>
+                                        <li class="en leaf"><a href="/en/" class="language-link active" xml:lang="en">English</a></li>
+                                        <li class="fr leaf"><a href="/fr/" class="language-link" xml:lang="fr">Français</a></li>
+                                        <li class="ru leaf"><a href="/ru/" class="language-link" xml:lang="ru">Русский</a></li>
+                                        <li class="es leaf"><a href="/es/" class="language-link" xml:lang="es">Español</a></li>
+                                    <!--    <li class="en leaf last">                           
+                                            <a href="#" data-target="#" class="dropdown-toggle active" data-toggle="dropdown">Other</a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="leaf"><a href="/pt/">Português</a></li>
+                                                    <li class="leaf"><a href="/sw/">Kiswahili</a></li>
+                                                    <li class="leaf "><a href="">Hindi हिंदी</a></li>                                       
+                                                </ul>
+                                        </li>-->                        
+                                    </ul>                
+                                </nav>
+                            </div>
+                        </div><!-- /.navbar-collapse -->
+                  
+                    </div> <!-- /.row -->
+                </div><!-- /.container -->
             </div>
         </div>
     </div>
-
     <header class="header">
         <nav class="navbar">
-            <div class="container">
+            <div class="container topbar-max-width">
                 <div class="navbar-wrapper">
                     <div class="navbar-header">
                         
-                        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
+                        <button id="main-menu-toggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+                            <i class="fas"><span class="sr-only">Toggle main menu</span></i>
                         </button>
 
                         <div class="navbar-brand">
@@ -67,64 +93,10 @@
 
                         <a href="#">Advanced Search</a>
                     </div>
-
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <span class="fas fa-long-arrow-alt-right closeMenu hidden"></span>
-                        <ul class="nav navbar-nav">
-                            <li><a href="schedule.html">Live Schedule</a></li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="categories.html">Categories</a>
-                                <ul class="dropdown-menu" style="height: 400px;">
-                                    <li><a href="sub-news.html">News stories</a></li>
-                                    <li><a href="sub-features.html">Features</a></li>
-                                    <li><a href="sub-security.html">Security Council</a></li>
-                                    <li><a href="sub-general.html">General Assembly</a></li>
-                                    <li><a href="sub-economic.html">Economic and Social Council</a></li>
-                                    <li><a href="sub-international.html">International Court of Justice (ICJ)</a></li>
-                                    <li><a href="sub-human.html">Human Rights Council</a></li>
-                                    <li><a href="sub-human-rights.html">Human Rights Treaty Bodies</a></li>
-                                    <li><a href="sub-trusteeship.html">Trusteeship Council</a></li>
-                                    <li><a href="sub-conferences.html">Conferences</a></li>
-                                    <li><a href="sub-media.html">Media Stakeouts</a></li>
-                                    <li><a href="sub-press.html">Press Conferences</a></li>
-                                    <li><a href="sub-secretary.html">UN Secretary-General</a></li>
-                                    <li><a href="sub-deputy.html">Deputy-Secretary General</a></li>
-                                    <li><a href="sub-president.html">President of the General Assembly</a></li>
-                                    <li><a href="sub-events.html">High-level Events</a></li>
-                                    <li><a href="sub-side-events.html">Side Events</a></li>
-                                    <li><a href="sub-concerts.html">Concerts</a></li>
-                                    <li><a href="sub-messages.html">Messages</a></li>
-                                    <li><a href="sub-interviewa.html">Interviews</a></li>
-                                    <li><a href="sub-brolls.html">B-Rolls and Compilations</a></li>
-                                    <li><a href="sub-field-operations.html">Field Operations</a></li>
-                                    <li><a href="sub-headquarters.html">UN Headquarters</a></li>
-                                    <li><a href="sub-offices.html">UN Offices</a></li>
-                                    <li><a href="sub-photo.html">Photo Opportunities</a></li>
-                                    <li><a href="sub-portraits.html">Portraits</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown social-media-menu">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="social-media.html">Social Media</a>
-                                <ul class="dropdown-menu">
-                                    <li><a target="_blank" href="http://youtube.com/unitednations">YouTube</a></li>
-                                    <li><a target="_blank" href="http://facebook.com/UNWebTV">Facebook</a></li>
-                                    <li><a target="_blank" href="http://twitter.com/UNWebTV">Twitter</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="internal.html">Internal UN Staff portal</a></li>
-                            <li><a href="subscribe.html">Contact Us</a></li>
-                            <li><a href="un-web-tv.html">UN Web TV</a></li>
-                            <li><a href="un-photo.html">UN Photo</a></li>
-                            <li><a href="audiovisual.html">UN Audiovisual Library</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </nav><!-- / navigation  -->
     </header><!-- / Header Area  -->
-    <div class="header_gutter"></div>
 
     <section class="live-area category-page">
         <div class="container">
@@ -6099,54 +6071,78 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="row align-center">
-                <div class="col-md-4">
-                    <div class="footer-logo">
-                        <a href="index.html">
-                            <img src="../assets/images/footer-logo.png" class="img-responsive" alt="">
-                        </a>
+    <div class="section-fluid footer-fluid">
+        <footer class="footer-un2">
+            <div class="container topbar-max-width">
+                <div class="row align-center">
+                    <div class="col-md-12">
+                        <div class="pull-left flip footer-brand">
+                            <a href="https://www.un.org/en/" title="Home">
+                                <span class="site-name">United Nations</span>
+                            </a>                        
+                        </div>
+                        <div class="pull-right flip social-media" role="navigation"><!-- social media links -->
+                            <h5 class="social-media-heading"><a href="/en/sections/about-website/un-social-media/">Join the conversation:</a></h5>
+                            <ul class="nav list-inline">
+                                <li class="list-inline-item facebook">
+                                    <a href="http://www.facebook.com/unwebtv">
+                                        <span class="icon-text">facebook</span>
+                                        <span class="social-media-text">unwebtv</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item twitter">
+                                    <a href="http://twitter.com/unwebtv">
+                                        <span class="icon-text">twitter</span>
+                                        <span class="social-media-text">unwebtv</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item youtube">
+                                    <a href="http://www.youtube.com/unitednations">
+                                        <span class="icon-text">youtube</span>
+                                        <span class="social-media-text">United Nations</span>
+                                    </a>
+                                    </li>
+                              <!--<li class="list-inline-item flickr"><a href="http://www.flickr.com/photos/un_photo/"><span class="icon-text">flickr</span></a></li>
+                              <li class="list-inline-item instagram"><a href="http://instagram.com/unitednations"><span class="icon-text">instagram</span></a></li>-->
+                            </ul> 
+                        </div>                  
                     </div>
                 </div>
-
-                <div class="col-md-8">
-                    <div class="footer-menu">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="site-index.html">A-Z Site Index</a></li>
-                            <li><a href="disclaimer.html">Interpretation Disclaimer</a></li>
-                            <li><a href="copy-right.html">Copyright & Use</a></li>
-                            <li><a href="privacy.html">Privacy Notice</a></li>
-                            <li><a href="fraud.html">Fraud Alert</a></li>
-                        </ul>
-                    </div>
+                <div class="row footer-links"><!-- row -->
+                    <div class="divider">
+                    </div><!-- top border -->
+                    <div class="col-md-12">
+                        <div class="pull-right flip"> 
+                           <div id="block-menu-menu-footer-links" class="block block-menu" role="navigation">
+                            <ul class="nav list-inline">
+                                <li class="list-inline-item ">
+                                    <a href="site-index.html">A-Z Site Index</a>
+                                </li>
+                                <li class="list-inline-item ">
+                                    <a href="disclaimer.html">Interpretation Disclaimer</a>
+                                </li>
+                                <li class="list-inline-item ">
+                                    <a href="copy-right.html">Copyright & Use</a>
+                                </li>
+                                
+                                <li class="list-inline-item ">
+                                    <a href="privacy-notice.html">Privacy Notice</a>
+                                </li>
+                                <li class="list-inline-item ">
+                                    <a href="fraud-alert.html">Fraud Alert</a>
+                                </li>                       
+                            </ul> 
+                          </div> 
+                        </div>              
+                    </div>            
                 </div>
             </div>
-        </div>
-    </footer>
-                                                
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/wow.min.js"></script>
-    <script src="../assets/js/sidr.min.js"></script>
-    <script src="../assets/js/slick.min.js"></script>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/mixitup.min.js"></script>
     <script src="../assets/js/scripts.js"></script>
-    <script>
-        wow = new WOW(
-          {
-            animateClass: 'animated',
-            offset:       100,
-            callback:     function(box) {
-              console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-            }
-          }
-        );
-        wow.init();
-        document.getElementById('moar').onclick = function() {
-          var section = document.createElement('section');
-          section.className = 'section--purple wow fadeInDown';
-          this.parentNode.insertBefore(section, this);
-        };
-    </script>
-    </body>
+</body>
 </html>

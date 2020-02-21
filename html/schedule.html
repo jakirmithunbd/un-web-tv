@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -10,6 +9,7 @@
     <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/css/animate.min.css">
     <link rel="stylesheet" href="../assets/css/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="../assets/css/main-style.css">
 
     
@@ -21,37 +21,63 @@
     <![endif]-->
     </head>
     <body>
-    <div class="topbar hidden-xs">
-        <div class="container">
-            <div class="row align-center">
-                <div class="col-md-6">
-                    <p><a href="index.html"><span class="fas fa-home"></span></a>Welcome to the United Nations</p>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="language-menu">
-                        <a href="#">العربية </a>
-                        <a href="#">ا中文</a>
-                        <a class="active" href="#">English</a>
-                        <a href="#">Français</a>
-                        <a href="#">Русский</a>
-                        <a href="#">Español</a>
-                    </div>
-                </div>
+    <div class="topbar">
+        <div class="container position-relative topbar-max-width">
+            <div id="brand-bar" class="navbar navbar-default" role="navigation"><!-- UN global brand bar -->
+                <div class="container brandbar-header topbar-max-width">
+                    <div class="row">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="col-md-3 position-absolute">
+                            <a class="navbar-brand" href="/en/" style="margin-left: 0;">Welcome to the United Nations</a>
+                        </div><!-- /UN global brand bar -->
+              
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="col-md-8 language-switcher">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#language-switcher">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                            </button>
+                            <div class="language-title visible-xs-inline">
+                                <a href="javascript:void(0)" data-toggle="collapse" data-target="#language-switcher">Language:</a>
+                            </div>
+                    
+                            <div class="navbar-collapse collapse position-language-switcher" id="language-switcher" style="height:auto">
+                                <nav role="navigation">    
+                                    <ul class="menu nav">
+                                        <li class="ar leaf first"><a href="/ar/" class="language-link" xml:lang="ar">العربية</a></li>
+                                        <li class="zh-hans leaf"><a href="/zh/" class="language-link" xml:lang="zh-hans">中文</a></li>
+                                        <li class="en leaf"><a href="/en/" class="language-link active" xml:lang="en">English</a></li>
+                                        <li class="fr leaf"><a href="/fr/" class="language-link" xml:lang="fr">Français</a></li>
+                                        <li class="ru leaf"><a href="/ru/" class="language-link" xml:lang="ru">Русский</a></li>
+                                        <li class="es leaf"><a href="/es/" class="language-link" xml:lang="es">Español</a></li>
+                                    <!--    <li class="en leaf last">                           
+                                            <a href="#" data-target="#" class="dropdown-toggle active" data-toggle="dropdown">Other</a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="leaf"><a href="/pt/">Português</a></li>
+                                                    <li class="leaf"><a href="/sw/">Kiswahili</a></li>
+                                                    <li class="leaf "><a href="">Hindi हिंदी</a></li>                                       
+                                                </ul>
+                                        </li>-->                        
+                                    </ul>                
+                                </nav>
+                            </div>
+                        </div><!-- /.navbar-collapse -->
+                  
+                    </div> <!-- /.row -->
+                </div><!-- /.container -->
             </div>
         </div>
     </div>
-
     <header class="header">
         <nav class="navbar">
-            <div class="container">
+            <div class="container topbar-max-width">
                 <div class="navbar-wrapper">
                     <div class="navbar-header">
                         
-                        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
+                        <button id="main-menu-toggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+                            <i class="fas"><span class="sr-only">Toggle main menu</span></i>
                         </button>
 
                         <div class="navbar-brand">
@@ -68,66 +94,39 @@
 
                         <a href="#">Advanced Search</a>
                     </div>
-
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <span class="fas fa-long-arrow-alt-right closeMenu hidden"></span>
-                        <ul class="nav navbar-nav">
-                            <li><a href="schedule.html">Live Schedule</a></li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="categories.html">Categories</a>
-                                <ul class="dropdown-menu" style="height: 400px;">
-                                    <li><a href="sub-news.html">News stories</a></li>
-                                    <li><a href="sub-features.html">Features</a></li>
-                                    <li><a href="sub-security.html">Security Council</a></li>
-                                    <li><a href="sub-general.html">General Assembly</a></li>
-                                    <li><a href="sub-economic.html">Economic and Social Council</a></li>
-                                    <li><a href="sub-international.html">International Court of Justice (ICJ)</a></li>
-                                    <li><a href="sub-human.html">Human Rights Council</a></li>
-                                    <li><a href="sub-human-rights.html">Human Rights Treaty Bodies</a></li>
-                                    <li><a href="sub-trusteeship.html">Trusteeship Council</a></li>
-                                    <li><a href="sub-conferences.html">Conferences</a></li>
-                                    <li><a href="sub-media.html">Media Stakeouts</a></li>
-                                    <li><a href="sub-press.html">Press Conferences</a></li>
-                                    <li><a href="sub-secretary.html">UN Secretary-General</a></li>
-                                    <li><a href="sub-deputy.html">Deputy-Secretary General</a></li>
-                                    <li><a href="sub-president.html">President of the General Assembly</a></li>
-                                    <li><a href="sub-events.html">High-level Events</a></li>
-                                    <li><a href="sub-side-events.html">Side Events</a></li>
-                                    <li><a href="sub-concerts.html">Concerts</a></li>
-                                    <li><a href="sub-messages.html">Messages</a></li>
-                                    <li><a href="sub-interviewa.html">Interviews</a></li>
-                                    <li><a href="sub-brolls.html">B-Rolls and Compilations</a></li>
-                                    <li><a href="sub-field-operations.html">Field Operations</a></li>
-                                    <li><a href="sub-headquarters.html">UN Headquarters</a></li>
-                                    <li><a href="sub-offices.html">UN Offices</a></li>
-                                    <li><a href="sub-photo.html">Photo Opportunities</a></li>
-                                    <li><a href="sub-portraits.html">Portraits</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="social-media.html">Social Media</a>
-                            </li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="internal.html">Internal UN Staff portal</a></li>
-                            <li><a href="subscribe.html">Contact Us</a></li>
-                            <li><a href="un-web-tv.html">UN Web TV</a></li>
-                            <li><a href="un-photo.html">UN Photo</a></li>
-                            <li><a href="audiovisual.html">UN Audiovisual Library</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </nav><!-- / navigation  -->
     </header><!-- / Header Area  -->
-    <div class="header_gutter" style="height: 110px;"></div>
 
     <section class="date-area">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="data-wrapper" id="data-wrapper">
+                    <div class="data-wrapper">
                         <ul id="ul-for-date">
-
+                            <li data-filter=".date-item-1">WED <b>03 jan</b></li>
+                            <li data-filter=".date-item-2">FRI <b>04 jan</b></li>
+                            <li data-filter=".date-item-3">SAT <b>05 jan</b></li>
+                            <li data-filter=".date-item-4">MON <b>07 jan</b></li>
+                            <li data-filter=".date-item-5">TUE <b>08 jan</b></li>
+                            <li data-filter=".date-item-6">WED <b>09 jan</b></li>
+                            <li data-filter=".date-item-7" class="active">WED <b>09 jan</b></li>
+                            <li data-filter=".today" class="mixitup-control-active">Today <b>02 jan</b></li>
+                            <li data-filter=".date-item-8">SAT <b>28 dec</b></li>
+                            <li data-filter=".date-item-10">SUN <b>29 dec</b></li>
+                            <li data-filter=".date-item-11">MON <b>30 dec</b></li>
+                            <li data-filter=".date-item-12">TUE <b>31 dec</b></li>
+                            <li data-filter=".date-item-13">WED <b>01 jan</b></li>
+                            <li data-filter=".date-item-14">WED <b>01 jan</b></li>
+                            <li data-filter=".date-item-15">WED <b>01 jan</b></li>
+                            <li data-filter=".date-item-16">WED <b>01 jan</b></li>
+                            <li data-filter=".date-item-17">WED <b>01 jan</b></li>
+                            <li data-filter=".date-item-18">WED <b>01 jan</b></li>
+                            <li data-filter=".date-item-19">WED <b>01 jan</b></li>
+                            <li data-filter=".date-item-20">WED <b>01 jan</b></li>
+                            <li data-filter=".date-item-21">WED <b>01 jan</b></li>
+                            <li data-filter=".date-item-22">WED <b>01 jan</b></li>
                         </ul>
                     </div>
                 </div>
@@ -169,30 +168,26 @@
                 <div class="col-md-12">
                     <div id="main-1" class="schedule-item-wrapper"></div>
                     <div id="main" class="schedule-item-wrapper">
-                        <div class="schedule-item mix date-item-0 date-item-1 date-item-2 date-item-3 date-item-4 date-item-5 date-item-6 date-item-7 date-item-14 date-item-13 today new-york"
-                            id="feb-sat-01">
+                        <div class="schedule-item mix today new-york date-item-1 date-item-2 date-item-3 date-item-4 date-item-5 date-item-6 date-item-7 date-item-8">
 
                             <div class="time">
                                 <h4>9:45pm - 11:30pm</h4>
-                                <div class="live-now">Live</div>
                             </div>
-                            
+
                             <div class="image">
                                 <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
                             </div>
 
                             <div class="content">
-                                <h4 style="color: #009edb; margin-bottom: 20px; ">António Guterres (UN
-                                    Secretary-General) on Climate Action Summit 2019</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+                                <h4 style="color: #009edb; margin-bottom: 20px; ">António Guterres (UN Secretary-General) on Climate Action Summit 2019</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
                             </div>
                         </div>
 
-                        <div class="schedule-item mix date-item-7 date-item-14 date-item-13 date-item-1 date-item-12 date-item-0 date-item-6 date-item-5 date-item-4 date-item-3 date-item-2 date-item-1 today geneva"
-                            id="feb-wed-12">
+                        <div class="schedule-item mix  today date-item-9 date-item-10 date-item-11 date-item-12 date-item-13 date-item-14 date-item-15 date-item-12 geneva" id="feb-wed-12">
                             <div class="time">
                                 <h4>9:45pm - 11:30pm</h4>
+                                <div class="live-now">Live</div>
                             </div>
 
                             <div class="image">
@@ -202,13 +197,11 @@
                             <div class="content">
                                 <h4 style="color: #009edb; margin-bottom: 20px; ">António Guterres (UN
                                     Secretary-General) on Climate Action Summit 2019</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
                             </div>
                         </div>
-
-                        <div class="schedule-item date-item-7 date-item-14 date-item-6 date-item-5 date-item-4 date-item-3 date-item-2 date-item-1 date-item-3 today the-hague" id="feb-wed-12">
+                        
+                        <div class="schedule-item today date-item-12 date-item-10 date-item-11 date-item-15 date-item-16 date-item-11  the-hague" id="feb-wed-12">
 
                             <div class="time">
                                 <h4>9:45pm - 11:30pm</h4>
@@ -216,35 +209,31 @@
                             </div>
 
                             <div class="image">
-                                <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
                             </div>
 
                             <div class="content">
                                 <h4 style="color: #009edb; margin-bottom: 20px; ">António Guterres (UN
                                     Secretary-General) on Climate Action Summit 2019</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
                             </div>
                         </div>
-
-                        <div class="schedule-item mix date-item-4 date-item-12 date-item-14 date-item-13 date-item-11 date-item-10 date-item-9 date-item-8 date-item-1 date-item-7 today geneva" id="feb-fri-14">
+                        
+                        <div class="schedule-item mix today date-item-17 date-item-15 date-item-14 date-item-17 date-item-18 geneva" id="feb-fri-14">
 
                             <div class="time">
-                                <h4>9:4dsfsdf5pm - 11:30pm</h4>
+                                <h4>9:45pm - 11:30pm</h4>
                             </div>
 
+
                             <div class="image">
-                                <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
+                                <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
                             </div>
 
                             <div class="content">
                                 <h4 style="color: #009edb; margin-bottom: 20px; ">António Guterres (UN
                                     Secretary-General) on Climate Action Summit 2019</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
                             </div>
                         </div>
                     </div>
@@ -252,257 +241,6 @@
             </div>
         </div>
     </section>
-
-
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/wow.min.js"></script>
-    <script src="../assets/js/sidr.min.js"></script>
-    <script src="../assets/js/mixitup.min.js"></script>
-    <script src="../assets/js/slick.min.js"></script>
-    <script src="../assets/js/scripts.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-    <script>
-        wow = new WOW(
-            {
-                animateClass: 'animated',
-                offset: 100,
-                callback: function (box) {
-                    console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-                }
-            }
-        );
-        wow.init();
-        // document.getElementById('moar').onclick = function () {
-        //     var section = document.createElement('section');
-        //     section.className = 'section--purple wow fadeInDown';
-        //     this.parentNode.insertBefore(section, this);
-        // };
-    </script>
-
-
-
-
-
-
-    <script>
-        $(function () {
-
-            $('#calendarImg').daterangepicker({
-                singleDatePicker: true,
-                showDropdowns: false,
-                minYear: 1901,
-                maxYear: parseInt(moment().format('YYYY'), 10)
-            }, function (mydate) {
-                for (let l = 0; l < 15; l++) {
-                    console.log(document.getElementById(l).value)
-                    document.getElementById(l).onclick = () => {
-                        let test = document.getElementsByClassName("mixitup-control-active");
-                        test[0].setAttribute("class", " ");
-                        document.getElementById(l).setAttribute("class", "mixitup-control-active");
-
-                        let df = document.getElementById(l).innerHTML.toString().split("<b>")
-                        let bf = df.toString().split("</b>")
-                        let mf = bf.toString().split(",")
-                        let gg = mf[1].split(" ")
-                        let scheduleItemContainer = gg[1].toLowerCase() + "-" + mf[0].toLowerCase() + "-" + gg[0].toLowerCase()
-                        document.getElementById(l).setAttribute("data-filter", `.date-item-${l}`);
-                        // console.log(scheduleItemContainer);
-                        document.getElementById('main').innerHTML = document.getElementById('main-1').innerHTML
-                        const listItems = document.getElementById('main').children;
-                        const listArray = Array.from(listItems);
-                        document.getElementById('main').innerHTML = " ";
-                        listArray.filter((item) => {
-                            let match ;
-                        let datafilter = document.getElementById(l).getAttribute('data-filter')
-                        let clas = item.getAttribute('class')
-
-                     match = clas.split(" ").filter((key) => {
-                            if (key == datafilter) {
-                              return    key
-                            }
-                        })
-
-                    return match == datafilter
-                        }).forEach(val => {
-                            document.getElementById('main').append(val);
-                        })
-                    }
-
-
-
-
-
-
-
-                    var mydata = mydate.toString().split(" ");
-                    // var dateUl = document.getElementById("ul-for-date");
-                    // var li
-                    // dateUl.innerHTML = " ";
-                    var curr = new Date; // get current date
-                    var first = curr.getDate() - curr.getDay();
-                    var firstday = (new Date(curr.setDate(first + 1))).toString();
-                    // let k = 0;
-                    // for (var i = -1; i < 13; i++) {
-                    //     li = document.createElement("li");;
-                    //     var next = new Date(curr.getTime());
-                    //     next.setDate(first + i);
-                    //     var data = next.toString().split(" ");
-                    //     // alert(data);
-                    //     li.innerHTML = data[0] + `<b>${data[2] + " " + data[1]}</b>`
-                    //     let currentDate = data[2].charAt(0) == 0 ? "0" + new Date().getDate() : new Date().getDate().toString()
-                    //     if (mydata[2] == data[2] && mydata[1] == data[1]) {
-                    //         li.setAttribute("data-filter", `.${data[1].toLowerCase() + "-" + data[0].toLowerCase() + "-" + data[2].toLowerCase()}`)
-                    //         li.setAttribute("class", "mixitup-control-active")
-                    //     }
-                    //     li.setAttribute("id", k)
-                    //     dateUl.appendChild(li);
-                    //     k++
-                    // }
-
-                    let df = document.getElementById(l).innerHTML.toString().split("<b>")
-                    let bf = df.toString().split("</b>")
-                    let mf = bf.toString().split(",")
-                    let gg = mf[1].split(" ")
-
-
-
-                    if (mydata[1].toLowerCase() + "-" + mydata[0].toLowerCase() + "-" + mydata[2].toLowerCase() == gg[1].toLowerCase() + "-" + mf[0].toLowerCase() + "-" + gg[0].toLowerCase()) {
-
-                        let test = document.getElementsByClassName("mixitup-control-active");
-                        test[0].setAttribute("class", " ");
-                        document.getElementById(l).setAttribute("class", "mixitup-control-active");
-
-                        let scheduleItemContainer = `${mydata[1].toLowerCase() + "-" + mydata[0].toLowerCase() + "-" + mydata[2].toLowerCase()}`;
-                        document.getElementById(l).setAttribute("data-filter", `date-item-${l}`);
-
-                        document.getElementById('main').innerHTML = document.getElementById('main-1').innerHTML
-
-                        const listItems = document.getElementById('main').children;
-                        const listArray = Array.from(listItems);
-                        document.getElementById('main').innerHTML = " ";
-                        listArray.filter((item) => {
-                            let match ;
-                        let datafilter = document.getElementById(l).getAttribute('data-filter')
-                        let clas = item.getAttribute('class')
-
-                     match = clas.split(" ").filter((key) => {
-                            if (key == datafilter) {
-                              return    key
-                            }
-                        })
-
-                    return match == datafilter
-                        }).forEach(val => {
-                            document.getElementById('main').append(val);
-                        })
-                        break;
-                    }
-                }
-
-            })
-
-
-        });
-    </script>
-
-
-
-
-
-
-    <script>
-        window.onload = () => {
-            document.getElementById("main-1").style.display = "none"
-            document.getElementById("main-1").innerHTML = document.getElementById("main").innerHTML;
-            var dateUl = document.getElementById("ul-for-date");
-            var li
-            dateUl.innerHTML = " ";
-            var curr = new Date; // get current date
-            var first = curr.getDate() - curr.getDay();
-            var firstday = (new Date(curr.setDate(first + 1))).toString();
-            let k = 0;
-            for (var i = -3; i < 12; i++) {
-                li = document.createElement("li");
-                var next = new Date(curr.getTime());
-                next.setDate(first + i);
-                var data = next.toString().split(" ")
-                li.innerHTML = data[0] + `<b>${data[2] + " " + data[1]}</b>`
-                let currentDate = data[2].charAt(0) == 0 ? "0" + new Date().getDate() : new Date().getDate().toString()
-                if (data[2] == currentDate) {
-                    li.setAttribute("data-filter", `.today`)
-                    li.setAttribute("class", "mixitup-control-active")
-                }
-                // `${data[1].toLowerCase() + "-" + data[0].toLowerCase() + "-" + data[2].toLowerCase()}`
-                li.setAttribute("id", k)
-                li.setAttribute("data-filter", `date-item-${k}`);
-                dateUl.appendChild(li);
-                k++
-            }
-
-            for (let l = 0; l < 15; l++) {
-                document.getElementById(l).addEventListener('click', () => {
-                    let test = document.getElementsByClassName("mixitup-control-active");
-                    test[0].setAttribute("class", " ");
-                    document.getElementById(l).setAttribute("class", "mixitup-control-active");
-
-                    let df = document.getElementById(l).innerHTML.toString().split("<b>")
-                    let bf = df.toString().split("</b>")
-                    let mf = bf.toString().split(",")
-                    let gg = mf[1].split(" ")
-                    let scheduleItemContainer = gg[1].toLowerCase() + "-" + mf[0].toLowerCase() + "-" + gg[0].toLowerCase()
-                    // document.getElementById(l)
-                    // console.log(scheduleItemContainer);
-                    document.getElementById('main').innerHTML = document.getElementById('main-1').innerHTML
-                    const listItems = document.getElementById('main').children;
-                    const listArray = Array.from(listItems);
-                    document.getElementById('main').innerHTML = " ";
-                    listArray.filter((item) => {
-                        // item.getAttribute('id')
-                        let match ;
-                        let datafilter = document.getElementById(l).getAttribute('data-filter')
-                        let clas = item.getAttribute('class')
-
-                     match = clas.split(" ").filter((key) => {
-                            if (key == datafilter) {
-                              return    key
-                            }
-                        })
-
-                    return match == datafilter
-
-                    }).forEach(val => {
-                        document.getElementById('main').append(val);
-                    })
-                })
-            }
-        }
-
-
-        document.getElementById("country-list").onchange = () => {
-            document.getElementById('main').innerHTML = document.getElementById('main-1').innerHTML;
-
-            const listItems = document.getElementById('main').children;
-            const listArray = Array.from(listItems);
-            document.getElementById('main').innerHTML = " ";
-            listArray.filter((item) => {
-                let match = item.getAttribute('class')
-                let country = match.split(" ")
-                // console.log(match,country,document.getElementById("country-list").value)
-                if (document.getElementById("country-list").value == "all") {
-                    return item
-                }
-                return document.getElementById("country-list").value == "." + country[country.length - 1]
-            }).forEach(val => {
-                document.getElementById('main').append(val);
-            })
-        }
-
-    </script>
-
 
     <footer class="footer">
         <div class="container">
@@ -529,6 +267,115 @@
             </div>
         </div>
     </footer>
-</body>
+                                                
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/mixitup.min.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script>
+        $(function () {
+            $('#calendarImg').daterangepicker({
+                singleDatePicker: true,
+                showDropdowns: false,
+                minYear: 1901,
+                maxYear: parseInt(moment().format('YYYY'), 10)
+            }, function (mydate) {
 
+                var mydata = mydate.toString().split(" ");
+                var dateUl = document.getElementById("ul-for-date");
+                var li
+                dateUl.innerHTML = " ";
+                var curr = new Date; // get current date
+                var first = curr.getDate() - curr.getDay();
+                var firstday = (new Date(curr.setDate(first + 1))).toString();
+                for (var i = -1; i < 13; i++) {
+                    li = document.createElement("li");;
+                    var next = new Date(curr.getTime());
+                    next.setDate(first + i);
+                    var data = next.toString().split(" ");
+                    // alert(data);
+                    li.innerHTML = data[0] + `<b>${data[2] + " " + data[1]}</b>`
+                    let currentDate = data[2].charAt(0) == 0 ? "0" + new Date().getDate() : new Date().getDate().toString()
+                    if (mydata[2] == data[2] && mydata[1] == data[1]) {
+                        li.setAttribute("data-filter", `.${data[1].toLowerCase() + "-" + data[0].toLowerCase() + "-" + data[2].toLowerCase()}`)
+                        li.setAttribute("class", "mixitup-control-active")
+                    }
+                    dateUl.appendChild(li)
+                }
+
+                let scheduleItemContainer = `${mydata[1].toLowerCase() + "-" + mydata[0].toLowerCase() + "-" + mydata[2].toLowerCase()}`;
+                document.getElementById('main').innerHTML = document.getElementById('main-1').innerHTML
+                const listItems = document.getElementById('main').children;
+                const listArray = Array.from(listItems);
+                document.getElementById('main').innerHTML = " ";
+                listArray.filter((item) => {
+                    let match = item.getAttribute('id')
+                    console.log(match, scheduleItemContainer)
+                    return match == scheduleItemContainer
+                }).forEach(val => {
+                    document.getElementById('main').append(val);
+                })
+            })
+        });
+    </script>
+
+    <script>
+        window.onload = () => {
+            document.getElementById("main-1").style.display = "none"
+            document.getElementById("main-1").innerHTML = document.getElementById("main").innerHTML;
+            var dateUl = document.getElementById("ul-for-date");
+            var li
+            dateUl.innerHTML = " ";
+            var curr = new Date; // get current date
+            var first = curr.getDate() - curr.getDay();
+            var firstday = (new Date(curr.setDate(first + 1))).toString();
+            let k = 0;
+            for (var i = -1; i < 13; i++) {
+                li = document.createElement("li");
+                var next = new Date(curr.getTime());
+                next.setDate(first + i);
+                var data = next.toString().split(" ")
+                li.innerHTML = data[0] + `<b>${data[2] + " " + data[1]}</b>`
+                let currentDate = data[2].charAt(0) == 0 ? "0" + new Date().getDate() : new Date().getDate().toString()
+                if (data[2] == currentDate) {
+                    li.setAttribute("data-filter", `.today`)
+                    li.setAttribute("class", "mixitup-control-active")
+                }
+                // `${data[1].toLowerCase() + "-" + data[0].toLowerCase() + "-" + data[2].toLowerCase()}`
+                li.setAttribute("id", k)
+                dateUl.appendChild(li);
+                k++
+            }
+
+            for (let l = 0; l < 15; l++) {
+                document.getElementById(l).onclick = () => {
+                    let test = document.getElementsByClassName("mixitup-control-active");
+                    test[0].setAttribute("class", " ");
+                    document.getElementById(l).setAttribute("class", "mixitup-control-active");
+
+                    let df = document.getElementById(l).innerHTML.toString().split("<b>")
+                    let bf = df.toString().split("</b>")
+                    let mf = bf.toString().split(",")
+                    let gg = mf[1].split(" ")
+                    let scheduleItemContainer = gg[1].toLowerCase() + "-" + mf[0].toLowerCase() + "-" + gg[0].toLowerCase()
+                    console.log(scheduleItemContainer);
+                    document.getElementById('main').innerHTML = document.getElementById('main-1').innerHTML
+                    const listItems = document.getElementById('main').children;
+                    const listArray = Array.from(listItems);
+                    document.getElementById('main').innerHTML = " ";
+                    listArray.filter((item) => {
+                        let match = item.getAttribute('id')
+                        console.log(match, scheduleItemContainer)
+                        return match == scheduleItemContainer
+                    }).forEach(val => {
+                        document.getElementById('main').append(val);
+                    })
+                }
+            }
+        }
+    </script>    
+</body>
 </html>

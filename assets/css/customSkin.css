@@ -1,0 +1,68 @@
+.mwPlayerContainer .largePlayBtn {
+    background: rgba(0,0,0,0.4) !important;
+	padding: 0;
+	line-height: 2.3em;
+	width: 2.3em;
+	height: 2.3em;
+	text-align: center;
+	margin-top: -1em;
+}
+.mwPlayerContainer .largePlayBtn:hover {
+	background: rgba(0,0,0,0.6) !important;
+	padding: 0;
+	line-height: 2.3em;
+	width: 2.3em;
+	height: 2.3em;
+	text-align: center;
+	margin-top: -1em;
+}
+.mwPlayerContainer .icon-play:before {
+	padding-left: 9%;
+	font-size: 1em;
+}
+
+.mwPlayerContainer .largePlayBtnBorder {
+	border-radius: 50%;
+}
+
+.mwPlayerContainer .watermark {
+	padding: 10px 0 0 0 !important;
+}
+
+.mwPlayerContainer .watermark img {
+	width: 85% !important;
+}
+
+.mwPlayerContainer .controlsContainer {
+	background: rgba(0, 0, 0, 0.4) !important;
+	font-size: 1.2em !important;
+}
+
+.mwPlayerContainer .btn {
+	background: rgba(0,0,0,0) !important;
+}
+
+.mwPlayerContainer .scrubber {
+	background-color: #CBC8C8 !important;
+}
+
+.mwPlayerContainer .scrubber .watched {
+	background-color: #ff0000 !important;
+}
+
+.mwPlayerContainer .scrubber .buffered {
+	background-color: #333333 !important;
+}
+
+.mwPlayerContainer .logo {
+	font-size: 1.6em !important;
+}
+
+.mwPlayerContainer .back-to-live-text {
+/*	color: #ff0000 !important;*/
+	font-weight: 900;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+	background-color: #ff0000;
+	padding: 1px 3px;
+}
+
