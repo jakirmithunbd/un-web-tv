@@ -4,7 +4,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Terms | UN WEB TV</title>
+    <title>Schedule | UN WEB TV</title>
     <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" media="all" />
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
     <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" />
@@ -391,59 +391,145 @@
             </div>
         </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script src="../assets/js/slick.min.js"></script>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/sidr.min.js"></script>
     <script src="../assets/js/mixitup.min.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
     <script src="../assets/js/scripts.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
     <script>
         $(function () {
+
             $('#calendarImg').daterangepicker({
                 singleDatePicker: true,
                 showDropdowns: false,
                 minYear: 1901,
                 maxYear: parseInt(moment().format('YYYY'), 10)
             }, function (mydate) {
+                
+                for (let l = 0; l < 15; l++) {
+                    console.log(document.getElementById(l).value)
+                    document.getElementById(l).onclick = () => {
+                        let test = document.getElementsByClassName("mixitup-control-active");
+                        test[0].setAttribute("class", " ");
+                        document.getElementById(l).setAttribute("class", "mixitup-control-active");
 
-                var mydata = mydate.toString().split(" ");
-                var dateUl = document.getElementById("ul-for-date");
-                var li
-                dateUl.innerHTML = " ";
-                var curr = new Date; // get current date
-                var first = curr.getDate() - curr.getDay();
-                var firstday = (new Date(curr.setDate(first + 1))).toString();
-                for (var i = -1; i < 13; i++) {
-                    li = document.createElement("li");;
-                    var next = new Date(curr.getTime());
-                    next.setDate(first + i);
-                    var data = next.toString().split(" ");
-                    // alert(data);
-                    li.innerHTML = data[0] + `<b>${data[2] + " " + data[1]}</b>`
-                    let currentDate = data[2].charAt(0) == 0 ? "0" + new Date().getDate() : new Date().getDate().toString()
-                    if (mydata[2] == data[2] && mydata[1] == data[1]) {
-                        li.setAttribute("data-filter", `.${data[1].toLowerCase() + "-" + data[0].toLowerCase() + "-" + data[2].toLowerCase()}`)
-                        li.setAttribute("class", "mixitup-control-active")
+                        let df = document.getElementById(l).innerHTML.toString().split("<b>")
+                        let bf = df.toString().split("</b>")
+                        let mf = bf.toString().split(",")
+                        let gg = mf[1].split(" ")
+                        let scheduleItemContainer = gg[1].toLowerCase() + "-" + mf[0].toLowerCase() + "-" + gg[0].toLowerCase()
+                        document.getElementById(l).setAttribute("data-filter", `.date-item-${l}`);
+                        // console.log(scheduleItemContainer);
+                        document.getElementById('main').innerHTML = document.getElementById('main-1').innerHTML
+                        const listItems = document.getElementById('main').children;
+                        const listArray = Array.from(listItems);
+                        document.getElementById('main').innerHTML = " ";
+                        listArray.filter((item) => {
+                            let match ;
+                        let datafilter = document.getElementById(l).getAttribute('data-filter')
+                        let clas = item.getAttribute('class')
+
+                     match = clas.split(" ").filter((key) => {
+                            if (key == datafilter) {
+                              return    key
+                            }
+                        })
+
+                    return match == datafilter
+                        }).forEach(val => {
+                            document.getElementById('main').append(val);
+                        })
                     }
-                    dateUl.appendChild(li)
+
+
+
+
+
+
+
+                    var mydata = mydate.toString().split(" ");
+                    // var dateUl = document.getElementById("ul-for-date");
+                    // var li
+                    // dateUl.innerHTML = " ";
+                    var curr = new Date; // get current date
+                    var first = curr.getDate() - curr.getDay();
+                    var firstday = (new Date(curr.setDate(first + 1))).toString();
+                    // let k = 0;
+                    // for (var i = -1; i < 13; i++) {
+                    //     li = document.createElement("li");;
+                    //     var next = new Date(curr.getTime());
+                    //     next.setDate(first + i);
+                    //     var data = next.toString().split(" ");
+                    //     // alert(data);
+                    //     li.innerHTML = data[0] + `<b>${data[2] + " " + data[1]}</b>`
+                    //     let currentDate = data[2].charAt(0) == 0 ? "0" + new Date().getDate() : new Date().getDate().toString()
+                    //     if (mydata[2] == data[2] && mydata[1] == data[1]) {
+                    //         li.setAttribute("data-filter", `.${data[1].toLowerCase() + "-" + data[0].toLowerCase() + "-" + data[2].toLowerCase()}`)
+                    //         li.setAttribute("class", "mixitup-control-active")
+                    //     }
+                    //     li.setAttribute("id", k)
+                    //     dateUl.appendChild(li);
+                    //     k++
+                    // }
+
+                    let df = document.getElementById(l).innerHTML.toString().split("<b>")
+                    let bf = df.toString().split("</b>")
+                    let mf = bf.toString().split(",")
+                    let gg = mf[1].split(" ")
+
+
+
+                    if (mydata[1].toLowerCase() + "-" + mydata[0].toLowerCase() + "-" + mydata[2].toLowerCase() == gg[1].toLowerCase() + "-" + mf[0].toLowerCase() + "-" + gg[0].toLowerCase()) {
+
+                        let test = document.getElementsByClassName("mixitup-control-active");
+                        test[0].setAttribute("class", " ");
+                        document.getElementById(l).setAttribute("class", "mixitup-control-active");
+
+                        let scheduleItemContainer = `${mydata[1].toLowerCase() + "-" + mydata[0].toLowerCase() + "-" + mydata[2].toLowerCase()}`;
+                        document.getElementById(l).setAttribute("data-filter", `date-item-${l}`);
+
+                        document.getElementById('main').innerHTML = document.getElementById('main-1').innerHTML
+
+                        const listItems = document.getElementById('main').children;
+                        const listArray = Array.from(listItems);
+                        document.getElementById('main').innerHTML = " ";
+                        listArray.filter((item) => {
+                            let match ;
+                        let datafilter = document.getElementById(l).getAttribute('data-filter')
+                        let clas = item.getAttribute('class')
+
+                     match = clas.split(" ").filter((key) => {
+                            if (key == datafilter) {
+                              return    key
+                            }
+                        })
+
+                    return match == datafilter
+                        }).forEach(val => {
+                            document.getElementById('main').append(val);
+                        })
+                        break;
+                    }
                 }
 
-                let scheduleItemContainer = `${mydata[1].toLowerCase() + "-" + mydata[0].toLowerCase() + "-" + mydata[2].toLowerCase()}`;
-                document.getElementById('main').innerHTML = document.getElementById('main-1').innerHTML
-                const listItems = document.getElementById('main').children;
-                const listArray = Array.from(listItems);
-                document.getElementById('main').innerHTML = " ";
-                listArray.filter((item) => {
-                    let match = item.getAttribute('id')
-                    console.log(match, scheduleItemContainer)
-                    return match == scheduleItemContainer
-                }).forEach(val => {
-                    document.getElementById('main').append(val);
-                })
             })
+
+
         });
     </script>
+
+
+
+
+
 
     <script>
         window.onload = () => {
@@ -456,7 +542,7 @@
             var first = curr.getDate() - curr.getDay();
             var firstday = (new Date(curr.setDate(first + 1))).toString();
             let k = 0;
-            for (var i = -1; i < 13; i++) {
+            for (var i = -3; i < 12; i++) {
                 li = document.createElement("li");
                 var next = new Date(curr.getTime());
                 next.setDate(first + i);
@@ -469,12 +555,13 @@
                 }
                 // `${data[1].toLowerCase() + "-" + data[0].toLowerCase() + "-" + data[2].toLowerCase()}`
                 li.setAttribute("id", k)
+                li.setAttribute("data-filter", `date-item-${k}`);
                 dateUl.appendChild(li);
                 k++
             }
 
             for (let l = 0; l < 15; l++) {
-                document.getElementById(l).onclick = () => {
+                document.getElementById(l).addEventListener('click', () => {
                     let test = document.getElementsByClassName("mixitup-control-active");
                     test[0].setAttribute("class", " ");
                     document.getElementById(l).setAttribute("class", "mixitup-control-active");
@@ -484,21 +571,53 @@
                     let mf = bf.toString().split(",")
                     let gg = mf[1].split(" ")
                     let scheduleItemContainer = gg[1].toLowerCase() + "-" + mf[0].toLowerCase() + "-" + gg[0].toLowerCase()
-                    console.log(scheduleItemContainer);
+                    // document.getElementById(l)
+                    // console.log(scheduleItemContainer);
                     document.getElementById('main').innerHTML = document.getElementById('main-1').innerHTML
                     const listItems = document.getElementById('main').children;
                     const listArray = Array.from(listItems);
                     document.getElementById('main').innerHTML = " ";
                     listArray.filter((item) => {
-                        let match = item.getAttribute('id')
-                        console.log(match, scheduleItemContainer)
-                        return match == scheduleItemContainer
+                        // item.getAttribute('id')
+                        let match ;
+                        let datafilter = document.getElementById(l).getAttribute('data-filter')
+                        let clas = item.getAttribute('class')
+
+                     match = clas.split(" ").filter((key) => {
+                            if (key == datafilter) {
+                              return    key
+                            }
+                        })
+
+                    return match == datafilter
+
                     }).forEach(val => {
                         document.getElementById('main').append(val);
                     })
-                }
+                })
             }
         }
-    </script>  
+
+
+        document.getElementById("country-list").onchange = () => {
+            document.getElementById('main').innerHTML = document.getElementById('main-1').innerHTML;
+
+            const listItems = document.getElementById('main').children;
+            const listArray = Array.from(listItems);
+            document.getElementById('main').innerHTML = " ";
+            listArray.filter((item) => {
+                let match = item.getAttribute('class')
+                let country = match.split(" ")
+                // console.log(match,country,document.getElementById("country-list").value)
+                if (document.getElementById("country-list").value == "all") {
+                    return item
+                }
+                return document.getElementById("country-list").value == "." + country[country.length - 1]
+            }).forEach(val => {
+                document.getElementById('main').append(val);
+            })
+        }
+
+    </script> 
 </body>
 </html>

@@ -1609,13 +1609,24 @@ button:hover {
     overflow: hidden
 }
 
+.date-area.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #009edb;
+    transition: all .3s ease;
+    z-index: 1023;
+}
+
 .date-area .data-wrapper:before {
 	content: none
 }
 
 .date-area .data-wrapper ul {
     list-style: none;
-    padding-left: 0
+    padding-left: 0;
+    text-align: center;
 }
 
 .date-area .data-wrapper ul li {
@@ -1655,7 +1666,7 @@ button:hover {
 }
 
 .calender-filter-area .calender a {
-	color: #000;
+	color: #fff;
 	border: 3px solid #009edb;
 	border-radius: 5px;
 	font-weight: 700;
