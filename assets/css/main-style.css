@@ -1568,6 +1568,17 @@ button:hover {
 	text-align: center
 }
 
+.video-metadata .panel-group .panel .panel-body .table tr td .btn {
+    max-width: 100% !important;
+    padding: 15px !important;
+    width: 100% !important;
+    text-transform: uppercase !important;
+    background-color: #009edb !important;
+    font-size: 1.125rem !important;
+    line-height: 1.22222 !important;
+    color: #fff;
+}
+
 .video-metadata .panel-group .panel .panel-body .table tr td span,
 .video-metadata .panel-group .panel .panel-body .table tr th span {
 	font-size: 1.5rem
@@ -1786,7 +1797,7 @@ button:hover {
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 1.5;
-    letter-spacing: 0.025em
+    letter-spacing: 0.025em;
 }
 
 .schedule-wrapper .schedule-item-wrapper .schedule-item .time .live-now {
@@ -1806,7 +1817,7 @@ button:hover {
 }
 
 .schedule-wrapper .schedule-item-wrapper .schedule-item .image {
-    width: 25%
+    width: 15%
 }
 
 .schedule-wrapper .schedule-item-wrapper .schedule-item .image img {
@@ -1814,7 +1825,7 @@ button:hover {
 }
 
 .schedule-wrapper .schedule-item-wrapper .schedule-item .content {
-    width: 45%
+    width: 55%
 }
 
 .schedule-wrapper .schedule-item-wrapper .schedule-item .content p {
@@ -2774,6 +2785,66 @@ select {
 .search-filter-area .search-filter-sidebar fieldset ul {
 	list-style: none outside;
 	padding: 0;
+}
+
+@media only screen and (max-width:1498px) {
+	.date-area .data-wrapper ul li:nth-child(15) {
+		display: none;
+	}
+}
+
+@media only screen and (max-width:1396px) {
+	.date-area .data-wrapper ul li:nth-child(14) {
+		display: none;
+	}
+}
+
+@media only screen and (max-width:1294px) {
+	.date-area .data-wrapper ul li:nth-child(1) {
+		display: none;
+	}
+	.date-area .data-wrapper ul li:nth-child(13) {
+		display: none;
+	}
+}
+
+@media only screen and (max-width:1099px) {
+	.date-area .data-wrapper ul li:nth-child(2) {
+		display: none;
+	}
+	.date-area .data-wrapper ul li:nth-child(12) {
+		display: none;
+	}
+}
+
+
+
+@media only screen and (max-width:875px) {
+	.date-area .data-wrapper ul li:nth-child(3) {
+		display: none;
+	}
+	.date-area .data-wrapper ul li:nth-child(11) {
+		display: none;
+	}
+}
+
+@media only screen and (max-width:504px) {
+	.date-area .data-wrapper ul li:nth-child(4) {
+		display: none;
+	}
+	.date-area .data-wrapper ul li:nth-child(10) {
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width:368px) {
+	.date-area .data-wrapper ul li:nth-child(5) {
+		display: none;
+	}
+	.date-area .data-wrapper ul li:nth-child(9) {
+		display: none;
+	}
 }
 
 @media only screen and (max-width:1355px) {
