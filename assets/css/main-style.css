@@ -2531,11 +2531,12 @@ select {
     transition: all .3s ease;
     position: relative;
     top: -4px;
+    font-size: 27px;
     right: -5px
 }
 
 .search-top .sort-by p.Color-Right {
-    text-align: left
+    text-align: left;
 }
 
 .search-top .sort-by p.Color-Right span {
@@ -2675,11 +2676,11 @@ select {
 
 .advance-search-area .search-button .btn {
     padding: 10px 30px;
-    text-align: left
+    width: 100%;
+    text-align: center;
 }
 
 .advance-search-area .search-button .btn span {
-    background-color: #009edb;
     border-radius: 5px
 }
 
@@ -2840,6 +2841,10 @@ select {
 	margin: .2em 0;
 }
 
+.search-filter-area .search-filter-sidebar .panel-group .panel .panel-body .form-checkbox input {
+	position: relative;
+}
+
 .search-filter-area .search-filter-sidebar .panel-group .panel .panel-body .form-checkbox input:before {
     content: "\f00c";
     position: absolute;
@@ -2879,6 +2884,10 @@ select {
 	display: none;
 }
 
+.search-filter-area {
+	padding: 50px 0;
+}
+
 .search-filter-area .selected-search {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2886,9 +2895,7 @@ select {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-	margin: 1em 0 -10px;
 	padding-bottom: 20px;
-	border-bottom: 4px solid #4d4d4d;
 }
 
 .search-filter-area .selected-search p {
@@ -2928,6 +2935,10 @@ select {
     line-height: 1.33333;
     letter-spacing: 0.025em;
     color: #009edb
+}
+
+.search-filter-area .search-items {
+	padding: 40px 0;
 }
 
 .search-filter-area .search-items .search-item {

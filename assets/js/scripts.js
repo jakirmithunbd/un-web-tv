@@ -129,11 +129,6 @@
         $('#schedule-list').mixItUp('filter', this.value);
     });
 
-    $('#Change_Color').on('click', function(){
-      $(this).toggleClass('Color-Right');
-      $('.advance-search-area').toggleClass('ShowAdvanceFields');
-    });
-
     var tab = $('#data-wrapper');
     if(tab.length > 0){
         var tabLocationTop = tab.offset().top - $(window).scrollTop();
@@ -169,5 +164,11 @@
     //         vidoe.autoplay = true;
         
     // });
+
+    $('#Change_Color').on('click', function(e){
+        e.preventDefault();
+      $(this).toggleClass('Color-Right');
+      $('.advance-search-area').toggleClass('ShowAdvanceFields');
+    });
 
 })(jQuery);
