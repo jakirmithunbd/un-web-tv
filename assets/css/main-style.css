@@ -1732,6 +1732,32 @@ button:hover {
 	height: 100%
 }
 
+.live-area .slider-wrapper#featured .slick-slider {
+	overflow: inherit;
+	position: relative;
+}
+.live-area .slider-wrapper#featured .slick-slider video {
+	position: absolute;
+	top: -230px;
+	right: 0;
+	opacity: 0;
+	visibility: hidden;
+	width: 400px;
+	transition: all .3s ease;
+	border: 5px solid #fff;
+	border-radius: 5px;
+	z-index: 1024;
+}
+
+.live-area .slider-wrapper#featured .slick-slider:hover video {
+	opacity: 1;
+	visibility: visible;
+}
+
+.live-area .slider-wrapper#featured .slick-slider:hover > img {
+	transform: scale(1) !important;
+}
+
 .category-page .section-title {
 	display: -webkit-box;
 	display: -ms-flexbox;

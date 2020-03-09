@@ -164,6 +164,10 @@
         }
     });
 
-
+    // $('#featured .slick-slider').hover(function(){
+    //     var vidoe = $(this).children('video');
+    //         vidoe.autoplay = true;
+        
+    // });
 
 })(jQuery);
