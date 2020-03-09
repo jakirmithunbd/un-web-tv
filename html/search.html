@@ -28,7 +28,7 @@
                 <div class="container brandbar-header topbar-max-width">
                     <div class="row">
                         <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="col-md-3 position-absolute">
+                        <div class="col-md-4 position-absolute">
                             <a class="navbar-brand" href="/en/" style="margin-left: 0;">Welcome to the United Nations</a>
                         </div><!-- /UN global brand bar -->
               
@@ -82,18 +82,19 @@
                         </button>
 
                         <div class="navbar-brand">
-                            <a href="index.html"><img src="../assets/images/logo.png" class="img-responsive" alt="Logo Image"></a>
+                            <a href="index.html" class="navbar-logo-left"><!--<img src="../assets/images/logo-en-reverse.svg" class="img-responsive" alt="Logo Image">--></a>
+                            <a href="index.html"  class="navbar-logo-right"><span class="navbar-logo-right-top">UN Web TV</span><span class="navbar-logo-right-bottom">Live & On-Demand</span></a>
                         </div><!-- / Logo  -->
 
                     </div>
 
                     <div class="search-container">
                         <form action="/search.html">
-                            <input type="search" placeholder="Search" name="search">
+                        <h2 class="element-invisible">Search the UN Media</h2>
+                            <input type="search" placeholder="Search" name="search" value="" size="10" maxlength="128">
                             <button type="submit"><i class="fas fa-search"></i></button>
                         </form>
-
-                        <a href="#">Advanced Search</a>
+                        <!--<a href="#">Advanced Search</a>-->
                     </div>
                 </div>
             </div>
@@ -104,672 +105,705 @@
         <div class="row">
             <div id="main-menu" class="col-sm-4 col-md-3 collapse width">
                 <nav>
-                    <ul>
-                        <li>
-                            <a class="menu-item-primary" href="schedule.html"><i class="fas fa-calendar"></i><span class="long-name">Live</span> Schedule</a>
-                        </li>
-                        <li>
-                            <a href="#sub-menu-123" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                            <a class="menu-item-primary" href="categories.html"><i class="fas fa-th-list"></i>Categories</a class="menu-item-primary">
-                            <ul id="sub-menu-123" class="collapse">
-                                
-                                <li>
-                                    <a href="#sub-menu-meetings" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                                    <a href="#">Meetings &amp; Events</a>
-                                    <ul id="sub-menu-meetings" class="collapse">
-                                        <li><a href="#">General Assembly</a></li>
-                                        <li><a href="#">Security Council</a></li>
-                                        <li><a href="#">Economic and Social Council</a></li>
-                                        <li><a href="#">International Court of Justice</a></li>
-                                        <li><a href="#">Trusteeship Council</a></li>
-                                        <li><a href="#">Human Rights Council</a></li>
-                                        <li><a href="#">Human Rights Treaty Bodies</a></li>
-                                        <li><a href="#">High Level Events</a></li>
-                                        <li><a href="#">Side Events</a></li>
-                                        <li><a href="#">Conferences</a></li>
-                                        <li><a href="#">Concerts</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#sub-menu-media" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                                    <a href="#">Media</a>
-                                    <ul id="sub-menu-media" class="collapse">
-                                        <li><a href="#">Press Conferences</a></li>
-                                        <li><a href="#">Media Stakeouts</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#sub-menu-news" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                                    <a href="#">News &amp; Features</a>
-                                    <ul id="sub-menu-news" class="collapse">
-                                        <li><a href="#">News Stories</a></li>
-                                        <li><a href="#">Features</a></li>
-                                        <li><a href="#">Messages</a></li>
-                                        <li><a href="#">Interviews</a></li>
-                                        <li><a href="#">Dag Hammarskjöld Library</a></li>
-                                        <li><a href="#">B-Rolls &amp; Compilations</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#sub-menu-officials" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                                    <a href="#">Officials</a>
-                                    <ul id="sub-menu-officials" class="collapse">
-                                        <li><a href="#">Secretary-General</a></li>
-                                        <li><a href="#">Deputy Secretary-General</a></li>
-                                        <li><a href="#">President of the General Assembly</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="menu-item-primary" href="internal.html"><i class="fas fa-shield-alt"></i>UN Staff Portal</a>
-                        </li>
-                        <li class="sep"></li>
+                    <div class="main-menu-item div-hov main-menu-item-first">
+                        <div class="main-menu-item-left">
+                            <a class="main-menu-item-primary-icon" href="schedule.html">
+                                <i class="fas fa-calendar"></i>
+                            </a>
+                        </div>
+                        <div class="main-menu-item-right-short">
+                            <a class="main-menu-item-primary-text main-menu-item-primary-text-short" href="schedule.html">Live Schedule</a>
+                        </div>
+                        <div class="main-menu-item-right">
+                            <a class="main-menu-item-primary-text" href="schedule.html"><span class="long-name">Live</span> Schedule</a>
+                        </div>              
+                    </div>
+                    <div class="main-menu-item div-hov">
+                        <div class="main-menu-item-left">
+                            <a class="main-menu-item-primary-icon" href="schedule.html">
+                                <i class="fas fa-shield-alt"></i>
+                            </a>
+                        </div>
+                        <div class="main-menu-item-right-short">
+                            <a class="main-menu-item-primary-text  main-menu-item-primary-text-short" href="">UN Staff Portal</a>
+                        </div>
+                        <div class="main-menu-item-right">
+                            <a class="main-menu-item-primary-text" href="">UN Staff Portal</a>
+                        </div>              
+                    </div>
+            
+                    <div class="main-menu-item">
+                        
+                        <div class="main-menu-item-right">
+                            <ul>
+                            <!--<li>
+                                <a class="menu-item-primary" href="schedule.html"><i class="fas fa-calendar"></i><span class="long-name">Live</span> Schedule</a>
+                            </li>
+                            
+                            <li>
+                                <a class="menu-item-primary" href="internal.html"><i class="fas fa-shield-alt"></i>UN Staff Portal</a>
+                            </li>-->
+                            <li class="sep"></li>
+                            <li>
+                                <a href="#sub-menu-123" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                <a class="menu-item-primary" href="categories.html"><i class="fas fa-th-list"></i>Categories</a>
+                                <ul id="sub-menu-123" class="collapse">
+                                    
+                                    <li>
+                                        <a href="#sub-menu-meetings" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                        <a href="#">Meetings &amp; Events</a>
+                                        <ul id="sub-menu-meetings" class="collapse">
+                                            <li><a href="#">General Assembly</a></li>
+                                            <li><a href="#">Security Council</a></li>
+                                            <li><a href="#">Economic and Social Council</a></li>
+                                            <li><a href="#">International Court of Justice</a></li>
+                                            <li><a href="#">Trusteeship Council</a></li>
+                                            <li><a href="#">Human Rights Council</a></li>
+                                            <li><a href="#">Human Rights Treaty Bodies</a></li>
+                                            <li><a href="#">High Level Events</a></li>
+                                            <li><a href="#">Side Events</a></li>
+                                            <li><a href="#">Conferences</a></li>
+                                            <li><a href="#">Concerts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#sub-menu-media" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                        <a href="#">Media</a>
+                                        <ul id="sub-menu-media" class="collapse">
+                                            <li><a href="#">Press Conferences</a></li>
+                                            <li><a href="#">Media Stakeouts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#sub-menu-news" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                        <a href="#">News &amp; Features</a>
+                                        <ul id="sub-menu-news" class="collapse">
+                                            <li><a href="#">News Stories</a></li>
+                                            <li><a href="#">Features</a></li>
+                                            <li><a href="#">Messages</a></li>
+                                            <li><a href="#">Interviews</a></li>
+                                            <li><a href="#">Dag Hammarskjöld Library</a></li>
+                                            <li><a href="#">B-Rolls &amp; Compilations</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#sub-menu-officials" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                        <a href="#">Officials</a>
+                                        <ul id="sub-menu-officials" class="collapse">
+                                            <li><a href="#">Secretary-General</a></li>
+                                            <li><a href="#">Deputy Secretary-General</a></li>
+                                            <li><a href="#">President of the General Assembly</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
                             <li><a class="menu-item-secondary" href="about.html">About Us</a></li>
                             <li><a class="menu-item-secondary" href="contact.html">Contact Us</a></li>
                             <li>
-                            <a href="#sub-menu-456" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Lorem</span></i></a>
-                            <a class="menu-item-secondary">Media Sites</a>
-                            <ul id="sub-menu-456" class="collapse">
-                                <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/avlibrary/">Audiovisual Library</a></li>
-                                <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/tv/unifeed/">Unifeed</a></li>
-                                <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/photo/">UN Photo</a></li>
-                                <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/avlibrary/">UN WebTV</a></li>
-                                
-                                
-                                        
-                            </ul>
-                        </li>
-                    </ul>
+                                <a href="#sub-menu-456" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Lorem</span></i></a>
+                                <a class="menu-item-secondary">Media Sites</a>
+                                <ul id="sub-menu-456" class="collapse">
+                                    <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/avlibrary/">Audiovisual Library</a></li>
+                                    <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/tv/unifeed/">Unifeed</a></li>
+                                    <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/photo/">UN Photo</a></li>
+                                    <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/avlibrary/">UN WebTV</a></li>
+                                    
+                                    
+                                            
+                                </ul>
+                            </li>
+                        </ul> 
+                        </div>
+                    </div>
                 </nav>
             </div>
             
             <div id="main-content" class="col">
 
-      <section class="search-top">
-        <div class="container">
-            <div class="row align-center">
-                <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
-                    <div class="search-result">
-                        <h3>6 Results for <span>“Human Rights”</span></h3>
-                        <div class="border"></div>
-                    </div>
-                </div>
-
-                <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
-                    <div class="sort-by">
-                        <h4>Sort by</h4>
-                        <div class="date-search dropdown-select">
-                            <select name="" class="form-control" id="">
-                                <option value="date">Date</option>
-                                <option value="relevance">Relevance</option>
-                            </select>
-                        </div>
-                        <div class="advance-search">
-                            <h4>Open Advanced Search</h4>
-                            <p id="Change_Color"><span class="fas fa-circle"></span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="advance-search-area">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-10">
-                    <h4 class="text-uppercase text-center">Find Results</h4>
-
-                    <div class="search-term-row">
-                        <div class="dropdown-select">
-                            <select name="" class="form-control" id="">
-                                <option value="ocronly">Only Full-Text</option>
-                                <option value="ocr" selected="selected">Full-Text + All Fields</option>
-                                <option value="title">Title</option>
-                                <option value="author">Author</option>
-                                <option value="subject">Subject</option>
-                                <option value="publisher">Publisher</option>
-                                <option value="series">Series Title</option>
-                                <option value="isn">ISBN/ISSN</option>
-                            </select>
-                        </div>
-
-                        <div class="dropdown-select">
-                            <select name="" class="form-control" id="">
-                                <option value="all" selected="selected">all of these words</option>
-                                <option value="any">any of these words</option>
-                                <option value="phrase">this exact phrase</option>
-                            </select>
-                        </div>
-
-                        <div class="input-text">
-                            <input class="form-control" type="text" placeholder="Search Term 1">
-                        </div>
-                    </div>
-
-                    <div class="condition">
-                        <div class="form-group text-center">
-                            <input type="radio" name="r1" id="r1_1" />
-                            <label for="r1_1">AND</label>
-                            <input type="radio" name="r1" id="r1_2" />
-                            <label for="r1_2">OR</label>
-                        </div>
-                    </div>
-
-                    <div class="search-term-row">
-                        <div class="dropdown-select">
-                            <select name="" class="form-control" id="">
-                              <option value="ocronly">Only Full-Text</option>
-                              <option value="ocr">Full-Text + All Fields</option>
-                              <option value="title" selected="selected">Title</option>
-                              <option value="author">Author</option>
-                              <option value="subject">Subject</option>
-                              <option value="publisher">Publisher</option>
-                              <option value="series">Series Title</option>
-                              <option value="isn">ISBN/ISSN</option>
-                            </select>
-                        </div>
-                        <div class="dropdown-select">
-                            <select name="" class="form-control" id="">
-                              <option value="all">all of these words</option>
-                              <option value="any">any of these words</option>
-                              <option value="phrase" selected="selected">this exact phrase</option>
-                            </select>
-                        </div>
-
-                        <div class="input-text">
-                            <input type="text" class="form-control" placeholder="Search Term 2">
-                        </div>
-                    </div>
-
-                    <div class="search-button">
-                        <button type="submit" class="btn">Search <span class="fas fa-search"></span></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="search-filter-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="search-filter-sidebar">
-                        <h4>REFINE BY</h4>
-                        <div class="panel-group">
-                            <div class="panel panel-default">
-                                <div class="panel-heading" id="headingTwo">
-                                    <h4 class="panel-title">
-                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Date Range :</a>
-                                    </h4>
-                                </div>
-
-                                <div id="collapseTwo" class="panel-collapse collapse in">
-                                    <div class="panel-body">
-                                        <div class="form-checkbox datefilter-wrapper">
-                                            <div class="date-filter">
-                                                <input class="form-control" placeholder="From:" type="text">
-                                                <img class="calendarImg" src="../assets/images/Calander_Date_Time_Schedule_Timeline-128.png" alt="">                     
-                                            </div>
-                                            <div class="date-filter">
-                                                <input class="form-control" placeholder="To:" type="text">
-                                                <img class="calendarImg" src="../assets/images/Calander_Date_Time_Schedule_Timeline-128.png" alt="">                     
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" id="headingTwo">
-                                    <h4 class="panel-title">
-                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Media Type:</a>
-                                    </h4>
-                                </div>
-
-                                <div id="collapseTwo" class="panel-collapse collapse in">
-                                    <div class="panel-body">
-                                        <div class="form-checkbox">
-                                            <input checked type="checkbox" id="media_1">
-                                            <label for="media_1">Video</label> </br>
-                                            <input type="checkbox" id="media_2">
-                                            <label for="media_2">Audio</label></br>
-                                            <input type="checkbox" id="media_3">
-                                            <label for="media_3">All</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" id="headingThree">
-                                    <h4 class="panel-title">
-                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Language:</a>
-                                    </h4>
-                                </div>
-
-                                <div id="collapseThree" class="panel-collapse collapse in">
-                                    <div class="panel-body">
-                                        <div class="form-checkbox">
-                                            <input checked type="checkbox" id="Arabic">
-                                            <label for="Arabic">Arabic</label> </br>
-                                            <input type="checkbox" id="Chinese">
-                                            <label for="Chinese">Chinese</label></br>
-                                            <input type="checkbox" id="English">
-                                            <label for="English">English</label></br>
-                                            <input type="checkbox" id="French">
-                                            <label for="French">French</label></br>
-                                            <input type="checkbox" id="Spanish">
-                                            <label for="Spanish">Spanish</label></br>
-                                            <input type="checkbox" id="Russian">
-                                            <label for="Russian">Russian</label></br>
-                                            <input type="checkbox" id="Original">
-                                            <label for="Original">Original</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" id="headingfour">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefour">Category:</a>
-                                    </h4>
-                                </div>
-
-                                <div id="collapsefour" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <div class="form-checkbox">
-                                            <input checked type="checkbox" id="stories">
-                                            <label for="stories">News stories</label> </br>
-                                            <input type="checkbox" id="Features">
-                                            <label for="Features">Features</label></br>
-                                            <input type="checkbox" id="Security-Council">
-                                            <label for="Security-Council">Security Council</label></br>
-                                            <input type="checkbox" id="General-Assembly">
-                                            <label for="General-Assembly">General Assembly</label></br>
-                                            <input type="checkbox" id="Economic-Council">
-                                            <label for="Economic-Council">Economic and Social Council</label></br>
-                                            <input type="checkbox" id="International Court-Justice">
-                                            <label for="International Court-Justice">International Court of Justice (ICJ)</label></br>
-                                            <input type="checkbox" id="Human-Council">
-                                            <label for="Human-Council">Human Rights Council</label> </br>
-                                            <input type="checkbox" id="Human-Bodies">
-                                            <label for="Human-Bodies">Human Rights Treaty Bodies</label> </br>
-                                            <input type="checkbox" id="Trusteeship">
-                                            <label for="Trusteeship">Trusteeship Council</label> </br>
-                                            <input type="checkbox" id="Conferences">
-                                            <label for="Conferences">Conferences Conferences</label> </br>
-                                            <input type="checkbox" id="Media-Stakeouts">
-                                            <label for="Media-Stakeouts">Media Stakeouts</label> </br>
-                                            <input type="checkbox" id="Press-Conferences">
-                                            <label for="Press-Conferences">Press Conferences</label> </br>
-                                            <input type="checkbox" id="Secretary-General">
-                                            <label for="Secretary-General">UN Secretary-General</label> </br>
-                                            <input type="checkbox" id="Deputy-Secretary">
-                                            <label for="Deputy-Secretary">Deputy-Secretary General</label> </br>
-                                            <input type="checkbox" id="President-Assembly">
-                                            <label for="President-Assembly">President of the General Assembly</label> </br>
-                                            <input type="checkbox" id="High-level">
-                                            <label for="High-level">High level</label> </br>
-                                            <input type="checkbox" id="Side-Events">
-                                            <label for="Side-Events">Side Events</label> </br>
-                                            <input type="checkbox" id="Concerts">
-                                            <label for="Concerts">Concerts</label> </br>
-                                            <input type="checkbox" id="Messages">
-                                            <label for="Messages">Messages</label> </br>
-                                            <input type="checkbox" id="Interviews">
-                                            <label for="Interviews">Interviews</label> </br>
-                                            <input type="checkbox" id="B-Compilations">
-                                            <label for="B-Compilations">B-Rolls and Compilations</label> </br>
-                                            <input type="checkbox" id="Field Operations">
-                                            <label for="Field Operations">Field Operations</label> </br>
-                                            <input type="checkbox" id="UNHeadquarters">
-                                            <label for="UNHeadquarters">UN Headquarters</label> </br>
-                                            <input type="checkbox" id="UNOffices">
-                                            <label for="UNOffices">UN Offices</label> </br>
-                                            <input type="checkbox" id="PhotoOpportunities">
-                                            <label for="PhotoOpportunities">Photo Opportunities</label> </br>
-                                            <input type="checkbox" id="Portraits">
-                                            <label for="Portraits">Portraits</label> </br>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" id="headingfive">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefive">Sub Categories:</a>
-                                    </h4>
-                                </div>
-
-                                <div id="collapsefive" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <div class="form-checkbox">
-                                            <input checked type="checkbox" id="Africa">
-                                            <label for="Africa">AfAfricarica</label> </br>
-                                            <input type="checkbox" id="Americas">
-                                            <label for="Americas">Americas</label></br>
-                                            <input type="checkbox" id="Asia">
-                                            <label for="Asia">Asia</label></br>
-                                            <input type="checkbox" id="Europe">
-                                            <label for="Europe">Europe</label></br>
-                                            <input type="checkbox" id="Middle-East">
-                                            <label for="Middle-East">Middle East</label></br>
-                                            <input type="checkbox" id="ThematicDebate">
-                                            <label for="ThematicDebate">Thematic Debate</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" id="headingsix">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsesix">Subject - Topic:</a>
-                                    </h4>
-                                </div>
-
-                                <div id="collapsesix" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <div class="form-checkbox">
-                                            <input class="form-control" type="text" placeholder="Search Topic">
-                                            <p>Climate Change <span>5,325</span></p>
-                                            <p>Children <span>3,967</span></p>
-                                            <a class="toggle-Hide" href="#">Show all Subject </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" id="headingsaven">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsesaven">Subject - Geographic:</a>
-                                    </h4>
-                                </div>
-
-                                <div id="collapsesaven" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <div class="form-checkbox">
-                                            <input class="form-control" type="text" placeholder="Search Topic">
-                                            <p>Climate Change <span>5,325</span></p>
-                                            <p>Children <span>3,967</span></p>
-                                            <p>Children <span>3,967</span></p>
-                                            <p>Children <span>3,967</span></p>
-                                            <a class="toggle-Hide" href="#">Show all Subject </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" id="headingeigjt">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseeigjt">Subject - Corporate:</a>
-                                    </h4>
-                                </div>
-
-                                <div id="collapseeigjt" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <div class="form-checkbox">
-                                            <input class="form-control" type="text" placeholder="Search Corporate">
-                                            <p>Climate Change <span>5,325</span></p>
-                                            <p>Children <span>3,967</span></p>
-                                            <p>Children <span>3,967</span></p>
-                                            <p>Children <span>3,967</span></p>
-                                            <a class="toggle-Hide" href="#">Show all Subject </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" id="headinnine">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsnine">Event Location: Country:</a>
-                                    </h4>
-                                </div>
-
-                                <div id="collapsnine" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <div class="form-checkbox">
-                                            <input type="checkbox" id="Canada">
-                                            <label for="Canada">Canada</label></br>
-                                            <input type="checkbox" id="Germany">
-                                            <label for="Germany">Germany</label></br>
-                                            <input type="checkbox" id="UnitedKingdom">
-                                            <label for="UnitedKingdom">United Kingdom</label></br>
-                                            <input type="checkbox" id="Sweden">
-                                            <label for="Sweden">Sweden</label></br>
-                                            <input type="checkbox" id="Australia">
-                                            <label for="Australia">Australia</label></br>
-                                            <input type="checkbox" id="UnitedStates">
-                                            <label for="UnitedStates">United States</label></br>
-                                            <input type="checkbox" id="Japan">
-                                            <label for="Japan">Japan</label></br>
-                                            <a class="toggle-Hide" href="#">More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" id="headiten">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapten">Event Location: City:</a>
-                                    </h4>
-                                </div>
-
-                                <div id="collapten" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <div class="form-checkbox">
-                                            <input type="checkbox" id="Canada">
-                                            <label for="Canada">Canada</label></br>
-                                            <input type="checkbox" id="Germany">
-                                            <label for="Germany">Germany</label></br>
-                                            <input type="checkbox" id="UnitedKingdom">
-                                            <label for="UnitedKingdom">United Kingdom</label></br>
-                                            <input type="checkbox" id="Sweden">
-                                            <label for="Sweden">Sweden</label></br>
-                                            <input type="checkbox" id="Australia">
-                                            <label for="Australia">Australia</label></br>
-                                            <input type="checkbox" id="UnitedStates">
-                                            <label for="UnitedStates">United States</label></br>
-                                            <input type="checkbox" id="Japan">
-                                            <label for="Japan">Japan</label></br>
-                                            <a class="toggle-Hide" href="#">More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" id="headieleven">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapeleven">Digitized:</a>
-                                    </h4>
-                                </div>
-
-                                <div id="collapeleven" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <div class="form-checkbox">
-                                            <div class="form-group">
-                                                <input type="radio" name="r2" id="r1_yes">
-                                                <label for="r1_yes">Yes</label></br>
-                                                <input type="radio" name="r2" id="r1_no">
-                                                <label for="r1_no">No</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" id="headietwelve">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapetwelve">Status:</a>
-                                    </h4>
-                                </div>
-
-                                <div id="collapetwelve" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <div class="form-checkbox">
-                                            <div class="form-group">
-                                                <input type="radio" name="r3" id="r1_Live">
-                                                <label for="r1_Live">Live Now</label> </br>
-                                                <input type="radio" name="r3" id="r1_Scheduled">
-                                                <label for="r1_Scheduled">Scheduled</label></br>
-                                                <input type="radio" name="r3" id="r1_On-demand">
-                                                <label for="r1_On-demand">On-demand</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-9">
-                    <div class="selected-search">
-                        <p>Your Selections: </p>
-                        <a class="filter-btn" href="#">Media Type: Video <span>X</span></a>
-                        <a class="filter-btn" href="#">Language: English <span>X</span></a>
-                        <a class="clearFilter" href="#">Clear</a>
-                    </div>
-                    <div class="search-items">
-                        <div class="search-item align-center">
-                            <div class="video-thumb">
-                                <img src="../assets/images/slide-1.jpg" class="" alt="">
-                                <a href="single-video.html" class="hover-content">
-                                    <p class="text-uppercase"><span class="fas fa-video"></span>Original</p>
-                                    <p>6 Chapters</p>
-                                </a>
-                            </div>
-
-                            <div class="search-item-content">
-                                <p class="top-title"><i><img src="../assets/images/play-white.png" alt=""></i>45min (English)<span>28 DEC 2019</span></p>
-                                <a class="title" href="single-video.html">Lorem ipsum dolor sit amet consectetur adipiscing elit</a>
-                                <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repr ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cu pidatat non proident, sunt in culpa qui officia deserunt cillum mollit anim id est laborum. Sed ut persp iciatis unde omnis iste natus erro</p>
+              <section class="search-top">
+                <div class="container">
+                    <div class="row align-center">
+                        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                            <div class="search-result">
+                                <h3>6 Results for <span>“Human Rights”</span></h3>
+                                <div class="border"></div>
                             </div>
                         </div>
 
-                        <div class="search-item align-center microphone">
-                            <div class="video-thumb">
-                                <img src="../assets/images/slide-2.jpg" class="" alt="">
-                                <a href="single-video.html" class="hover-content">
-                                    <p class="text-uppercase"><span class="fas fa-microphone-alt"></span>English</p>
-                                    <p>6 Chapters</p>
-                                </a>
-                            </div>
-
-                            <div class="search-item-content">
-                                <p class="top-title"><i><img src="../assets/images/play-white.png" alt=""></i>45min (English)<span>28 DEC 2019</span></p>
-                                <a class="title" href="single-video.html">Lorem ipsum dolor sit amet consectetur adipiscing elit</a>
-                                <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repr ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cu pidatat non proident, sunt in culpa qui officia deserunt cillum mollit anim id est laborum. Sed ut persp iciatis unde omnis iste natus erro</p>
-                            </div>
-                        </div>
-
-                        <div class="search-item align-center">
-                            <div class="video-thumb">
-                                <img src="../assets/images/slide-2.jpg" class="" alt="">
-                                <a href="single-video.html" class="hover-content">
-                                    <p class="text-uppercase"><span class="fas fa-microphone-alt"></span>Original</p>
-                                    <p>6 Chapters</p>
-                                </a>
-                            </div>
-
-                            <div class="search-item-content">
-                                <p class="top-title"><i><img src="../assets/images/play-white.png" alt=""></i>45min (English)<span>28 DEC 2019</span></p>
-                                <a class="title" href="single-video.html">Lorem ipsum dolor sit amet consectetur adipiscing elit</a>
-                                <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repr ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cu pidatat non proident, sunt in culpa qui officia deserunt cillum mollit anim id est laborum. Sed ut persp iciatis unde omnis iste natus erro</p>
-                            </div>
-                        </div>
-
-                        <div class="search-item align-center microphone">
-                            <div class="video-thumb">
-                                <img src="../assets/images/slide-2.jpg" class="" alt="">
-                                <a href="single-video.html" class="hover-content">
-                                    <p class="text-uppercase"><span class="fas fa-microphone-alt"></span>English</p>
-                                    <p>6 Chapters</p>
-                                </a>
-                            </div>
-
-                            <div class="search-item-content">
-                                <p class="top-title"><i><img src="../assets/images/play-white.png" alt=""></i>45min (English)<span>28 DEC 2019</span></p>
-                                <a class="title" href="single-video.html">Lorem ipsum dolor sit amet consectetur adipiscing elit</a>
-                                <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repr ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cu pidatat non proident, sunt in culpa qui officia deserunt cillum mollit anim id est laborum. Sed ut persp iciatis unde omnis iste natus erro</p>
-                            </div>
-                        </div>
-
-                        <div class="search-item align-center">
-                            <div class="video-thumb">
-                                <img src="../assets/images/slide-2.jpg" class="" alt="">
-                                <a href="single-video.html" class="hover-content">
-                                    <p class="text-uppercase"><span class="fas fa-microphone-alt"></span>Original</p>
-                                    <p>6 Chapters</p>
-                                </a>
-                            </div>
-
-                            <div class="search-item-content">
-                                <p class="top-title"><i><img src="../assets/images/play-white.png" alt=""></i>45min (English)<span>28 DEC 2019</span></p>
-                                <a class="title" href="single-video.html">Lorem ipsum dolor sit amet consectetur adipiscing elit</a>
-                                <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repr ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cu pidatat non proident, sunt in culpa qui officia deserunt cillum mollit anim id est laborum. Sed ut persp iciatis unde omnis iste natus erro</p>
-                            </div>
-                        </div>
-
-                        <div class="pagination-wrapper">
-                            <div class="paginations">
-                                <a class="hidden" href="#"><span class="fas fa-angle-left"></span></a>
-                                <a class="active" href="#">01</a>
-                                <a href="#">02</a>
-                                <a href="#">03</a>
-                                <a href="#"><span class="fas fa-angle-right"></span></a>
-                            </div>
-
-                            <div class="result-show-perpage">
-                                <span>Results per Page</span>
-                                <div class="dropdown-select">
+                        <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                            <div class="sort-by">
+                                <h4>Sort by</h4>
+                                <div class="date-search dropdown-select">
                                     <select name="" class="form-control" id="">
-                                        <option value="20" selected="selected">20</option>
-                                        <option value="30">30</option>
-                                        <option value="40">40</option>
+                                        <option value="date">Date</option>
+                                        <option value="relevance">Relevance</option>
                                     </select>
                                 </div>
+                                <div class="advance-search">
+                                    <h4>Open Advanced Search</h4>
+                                    <p id="Change_Color"><span class="fas fa-circle"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="advance-search-area">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <h4 class="text-uppercase text-center">Find Results</h4>
+
+                            <div class="search-term-row">
+                                <div class="dropdown-select">
+                                    <select name="" class="form-control" id="">
+                                        <option value="ocronly">Only Full-Text</option>
+                                        <option value="ocr" selected="selected">Full-Text + All Fields</option>
+                                        <option value="title">Title</option>
+                                        <option value="author">Author</option>
+                                        <option value="subject">Subject</option>
+                                        <option value="publisher">Publisher</option>
+                                        <option value="series">Series Title</option>
+                                        <option value="isn">ISBN/ISSN</option>
+                                    </select>
+                                </div>
+
+                                <div class="dropdown-select">
+                                    <select name="" class="form-control" id="">
+                                        <option value="all" selected="selected">all of these words</option>
+                                        <option value="any">any of these words</option>
+                                        <option value="phrase">this exact phrase</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-text">
+                                    <input class="form-control" type="text" placeholder="Search Term 1">
+                                </div>
+                            </div>
+
+                            <div class="condition">
+                                <div class="form-group text-center">
+                                    <input type="radio" name="r1" id="r1_1" />
+                                    <label for="r1_1">AND</label>
+                                    <input type="radio" name="r1" id="r1_2" />
+                                    <label for="r1_2">OR</label>
+                                </div>
+                            </div>
+
+                            <div class="search-term-row">
+                                <div class="dropdown-select">
+                                    <select name="" class="form-control" id="">
+                                      <option value="ocronly">Only Full-Text</option>
+                                      <option value="ocr">Full-Text + All Fields</option>
+                                      <option value="title" selected="selected">Title</option>
+                                      <option value="author">Author</option>
+                                      <option value="subject">Subject</option>
+                                      <option value="publisher">Publisher</option>
+                                      <option value="series">Series Title</option>
+                                      <option value="isn">ISBN/ISSN</option>
+                                    </select>
+                                </div>
+                                <div class="dropdown-select">
+                                    <select name="" class="form-control" id="">
+                                      <option value="all">all of these words</option>
+                                      <option value="any">any of these words</option>
+                                      <option value="phrase" selected="selected">this exact phrase</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-text">
+                                    <input type="text" class="form-control" placeholder="Search Term 2">
+                                </div>
+                            </div>
+
+                            <div class="search-button">
+                                <button type="submit" class="btn">Search <span class="fas fa-search"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="search-filter-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="search-filter-sidebar">
+                                <h4>REFINE BY</h4>
+                                <div class="panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="headingTwo">
+                                            <h4 class="panel-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Date Range :</a>
+                                            </h4>
+                                        </div>
+
+                                        <div id="collapseTwo" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                                <div class="form-checkbox datefilter-wrapper">
+                                                    <div class="date-filter">
+                                                        <input class="form-control" placeholder="From:" type="text">
+                                                        <img class="calendarImg" src="../assets/images/Calander_Date_Time_Schedule_Timeline-128.png" alt="">                     
+                                                    </div>
+                                                    <div class="date-filter">
+                                                        <input class="form-control" placeholder="To:" type="text">
+                                                        <img class="calendarImg" src="../assets/images/Calander_Date_Time_Schedule_Timeline-128.png" alt="">                     
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="headingTwo">
+                                            <h4 class="panel-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Media Type:</a>
+                                            </h4>
+                                        </div>
+
+                                        <div id="collapseTwo" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                                <div class="form-checkbox">
+                                                    <input checked type="checkbox" id="media_1">
+                                                    <label for="media_1">Video</label> </br>
+                                                    <input type="checkbox" id="media_2">
+                                                    <label for="media_2">Audio</label></br>
+                                                    <input type="checkbox" id="media_3">
+                                                    <label for="media_3">All</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="headingThree">
+                                            <h4 class="panel-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Language:</a>
+                                            </h4>
+                                        </div>
+
+                                        <div id="collapseThree" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                                <div class="form-checkbox">
+                                                    <input checked type="checkbox" id="Arabic">
+                                                    <label for="Arabic">Arabic</label> </br>
+                                                    <input type="checkbox" id="Chinese">
+                                                    <label for="Chinese">Chinese</label></br>
+                                                    <input type="checkbox" id="English">
+                                                    <label for="English">English</label></br>
+                                                    <input type="checkbox" id="French">
+                                                    <label for="French">French</label></br>
+                                                    <input type="checkbox" id="Spanish">
+                                                    <label for="Spanish">Spanish</label></br>
+                                                    <input type="checkbox" id="Russian">
+                                                    <label for="Russian">Russian</label></br>
+                                                    <input type="checkbox" id="Original">
+                                                    <label for="Original">Original</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="headingfour">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefour">Category:</a>
+                                            </h4>
+                                        </div>
+
+                                        <div id="collapsefour" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <div class="form-checkbox">
+                                                    <input checked type="checkbox" id="stories">
+                                                    <label for="stories">News stories</label> </br>
+                                                    <input type="checkbox" id="Features">
+                                                    <label for="Features">Features</label></br>
+                                                    <input type="checkbox" id="Security-Council">
+                                                    <label for="Security-Council">Security Council</label></br>
+                                                    <input type="checkbox" id="General-Assembly">
+                                                    <label for="General-Assembly">General Assembly</label></br>
+                                                    <input type="checkbox" id="Economic-Council">
+                                                    <label for="Economic-Council">Economic and Social Council</label></br>
+                                                    <input type="checkbox" id="International Court-Justice">
+                                                    <label for="International Court-Justice">International Court of Justice (ICJ)</label></br>
+                                                    <input type="checkbox" id="Human-Council">
+                                                    <label for="Human-Council">Human Rights Council</label> </br>
+                                                    <input type="checkbox" id="Human-Bodies">
+                                                    <label for="Human-Bodies">Human Rights Treaty Bodies</label> </br>
+                                                    <input type="checkbox" id="Trusteeship">
+                                                    <label for="Trusteeship">Trusteeship Council</label> </br>
+                                                    <input type="checkbox" id="Conferences">
+                                                    <label for="Conferences">Conferences Conferences</label> </br>
+                                                    <input type="checkbox" id="Media-Stakeouts">
+                                                    <label for="Media-Stakeouts">Media Stakeouts</label> </br>
+                                                    <input type="checkbox" id="Press-Conferences">
+                                                    <label for="Press-Conferences">Press Conferences</label> </br>
+                                                    <input type="checkbox" id="Secretary-General">
+                                                    <label for="Secretary-General">UN Secretary-General</label> </br>
+                                                    <input type="checkbox" id="Deputy-Secretary">
+                                                    <label for="Deputy-Secretary">Deputy-Secretary General</label> </br>
+                                                    <input type="checkbox" id="President-Assembly">
+                                                    <label for="President-Assembly">President of the General Assembly</label> </br>
+                                                    <input type="checkbox" id="High-level">
+                                                    <label for="High-level">High level</label> </br>
+                                                    <input type="checkbox" id="Side-Events">
+                                                    <label for="Side-Events">Side Events</label> </br>
+                                                    <input type="checkbox" id="Concerts">
+                                                    <label for="Concerts">Concerts</label> </br>
+                                                    <input type="checkbox" id="Messages">
+                                                    <label for="Messages">Messages</label> </br>
+                                                    <input type="checkbox" id="Interviews">
+                                                    <label for="Interviews">Interviews</label> </br>
+                                                    <input type="checkbox" id="B-Compilations">
+                                                    <label for="B-Compilations">B-Rolls and Compilations</label> </br>
+                                                    <input type="checkbox" id="Field Operations">
+                                                    <label for="Field Operations">Field Operations</label> </br>
+                                                    <input type="checkbox" id="UNHeadquarters">
+                                                    <label for="UNHeadquarters">UN Headquarters</label> </br>
+                                                    <input type="checkbox" id="UNOffices">
+                                                    <label for="UNOffices">UN Offices</label> </br>
+                                                    <input type="checkbox" id="PhotoOpportunities">
+                                                    <label for="PhotoOpportunities">Photo Opportunities</label> </br>
+                                                    <input type="checkbox" id="Portraits">
+                                                    <label for="Portraits">Portraits</label> </br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="headingfive">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefive">Sub Categories:</a>
+                                            </h4>
+                                        </div>
+
+                                        <div id="collapsefive" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <div class="form-checkbox">
+                                                    <input checked type="checkbox" id="Africa">
+                                                    <label for="Africa">AfAfricarica</label> </br>
+                                                    <input type="checkbox" id="Americas">
+                                                    <label for="Americas">Americas</label></br>
+                                                    <input type="checkbox" id="Asia">
+                                                    <label for="Asia">Asia</label></br>
+                                                    <input type="checkbox" id="Europe">
+                                                    <label for="Europe">Europe</label></br>
+                                                    <input type="checkbox" id="Middle-East">
+                                                    <label for="Middle-East">Middle East</label></br>
+                                                    <input type="checkbox" id="ThematicDebate">
+                                                    <label for="ThematicDebate">Thematic Debate</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="headingsix">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsesix">Subject - Topic:</a>
+                                            </h4>
+                                        </div>
+
+                                        <div id="collapsesix" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <div class="form-checkbox">
+                                                    <input class="form-control" type="text" placeholder="Search Topic">
+                                                    <p>Climate Change <span>5,325</span></p>
+                                                    <p>Children <span>3,967</span></p>
+                                                    <a class="toggle-Hide" href="#">Show all Subject </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="headingsaven">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsesaven">Subject - Geographic:</a>
+                                            </h4>
+                                        </div>
+
+                                        <div id="collapsesaven" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <div class="form-checkbox">
+                                                    <input class="form-control" type="text" placeholder="Search Topic">
+                                                    <p>Climate Change <span>5,325</span></p>
+                                                    <p>Children <span>3,967</span></p>
+                                                    <p>Children <span>3,967</span></p>
+                                                    <p>Children <span>3,967</span></p>
+                                                    <a class="toggle-Hide" href="#">Show all Subject </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="headingeigjt">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseeigjt">Subject - Corporate:</a>
+                                            </h4>
+                                        </div>
+
+                                        <div id="collapseeigjt" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <div class="form-checkbox">
+                                                    <input class="form-control" type="text" placeholder="Search Corporate">
+                                                    <p>Climate Change <span>5,325</span></p>
+                                                    <p>Children <span>3,967</span></p>
+                                                    <p>Children <span>3,967</span></p>
+                                                    <p>Children <span>3,967</span></p>
+                                                    <a class="toggle-Hide" href="#">Show all Subject </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="headinnine">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsnine">Event Location: Country:</a>
+                                            </h4>
+                                        </div>
+
+                                        <div id="collapsnine" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <div class="form-checkbox">
+                                                    <input type="checkbox" id="Canada">
+                                                    <label for="Canada">Canada</label></br>
+                                                    <input type="checkbox" id="Germany">
+                                                    <label for="Germany">Germany</label></br>
+                                                    <input type="checkbox" id="UnitedKingdom">
+                                                    <label for="UnitedKingdom">United Kingdom</label></br>
+                                                    <input type="checkbox" id="Sweden">
+                                                    <label for="Sweden">Sweden</label></br>
+                                                    <input type="checkbox" id="Australia">
+                                                    <label for="Australia">Australia</label></br>
+                                                    <input type="checkbox" id="UnitedStates">
+                                                    <label for="UnitedStates">United States</label></br>
+                                                    <input type="checkbox" id="Japan">
+                                                    <label for="Japan">Japan</label></br>
+                                                    <a class="toggle-Hide" href="#">More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="headiten">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapten">Event Location: City:</a>
+                                            </h4>
+                                        </div>
+
+                                        <div id="collapten" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <div class="form-checkbox">
+                                                    <input type="checkbox" id="Canada">
+                                                    <label for="Canada">Canada</label></br>
+                                                    <input type="checkbox" id="Germany">
+                                                    <label for="Germany">Germany</label></br>
+                                                    <input type="checkbox" id="UnitedKingdom">
+                                                    <label for="UnitedKingdom">United Kingdom</label></br>
+                                                    <input type="checkbox" id="Sweden">
+                                                    <label for="Sweden">Sweden</label></br>
+                                                    <input type="checkbox" id="Australia">
+                                                    <label for="Australia">Australia</label></br>
+                                                    <input type="checkbox" id="UnitedStates">
+                                                    <label for="UnitedStates">United States</label></br>
+                                                    <input type="checkbox" id="Japan">
+                                                    <label for="Japan">Japan</label></br>
+                                                    <a class="toggle-Hide" href="#">More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="headieleven">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapeleven">Digitized:</a>
+                                            </h4>
+                                        </div>
+
+                                        <div id="collapeleven" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <div class="form-checkbox">
+                                                    <div class="form-group">
+                                                        <input type="radio" name="r2" id="r1_yes">
+                                                        <label for="r1_yes">Yes</label></br>
+                                                        <input type="radio" name="r2" id="r1_no">
+                                                        <label for="r1_no">No</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="headietwelve">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapetwelve">Status:</a>
+                                            </h4>
+                                        </div>
+
+                                        <div id="collapetwelve" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <div class="form-checkbox">
+                                                    <div class="form-group">
+                                                        <input type="radio" name="r3" id="r1_Live">
+                                                        <label for="r1_Live">Live Now</label> </br>
+                                                        <input type="radio" name="r3" id="r1_Scheduled">
+                                                        <label for="r1_Scheduled">Scheduled</label></br>
+                                                        <input type="radio" name="r3" id="r1_On-demand">
+                                                        <label for="r1_On-demand">On-demand</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-9">
+                            <div class="selected-search">
+                                <p>Your Selections: </p>
+                                <a class="filter-btn" href="#">Media Type: Video <span>X</span></a>
+                                <a class="filter-btn" href="#">Language: English <span>X</span></a>
+                                <a class="clearFilter" href="#">Clear</a>
+                            </div>
+                            <div class="search-items">
+                                <div class="search-item align-center">
+                                    <div class="video-thumb">
+                                        <img src="../assets/images/slide-1.jpg" class="" alt="">
+                                        <a href="single-video.html" class="hover-content">
+                                            <p class="text-uppercase"><span class="fas fa-video"></span>Original</p>
+                                            <p>6 Chapters</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="search-item-content">
+                                        <p class="top-title"><i><img src="../assets/images/play-white.png" alt=""></i>45min (English)<span>28 DEC 2019</span></p>
+                                        <a class="title" href="single-video.html">Lorem ipsum dolor sit amet consectetur adipiscing elit</a>
+                                        <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repr ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cu pidatat non proident, sunt in culpa qui officia deserunt cillum mollit anim id est laborum. Sed ut persp iciatis unde omnis iste natus erro</p>
+                                    </div>
+                                </div>
+
+                                <div class="search-item align-center microphone">
+                                    <div class="video-thumb">
+                                        <img src="../assets/images/slide-2.jpg" class="" alt="">
+                                        <a href="single-video.html" class="hover-content">
+                                            <p class="text-uppercase"><span class="fas fa-microphone-alt"></span>English</p>
+                                            <p>6 Chapters</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="search-item-content">
+                                        <p class="top-title"><i><img src="../assets/images/play-white.png" alt=""></i>45min (English)<span>28 DEC 2019</span></p>
+                                        <a class="title" href="single-video.html">Lorem ipsum dolor sit amet consectetur adipiscing elit</a>
+                                        <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repr ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cu pidatat non proident, sunt in culpa qui officia deserunt cillum mollit anim id est laborum. Sed ut persp iciatis unde omnis iste natus erro</p>
+                                    </div>
+                                </div>
+
+                                <div class="search-item align-center">
+                                    <div class="video-thumb">
+                                        <img src="../assets/images/slide-2.jpg" class="" alt="">
+                                        <a href="single-video.html" class="hover-content">
+                                            <p class="text-uppercase"><span class="fas fa-microphone-alt"></span>Original</p>
+                                            <p>6 Chapters</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="search-item-content">
+                                        <p class="top-title"><i><img src="../assets/images/play-white.png" alt=""></i>45min (English)<span>28 DEC 2019</span></p>
+                                        <a class="title" href="single-video.html">Lorem ipsum dolor sit amet consectetur adipiscing elit</a>
+                                        <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repr ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cu pidatat non proident, sunt in culpa qui officia deserunt cillum mollit anim id est laborum. Sed ut persp iciatis unde omnis iste natus erro</p>
+                                    </div>
+                                </div>
+
+                                <div class="search-item align-center microphone">
+                                    <div class="video-thumb">
+                                        <img src="../assets/images/slide-2.jpg" class="" alt="">
+                                        <a href="single-video.html" class="hover-content">
+                                            <p class="text-uppercase"><span class="fas fa-microphone-alt"></span>English</p>
+                                            <p>6 Chapters</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="search-item-content">
+                                        <p class="top-title"><i><img src="../assets/images/play-white.png" alt=""></i>45min (English)<span>28 DEC 2019</span></p>
+                                        <a class="title" href="single-video.html">Lorem ipsum dolor sit amet consectetur adipiscing elit</a>
+                                        <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repr ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cu pidatat non proident, sunt in culpa qui officia deserunt cillum mollit anim id est laborum. Sed ut persp iciatis unde omnis iste natus erro</p>
+                                    </div>
+                                </div>
+
+                                <div class="search-item align-center">
+                                    <div class="video-thumb">
+                                        <img src="../assets/images/slide-2.jpg" class="" alt="">
+                                        <a href="single-video.html" class="hover-content">
+                                            <p class="text-uppercase"><span class="fas fa-microphone-alt"></span>Original</p>
+                                            <p>6 Chapters</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="search-item-content">
+                                        <p class="top-title"><i><img src="../assets/images/play-white.png" alt=""></i>45min (English)<span>28 DEC 2019</span></p>
+                                        <a class="title" href="single-video.html">Lorem ipsum dolor sit amet consectetur adipiscing elit</a>
+                                        <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repr ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cu pidatat non proident, sunt in culpa qui officia deserunt cillum mollit anim id est laborum. Sed ut persp iciatis unde omnis iste natus erro</p>
+                                    </div>
+                                </div>
+
+                                <div class="pagination-wrapper">
+                                    <div class="paginations">
+                                        <a class="hidden" href="#"><span class="fas fa-angle-left"></span></a>
+                                        <a class="active" href="#">01</a>
+                                        <a href="#">02</a>
+                                        <a href="#">03</a>
+                                        <a href="#"><span class="fas fa-angle-right"></span></a>
+                                    </div>
+
+                                    <div class="result-show-perpage">
+                                        <span>Results per Page</span>
+                                        <div class="dropdown-select">
+                                            <select name="" class="form-control" id="">
+                                                <option value="20" selected="selected">20</option>
+                                                <option value="30">30</option>
+                                                <option value="40">40</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/wow.min.js"></script>
-    <script src="../assets/js/sidr.min.js"></script>
-    <script src="../assets/js/mixitup.min.js"></script>
-    <script src="../assets/js/slick.min.js"></script>
-    <script src="../assets/js/scripts.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+            <script src="../assets/js/jquery.min.js"></script>
+            <script src="../assets/js/bootstrap.min.js"></script>
+            <script src="../assets/js/wow.min.js"></script>
+            <script src="../assets/js/sidr.min.js"></script>
+            <script src="../assets/js/mixitup.min.js"></script>
+            <script src="../assets/js/slick.min.js"></script>
+            <script src="../assets/js/scripts.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
-    <script>
-        $(function () {
-            $('.calendarImg').daterangepicker({
-                singleDatePicker: true,
-                showDropdowns: false,
-                minYear: 1901,
-                maxYear: parseInt(moment().format('YYYY'), 10)
-            });
-        });
-    </script>
+            <script>
+                $(function () {
+                    $('.calendarImg').daterangepicker({
+                        singleDatePicker: true,
+                        showDropdowns: false,
+                        minYear: 1901,
+                        maxYear: parseInt(moment().format('YYYY'), 10)
+                    });
+                });
+            </script>
 
 
             </div>

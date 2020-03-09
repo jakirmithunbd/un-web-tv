@@ -27,7 +27,7 @@
                 <div class="container brandbar-header topbar-max-width">
                     <div class="row">
                         <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="col-md-3 position-absolute">
+                        <div class="col-md-4 position-absolute">
                             <a class="navbar-brand" href="/en/" style="margin-left: 0;">Welcome to the United Nations</a>
                         </div><!-- /UN global brand bar -->
               
@@ -81,18 +81,19 @@
                         </button>
 
                         <div class="navbar-brand">
-                            <a href="index.html"><img src="../assets/images/logo.png" class="img-responsive" alt="Logo Image"></a>
+                            <a href="index.html" class="navbar-logo-left"><!--<img src="../assets/images/logo-en-reverse.svg" class="img-responsive" alt="Logo Image">--></a>
+                            <a href="index.html"  class="navbar-logo-right"><span class="navbar-logo-right-top">UN Web TV</span><span class="navbar-logo-right-bottom">Live & On-Demand</span></a>
                         </div><!-- / Logo  -->
 
                     </div>
 
                     <div class="search-container">
                         <form action="/search.html">
-                            <input type="search" placeholder="Search" name="search">
+                        <h2 class="element-invisible">Search the UN Media</h2>
+                            <input type="search" placeholder="Search" name="search" value="" size="10" maxlength="128">
                             <button type="submit"><i class="fas fa-search"></i></button>
                         </form>
-
-                        <a href="#">Advanced Search</a>
+                        <!--<a href="#">Advanced Search</a>-->
                     </div>
                 </div>
             </div>
@@ -103,158 +104,191 @@
         <div class="row">
             <div id="main-menu" class="col-sm-4 col-md-3 collapse width">
                 <nav>
-                    <ul>
-                        <li>
-                            <a class="menu-item-primary" href="schedule.html"><i class="fas fa-calendar"></i><span class="long-name">Live</span> Schedule</a>
-                        </li>
-                        <li>
-                            <a href="#sub-menu-123" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                            <a class="menu-item-primary" href="categories.html"><i class="fas fa-th-list"></i>Categories</a class="menu-item-primary">
-                            <ul id="sub-menu-123" class="collapse">
-                                
-                                <li>
-                                    <a href="#sub-menu-meetings" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                                    <a href="#">Meetings &amp; Events</a>
-                                    <ul id="sub-menu-meetings" class="collapse">
-                                        <li><a href="#">General Assembly</a></li>
-                                        <li><a href="#">Security Council</a></li>
-                                        <li><a href="#">Economic and Social Council</a></li>
-                                        <li><a href="#">International Court of Justice</a></li>
-                                        <li><a href="#">Trusteeship Council</a></li>
-                                        <li><a href="#">Human Rights Council</a></li>
-                                        <li><a href="#">Human Rights Treaty Bodies</a></li>
-                                        <li><a href="#">High Level Events</a></li>
-                                        <li><a href="#">Side Events</a></li>
-                                        <li><a href="#">Conferences</a></li>
-                                        <li><a href="#">Concerts</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#sub-menu-media" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                                    <a href="#">Media</a>
-                                    <ul id="sub-menu-media" class="collapse">
-                                        <li><a href="#">Press Conferences</a></li>
-                                        <li><a href="#">Media Stakeouts</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#sub-menu-news" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                                    <a href="#">News &amp; Features</a>
-                                    <ul id="sub-menu-news" class="collapse">
-                                        <li><a href="#">News Stories</a></li>
-                                        <li><a href="#">Features</a></li>
-                                        <li><a href="#">Messages</a></li>
-                                        <li><a href="#">Interviews</a></li>
-                                        <li><a href="#">Dag Hammarskjöld Library</a></li>
-                                        <li><a href="#">B-Rolls &amp; Compilations</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#sub-menu-officials" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                                    <a href="#">Officials</a>
-                                    <ul id="sub-menu-officials" class="collapse">
-                                        <li><a href="#">Secretary-General</a></li>
-                                        <li><a href="#">Deputy Secretary-General</a></li>
-                                        <li><a href="#">President of the General Assembly</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="menu-item-primary" href="internal.html"><i class="fas fa-shield-alt"></i>UN Staff Portal</a>
-                        </li>
-                        <li class="sep"></li>
+                    <div class="main-menu-item div-hov main-menu-item-first">
+                        <div class="main-menu-item-left">
+                            <a class="main-menu-item-primary-icon" href="schedule.html">
+                                <i class="fas fa-calendar"></i>
+                            </a>
+                        </div>
+                        <div class="main-menu-item-right-short">
+                            <a class="main-menu-item-primary-text main-menu-item-primary-text-short" href="schedule.html">Live Schedule</a>
+                        </div>
+                        <div class="main-menu-item-right">
+                            <a class="main-menu-item-primary-text" href="schedule.html"><span class="long-name">Live</span> Schedule</a>
+                        </div>              
+                    </div>
+                    <div class="main-menu-item div-hov">
+                        <div class="main-menu-item-left">
+                            <a class="main-menu-item-primary-icon" href="schedule.html">
+                                <i class="fas fa-shield-alt"></i>
+                            </a>
+                        </div>
+                        <div class="main-menu-item-right-short">
+                            <a class="main-menu-item-primary-text  main-menu-item-primary-text-short" href="">UN Staff Portal</a>
+                        </div>
+                        <div class="main-menu-item-right">
+                            <a class="main-menu-item-primary-text" href="">UN Staff Portal</a>
+                        </div>              
+                    </div>
+            
+                    <div class="main-menu-item">
+                        
+                        <div class="main-menu-item-right">
+                            <ul>
+                            <!--<li>
+                                <a class="menu-item-primary" href="schedule.html"><i class="fas fa-calendar"></i><span class="long-name">Live</span> Schedule</a>
+                            </li>
+                            
+                            <li>
+                                <a class="menu-item-primary" href="internal.html"><i class="fas fa-shield-alt"></i>UN Staff Portal</a>
+                            </li>-->
+                            <li class="sep"></li>
+                            <li>
+                                <a href="#sub-menu-123" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                <a class="menu-item-primary" href="categories.html"><i class="fas fa-th-list"></i>Categories</a>
+                                <ul id="sub-menu-123" class="collapse">
+                                    
+                                    <li>
+                                        <a href="#sub-menu-meetings" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                        <a href="#">Meetings &amp; Events</a>
+                                        <ul id="sub-menu-meetings" class="collapse">
+                                            <li><a href="#">General Assembly</a></li>
+                                            <li><a href="#">Security Council</a></li>
+                                            <li><a href="#">Economic and Social Council</a></li>
+                                            <li><a href="#">International Court of Justice</a></li>
+                                            <li><a href="#">Trusteeship Council</a></li>
+                                            <li><a href="#">Human Rights Council</a></li>
+                                            <li><a href="#">Human Rights Treaty Bodies</a></li>
+                                            <li><a href="#">High Level Events</a></li>
+                                            <li><a href="#">Side Events</a></li>
+                                            <li><a href="#">Conferences</a></li>
+                                            <li><a href="#">Concerts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#sub-menu-media" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                        <a href="#">Media</a>
+                                        <ul id="sub-menu-media" class="collapse">
+                                            <li><a href="#">Press Conferences</a></li>
+                                            <li><a href="#">Media Stakeouts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#sub-menu-news" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                        <a href="#">News &amp; Features</a>
+                                        <ul id="sub-menu-news" class="collapse">
+                                            <li><a href="#">News Stories</a></li>
+                                            <li><a href="#">Features</a></li>
+                                            <li><a href="#">Messages</a></li>
+                                            <li><a href="#">Interviews</a></li>
+                                            <li><a href="#">Dag Hammarskjöld Library</a></li>
+                                            <li><a href="#">B-Rolls &amp; Compilations</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#sub-menu-officials" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                        <a href="#">Officials</a>
+                                        <ul id="sub-menu-officials" class="collapse">
+                                            <li><a href="#">Secretary-General</a></li>
+                                            <li><a href="#">Deputy Secretary-General</a></li>
+                                            <li><a href="#">President of the General Assembly</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
                             <li><a class="menu-item-secondary" href="about.html">About Us</a></li>
                             <li><a class="menu-item-secondary" href="contact.html">Contact Us</a></li>
                             <li>
-                            <a href="#sub-menu-456" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Lorem</span></i></a>
-                            <a class="menu-item-secondary">Media Sites</a>
-                            <ul id="sub-menu-456" class="collapse">
-                                <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/avlibrary/">Audiovisual Library</a></li>
-                                <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/tv/unifeed/">Unifeed</a></li>
-                                <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/photo/">UN Photo</a></li>
-                                <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/avlibrary/">UN WebTV</a></li>
-                                
-                                
-                                        
-                            </ul>
-                        </li>
-                    </ul>
+                                <a href="#sub-menu-456" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Lorem</span></i></a>
+                                <a class="menu-item-secondary">Media Sites</a>
+                                <ul id="sub-menu-456" class="collapse">
+                                    <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/avlibrary/">Audiovisual Library</a></li>
+                                    <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/tv/unifeed/">Unifeed</a></li>
+                                    <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/photo/">UN Photo</a></li>
+                                    <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/avlibrary/">UN WebTV</a></li>
+                                    
+                                    
+                                            
+                                </ul>
+                            </li>
+                        </ul> 
+                        </div>
+                    </div>
                 </nav>
             </div>
             
-    <div id="main-content" class="col">
+            <div id="main-content" class="col">
 
-    <section class="page-area">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-12">
-					<div class="section-title">
-						<h3>About Us <span class="border"></span></h3>
-					</div>
-    			</div>
-    		</div>
+            <section class="page-area">
+            	<div class="container">
+            		<div class="row">
+            			<div class="col-md-12">
+        					<div class="section-title">
+        						<h3>About Us <span class="border"></span></h3>
+        					</div>
+            			</div>
+            		</div>
 
-    		<div class="row">
-    			<div class="col-md-12">
-    				<div class="content-area">
-    					<div class="content">
-							<div class="row">
-								<div class="col-md-6">
-									<img src="../assets/images/about-img-1.jpg" class="img-responsive" alt="">
-								</div>
+            		<div class="row">
+            			<div class="col-md-12">
+            				<div class="content-area">
+            					<div class="content">
+        							<div class="row">
+        								<div class="col-md-6">
+        									<img src="../assets/images/about-img-1.jpg" class="img-responsive" alt="">
+        								</div>
 
-								<div class="col-md-6">
-									<h2>The United Nations is an international organization founded in 1945.  It is currently made up of 193 Member States.  The mission and work of the United Nations are guided by the purposes and principles contained in its founding Charter.</h2>
-									<p>Due to the powers vested in its Charter and its unique international character, the United Nations can take action on the issues confronting humanity in the 21st century, such as peace and security, climate change, sustainable development, human rights, disarmament, terrorism, humanitarian and health emergencies, gender equality, governance, food production, and more.</p>
+        								<div class="col-md-6">
+        									<h2>The United Nations is an international organization founded in 1945.  It is currently made up of 193 Member States.  The mission and work of the United Nations are guided by the purposes and principles contained in its founding Charter.</h2>
+        									<p>Due to the powers vested in its Charter and its unique international character, the United Nations can take action on the issues confronting humanity in the 21st century, such as peace and security, climate change, sustainable development, human rights, disarmament, terrorism, humanitarian and health emergencies, gender equality, governance, food production, and more.</p>
 
-									<p>The UN also provides a forum for its members to express their views in the General Assembly, the Security Council, the Economic and Social Council, and other bodies and committees. By enabling dialogue between its members, and by hosting negotiations, the Organization has become a mechanism for governments to find areas of agreement and solve problems together.</p>
+        									<p>The UN also provides a forum for its members to express their views in the General Assembly, the Security Council, the Economic and Social Council, and other bodies and committees. By enabling dialogue between its members, and by hosting negotiations, the Organization has become a mechanism for governments to find areas of agreement and solve problems together.</p>
 
-									<p>The UN's Chief Administrative Officer is the Secretary-General. 2020 marks the 75th anniversary of the United Nations. nd signed by its duly authorized representative.</p>
-								</div>
-							</div>
+        									<p>The UN's Chief Administrative Officer is the Secretary-General. 2020 marks the 75th anniversary of the United Nations. nd signed by its duly authorized representative.</p>
+        								</div>
+        							</div>
 
-							<div class="space20px"></div>
+        							<div class="space20px"></div>
 
-							<h2>General Assembly</h2>
-							<p>The General Assembly is the main deliberative, policymaking and representative organ of the UN. All 193 Member States of the UN are represented in the General Assembly, making it the only UN body with universal representation.  Each year, in September, the full UN membership meets in the General Assembly Hall in New York for the annual General Assembly session, and general debate, which many heads of state attend and address. Decisions on important questions, such as those on peace and security, admission of new members and budgetary matters, require a two-thirds majority of the General Assembly. Decisions on other questions are by simple majority.  The General Assembly, each year, elects a GA President to serve a one-year term of office.</p>
+        							<h2>General Assembly</h2>
+        							<p>The General Assembly is the main deliberative, policymaking and representative organ of the UN. All 193 Member States of the UN are represented in the General Assembly, making it the only UN body with universal representation.  Each year, in September, the full UN membership meets in the General Assembly Hall in New York for the annual General Assembly session, and general debate, which many heads of state attend and address. Decisions on important questions, such as those on peace and security, admission of new members and budgetary matters, require a two-thirds majority of the General Assembly. Decisions on other questions are by simple majority.  The General Assembly, each year, elects a GA President to serve a one-year term of office.</p>
 
-							<div class="space20px"></div>
+        							<div class="space20px"></div>
 
-							<h2>Security Council</h2>
-							<p>The Security Council has primary responsibility, under the UN Charter, for the maintenance of international peace and security.  It has 15 Members (5 permanent and 10 non-permanent members). Each Member has one vote. Under the Charter, all Member States are obligated to comply with Council decisions. The Security Council takes the lead in determining the existence of a threat to the peace or act of aggression. It calls upon the parties to a dispute to settle it by peaceful means and recommends methods of adjustment or terms of settlement. In some cases, the Security Council can resort to imposing sanctions or even authorize the use of force to maintain or restore international peace and security.  The Security Council has a Presidency, which rotates, and changes, every month.</p>
+        							<h2>Security Council</h2>
+        							<p>The Security Council has primary responsibility, under the UN Charter, for the maintenance of international peace and security.  It has 15 Members (5 permanent and 10 non-permanent members). Each Member has one vote. Under the Charter, all Member States are obligated to comply with Council decisions. The Security Council takes the lead in determining the existence of a threat to the peace or act of aggression. It calls upon the parties to a dispute to settle it by peaceful means and recommends methods of adjustment or terms of settlement. In some cases, the Security Council can resort to imposing sanctions or even authorize the use of force to maintain or restore international peace and security.  The Security Council has a Presidency, which rotates, and changes, every month.</p>
 
-							<div class="space20px"></div>
+        							<div class="space20px"></div>
 
-							<h2>Trusteeship Council</h2>
-							<p>The Trusteeship Council was established in 1945 by the UN Charter, under Chapter XIII, to provide international supervision for 11 Trust Territories that had been placed under the administration of seven Member States, and ensure that adequate steps were taken to prepare the Territories for self-government and independence. By 1994, all Trust Territories had attained self-government or independence.  The Trusteeship Council suspended operation on 1 November 1994. By a resolution adopted on 25 May 1994, the Council amended its rules of procedure to drop the obligation to meet annually and agreed to meet as occasion required -- by its decision or the decision of its President, or at the request of a majority of its members or the General Assembly or the Security Council.</p>
+        							<h2>Trusteeship Council</h2>
+        							<p>The Trusteeship Council was established in 1945 by the UN Charter, under Chapter XIII, to provide international supervision for 11 Trust Territories that had been placed under the administration of seven Member States, and ensure that adequate steps were taken to prepare the Territories for self-government and independence. By 1994, all Trust Territories had attained self-government or independence.  The Trusteeship Council suspended operation on 1 November 1994. By a resolution adopted on 25 May 1994, the Council amended its rules of procedure to drop the obligation to meet annually and agreed to meet as occasion required -- by its decision or the decision of its President, or at the request of a majority of its members or the General Assembly or the Security Council.</p>
 
-							<div class="space20px"></div>
+        							<div class="space20px"></div>
 
-							<div class="row">
-								<div class="col-md-6">
-									<h2>International Court of Justice</h2>
-									<p>The International Court of Justice is the principal judicial organ of the United Nations. Its seat is at the Peace Palace in the Hague (Netherlands). It is the only one of the six principal organs of the United Nations not located in New York (United States of America). The Court’s role is to settle, in accordance with international law, legal disputes submitted to it by States and to give advisory opinions on legal questions referred to it by authorized United Nations organs and specialized agencies.</p>
+        							<div class="row">
+        								<div class="col-md-6">
+        									<h2>International Court of Justice</h2>
+        									<p>The International Court of Justice is the principal judicial organ of the United Nations. Its seat is at the Peace Palace in the Hague (Netherlands). It is the only one of the six principal organs of the United Nations not located in New York (United States of America). The Court’s role is to settle, in accordance with international law, legal disputes submitted to it by States and to give advisory opinions on legal questions referred to it by authorized United Nations organs and specialized agencies.</p>
 
-									<div class="space20px"></div>
+        									<div class="space20px"></div>
 
-									<h2>Secretariat</h2>
+        									<h2>Secretariat</h2>
 
-									<p>The Secretariat comprises the Secretary-General and tens of thousands of international UN staff members who carry out the day-to-day work of the UN as mandated by the General Assembly and the Organization's other principal organs.  The Secretary-General is chief administrative officer of the Organization, appointed by the General Assembly on the recommendation of the Security Council for a five-year, renewable term. UN staff members are recruited internationally and locally, and work in duty stations and on peacekeeping missions all around the world.  But serving the cause of peace in a violent world is a dangerous occupation. Since the founding of the United Nations, hundreds of brave men and women have given their lives in its service.</p>
-								</div>
+        									<p>The Secretariat comprises the Secretary-General and tens of thousands of international UN staff members who carry out the day-to-day work of the UN as mandated by the General Assembly and the Organization's other principal organs.  The Secretary-General is chief administrative officer of the Organization, appointed by the General Assembly on the recommendation of the Security Council for a five-year, renewable term. UN staff members are recruited internationally and locally, and work in duty stations and on peacekeeping missions all around the world.  But serving the cause of peace in a violent world is a dangerous occupation. Since the founding of the United Nations, hundreds of brave men and women have given their lives in its service.</p>
+        								</div>
 
-								<div class="col-md-6">
-									<img src="../assets/images/about-img-2.jpg" class="img-responsive" alt="">
-								</div>
-							</div>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </section>
+        								<div class="col-md-6">
+        									<img src="../assets/images/about-img-2.jpg" class="img-responsive" alt="">
+        								</div>
+        							</div>
+            					</div>
+            				</div>
+            			</div>
+            		</div>
+            	</div>
+            </section>
 
-     </div>
+             </div>
     
         </div>
 

@@ -28,7 +28,7 @@
                 <div class="container brandbar-header topbar-max-width">
                     <div class="row">
                         <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="col-md-3 position-absolute">
+                        <div class="col-md-4 position-absolute">
                             <a class="navbar-brand" href="/en/" style="margin-left: 0;">Welcome to the United Nations</a>
                         </div><!-- /UN global brand bar -->
               
@@ -82,18 +82,19 @@
                         </button>
 
                         <div class="navbar-brand">
-                            <a href="index.html"><img src="../assets/images/logo.png" class="img-responsive" alt="Logo Image"></a>
+                            <a href="index.html" class="navbar-logo-left"><!--<img src="../assets/images/logo-en-reverse.svg" class="img-responsive" alt="Logo Image">--></a>
+                            <a href="index.html"  class="navbar-logo-right"><span class="navbar-logo-right-top">UN Web TV</span><span class="navbar-logo-right-bottom">Live & On-Demand</span></a>
                         </div><!-- / Logo  -->
 
                     </div>
 
                     <div class="search-container">
                         <form action="/search.html">
-                            <input type="search" placeholder="Search" name="search">
+                        <h2 class="element-invisible">Search the UN Media</h2>
+                            <input type="search" placeholder="Search" name="search" value="" size="10" maxlength="128">
                             <button type="submit"><i class="fas fa-search"></i></button>
                         </form>
-
-                        <a href="#">Advanced Search</a>
+                        <!--<a href="#">Advanced Search</a>-->
                     </div>
                 </div>
             </div>
@@ -104,219 +105,252 @@
         <div class="row">
             <div id="main-menu" class="col-sm-4 col-md-3 collapse width">
                 <nav>
-                    <ul>
-                        <li>
-                            <a class="menu-item-primary" href="schedule.html"><i class="fas fa-calendar"></i><span class="long-name">Live</span> Schedule</a>
-                        </li>
-                        <li>
-                            <a href="#sub-menu-123" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                            <a class="menu-item-primary" href="categories.html"><i class="fas fa-th-list"></i>Categories</a class="menu-item-primary">
-                            <ul id="sub-menu-123" class="collapse">
-                                
-                                <li>
-                                    <a href="#sub-menu-meetings" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                                    <a href="#">Meetings &amp; Events</a>
-                                    <ul id="sub-menu-meetings" class="collapse">
-                                        <li><a href="#">General Assembly</a></li>
-                                        <li><a href="#">Security Council</a></li>
-                                        <li><a href="#">Economic and Social Council</a></li>
-                                        <li><a href="#">International Court of Justice</a></li>
-                                        <li><a href="#">Trusteeship Council</a></li>
-                                        <li><a href="#">Human Rights Council</a></li>
-                                        <li><a href="#">Human Rights Treaty Bodies</a></li>
-                                        <li><a href="#">High Level Events</a></li>
-                                        <li><a href="#">Side Events</a></li>
-                                        <li><a href="#">Conferences</a></li>
-                                        <li><a href="#">Concerts</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#sub-menu-media" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                                    <a href="#">Media</a>
-                                    <ul id="sub-menu-media" class="collapse">
-                                        <li><a href="#">Press Conferences</a></li>
-                                        <li><a href="#">Media Stakeouts</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#sub-menu-news" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                                    <a href="#">News &amp; Features</a>
-                                    <ul id="sub-menu-news" class="collapse">
-                                        <li><a href="#">News Stories</a></li>
-                                        <li><a href="#">Features</a></li>
-                                        <li><a href="#">Messages</a></li>
-                                        <li><a href="#">Interviews</a></li>
-                                        <li><a href="#">Dag Hammarskjöld Library</a></li>
-                                        <li><a href="#">B-Rolls &amp; Compilations</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#sub-menu-officials" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                                    <a href="#">Officials</a>
-                                    <ul id="sub-menu-officials" class="collapse">
-                                        <li><a href="#">Secretary-General</a></li>
-                                        <li><a href="#">Deputy Secretary-General</a></li>
-                                        <li><a href="#">President of the General Assembly</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="menu-item-primary" href="internal.html"><i class="fas fa-shield-alt"></i>UN Staff Portal</a>
-                        </li>
-                        <li class="sep"></li>
+                    <div class="main-menu-item div-hov main-menu-item-first">
+                        <div class="main-menu-item-left">
+                            <a class="main-menu-item-primary-icon" href="schedule.html">
+                                <i class="fas fa-calendar"></i>
+                            </a>
+                        </div>
+                        <div class="main-menu-item-right-short">
+                            <a class="main-menu-item-primary-text main-menu-item-primary-text-short" href="schedule.html">Live Schedule</a>
+                        </div>
+                        <div class="main-menu-item-right">
+                            <a class="main-menu-item-primary-text" href="schedule.html"><span class="long-name">Live</span> Schedule</a>
+                        </div>              
+                    </div>
+                    <div class="main-menu-item div-hov">
+                        <div class="main-menu-item-left">
+                            <a class="main-menu-item-primary-icon" href="schedule.html">
+                                <i class="fas fa-shield-alt"></i>
+                            </a>
+                        </div>
+                        <div class="main-menu-item-right-short">
+                            <a class="main-menu-item-primary-text  main-menu-item-primary-text-short" href="">UN Staff Portal</a>
+                        </div>
+                        <div class="main-menu-item-right">
+                            <a class="main-menu-item-primary-text" href="">UN Staff Portal</a>
+                        </div>              
+                    </div>
+            
+                    <div class="main-menu-item">
+                        
+                        <div class="main-menu-item-right">
+                            <ul>
+                            <!--<li>
+                                <a class="menu-item-primary" href="schedule.html"><i class="fas fa-calendar"></i><span class="long-name">Live</span> Schedule</a>
+                            </li>
+                            
+                            <li>
+                                <a class="menu-item-primary" href="internal.html"><i class="fas fa-shield-alt"></i>UN Staff Portal</a>
+                            </li>-->
+                            <li class="sep"></li>
+                            <li>
+                                <a href="#sub-menu-123" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                <a class="menu-item-primary" href="categories.html"><i class="fas fa-th-list"></i>Categories</a>
+                                <ul id="sub-menu-123" class="collapse">
+                                    
+                                    <li>
+                                        <a href="#sub-menu-meetings" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                        <a href="#">Meetings &amp; Events</a>
+                                        <ul id="sub-menu-meetings" class="collapse">
+                                            <li><a href="#">General Assembly</a></li>
+                                            <li><a href="#">Security Council</a></li>
+                                            <li><a href="#">Economic and Social Council</a></li>
+                                            <li><a href="#">International Court of Justice</a></li>
+                                            <li><a href="#">Trusteeship Council</a></li>
+                                            <li><a href="#">Human Rights Council</a></li>
+                                            <li><a href="#">Human Rights Treaty Bodies</a></li>
+                                            <li><a href="#">High Level Events</a></li>
+                                            <li><a href="#">Side Events</a></li>
+                                            <li><a href="#">Conferences</a></li>
+                                            <li><a href="#">Concerts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#sub-menu-media" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                        <a href="#">Media</a>
+                                        <ul id="sub-menu-media" class="collapse">
+                                            <li><a href="#">Press Conferences</a></li>
+                                            <li><a href="#">Media Stakeouts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#sub-menu-news" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                        <a href="#">News &amp; Features</a>
+                                        <ul id="sub-menu-news" class="collapse">
+                                            <li><a href="#">News Stories</a></li>
+                                            <li><a href="#">Features</a></li>
+                                            <li><a href="#">Messages</a></li>
+                                            <li><a href="#">Interviews</a></li>
+                                            <li><a href="#">Dag Hammarskjöld Library</a></li>
+                                            <li><a href="#">B-Rolls &amp; Compilations</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#sub-menu-officials" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                        <a href="#">Officials</a>
+                                        <ul id="sub-menu-officials" class="collapse">
+                                            <li><a href="#">Secretary-General</a></li>
+                                            <li><a href="#">Deputy Secretary-General</a></li>
+                                            <li><a href="#">President of the General Assembly</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
                             <li><a class="menu-item-secondary" href="about.html">About Us</a></li>
                             <li><a class="menu-item-secondary" href="contact.html">Contact Us</a></li>
                             <li>
-                            <a href="#sub-menu-456" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Lorem</span></i></a>
-                            <a class="menu-item-secondary">Media Sites</a>
-                            <ul id="sub-menu-456" class="collapse">
-                                <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/avlibrary/">Audiovisual Library</a></li>
-                                <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/tv/unifeed/">Unifeed</a></li>
-                                <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/photo/">UN Photo</a></li>
-                                <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/avlibrary/">UN WebTV</a></li>
-                                
-                                
-                                        
-                            </ul>
-                        </li>
-                    </ul>
+                                <a href="#sub-menu-456" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Lorem</span></i></a>
+                                <a class="menu-item-secondary">Media Sites</a>
+                                <ul id="sub-menu-456" class="collapse">
+                                    <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/avlibrary/">Audiovisual Library</a></li>
+                                    <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/tv/unifeed/">Unifeed</a></li>
+                                    <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/photo/">UN Photo</a></li>
+                                    <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/avlibrary/">UN WebTV</a></li>
+                                    
+                                    
+                                            
+                                </ul>
+                            </li>
+                        </ul> 
+                        </div>
+                    </div>
                 </nav>
             </div>
             
             <div id="main-content" class="col">
 
-   <section class="date-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="data-wrapper" id="data-wrapper">
-                        <ul id="ul-for-date">
+               <section class="date-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="data-wrapper" id="data-wrapper">
+                                    <ul id="ul-for-date">
 
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="calender-filter-area">
-        <div class="container">
-            <div class="row align-center">
-                <div class="col-md-6 col-custom">
-                    <div class="calender">
-                        <a href="#">Subscribe</a>
-                        <img id="calendarImg" src="../assets/images/Calander_Date_Time_Schedule_Timeline-128.png"
-                            alt="">
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-custom">
-                    <div class="location">
-                        <p>location</p>
-                        <div class="select-wrapper">
-                            <select name="" class="form-control" id="country-list">
-                                <option value="all">All</option>
-                                <option value=".new-york">New York</option>
-                                <option value=".geneva">Geneva</option>
-                                <option value=".the-hague">The Hague</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="schedule-wrapper" id="schedule-list">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="main-1" class="schedule-item-wrapper"></div>
-                    <div id="main" class="schedule-item-wrapper">
-                        <div class="schedule-item mix date-item-0 date-item-1 date-item-2 date-item-3 date-item-4 date-item-5 date-item-6 date-item-7 date-item-14 date-item-13 today new-york"
-                            id="feb-sat-01">
-
-                            <div class="time">
-                                <h4>9:45pm - 11:30pm</h4>
-                                <a href="live-single-video.html" class="live-now">Live</a>
-                            </div>
-                            
-                            <div class="image">
-                                <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
-                            </div>
-
-                            <div class="content">
-                                <h4 style="color: #009edb; margin-bottom: 20px; ">António Guterres (UN
-                                    Secretary-General) on Climate Action Summit 2019</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-                            </div>
-                        </div>
-
-                        <div class="schedule-item mix date-item-7 date-item-14 date-item-13 date-item-1 date-item-12 date-item-0 date-item-6 date-item-5 date-item-4 date-item-3 date-item-2 date-item-1 today geneva"
-                            id="feb-wed-12">
-                            <div class="time">
-                                <h4>9:45pm - 11:30pm</h4>
-                            </div>
-
-                            <div class="image">
-                                <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
-                            </div>
-
-                            <div class="content">
-                                <h4 style="color: #009edb; margin-bottom: 20px; ">António Guterres (UN
-                                    Secretary-General) on Climate Action Summit 2019</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute </p>
-                            </div>
-                        </div>
-
-                        <div class="schedule-item date-item-7 date-item-14 date-item-6 date-item-5 date-item-4 date-item-3 date-item-2 date-item-1 date-item-3 today the-hague" id="feb-wed-12">
-
-                            <div class="time">
-                                <h4>9:45pm - 11:30pm</h4>
-                                <a href="live-single-video.html" class="live-now">Live</a>
-                            </div>
-
-                            <div class="image">
-                                <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                            </div>
-
-                            <div class="content">
-                                <h4 style="color: #009edb; margin-bottom: 20px; ">António Guterres (UN
-                                    Secretary-General) on Climate Action Summit 2019</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
-                            </div>
-                        </div>
-
-                        <div class="schedule-item mix date-item-4 date-item-12 date-item-14 date-item-13 date-item-11 date-item-10 date-item-9 date-item-8 date-item-1 date-item-7 today geneva" id="feb-fri-14">
-
-                            <div class="time">
-                                <h4>9:4dsfsdf5pm - 11:30pm</h4>
-                            </div>
-
-                            <div class="image">
-                                <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
-                            </div>
-
-                            <div class="content">
-                                <h4 style="color: #009edb; margin-bottom: 20px; ">António Guterres (UN
-                                    Secretary-General) on Climate Action Summit 2019</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                </section>
+
+                <section class="calender-filter-area">
+                    <div class="container">
+                        <div class="row align-center">
+                            <div class="col-md-6 col-custom">
+                                <div class="calender">
+                                    <a href="#">Subscribe</a>
+                                    <img id="calendarImg" src="../assets/images/Calander_Date_Time_Schedule_Timeline-128.png"
+                                        alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-custom">
+                                <div class="location">
+                                    <p>location</p>
+                                    <div class="select-wrapper">
+                                        <select name="" class="form-control" id="country-list">
+                                            <option value="all">All</option>
+                                            <option value=".new-york">New York</option>
+                                            <option value=".geneva">Geneva</option>
+                                            <option value=".the-hague">The Hague</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="schedule-wrapper" id="schedule-list">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="main-1" class="schedule-item-wrapper"></div>
+                                <div id="main" class="schedule-item-wrapper">
+                                    <div class="schedule-item mix date-item-0 date-item-1 date-item-2 date-item-3 date-item-4 date-item-5 date-item-6 date-item-7 date-item-14 date-item-13 today new-york"
+                                        id="feb-sat-01">
+
+                                        <div class="time">
+                                            <h4>9:45pm - 11:30pm</h4>
+                                            <a href="live-single-video.html" class="live-now">Live</a>
+                                        </div>
+                                        
+                                        <div class="image">
+                                            <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
+                                        </div>
+
+                                        <div class="content">
+                                            <h4 style="color: #009edb; margin-bottom: 20px; ">António Guterres (UN
+                                                Secretary-General) on Climate Action Summit 2019</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="schedule-item mix date-item-7 date-item-14 date-item-13 date-item-1 date-item-12 date-item-0 date-item-6 date-item-5 date-item-4 date-item-3 date-item-2 date-item-1 today geneva"
+                                        id="feb-wed-12">
+                                        <div class="time">
+                                            <h4>9:45pm - 11:30pm</h4>
+                                        </div>
+
+                                        <div class="image">
+                                            <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
+                                        </div>
+
+                                        <div class="content">
+                                            <h4 style="color: #009edb; margin-bottom: 20px; ">António Guterres (UN
+                                                Secretary-General) on Climate Action Summit 2019</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="schedule-item date-item-7 date-item-14 date-item-6 date-item-5 date-item-4 date-item-3 date-item-2 date-item-1 date-item-3 today the-hague" id="feb-wed-12">
+
+                                        <div class="time">
+                                            <h4>9:45pm - 11:30pm</h4>
+                                            <a href="live-single-video.html" class="live-now">Live</a>
+                                        </div>
+
+                                        <div class="image">
+                                            <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                        </div>
+
+                                        <div class="content">
+                                            <h4 style="color: #009edb; margin-bottom: 20px; ">António Guterres (UN
+                                                Secretary-General) on Climate Action Summit 2019</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="schedule-item mix date-item-4 date-item-12 date-item-14 date-item-13 date-item-11 date-item-10 date-item-9 date-item-8 date-item-1 date-item-7 today geneva" id="feb-fri-14">
+
+                                        <div class="time">
+                                            <h4>9:4dsfsdf5pm - 11:30pm</h4>
+                                        </div>
+
+                                        <div class="image">
+                                            <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
+                                        </div>
+
+                                        <div class="content">
+                                            <h4 style="color: #009edb; margin-bottom: 20px; ">António Guterres (UN
+                                                Secretary-General) on Climate Action Summit 2019</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
             </div>
     
@@ -542,7 +576,7 @@
             var first = curr.getDate() - curr.getDay();
             var firstday = (new Date(curr.setDate(first + 1))).toString();
             let k = 0;
-            for (var i = -3; i < 12; i++) {
+            for (var i = -7; i < 8; i++) {
                 li = document.createElement("li");
                 var next = new Date(curr.getTime());
                 next.setDate(first + i);

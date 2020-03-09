@@ -28,7 +28,7 @@
                 <div class="container brandbar-header topbar-max-width">
                     <div class="row">
                         <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="col-md-3 position-absolute">
+                        <div class="col-md-4 position-absolute">
                             <a class="navbar-brand" href="/en/" style="margin-left: 0;">Welcome to the United Nations</a>
                         </div><!-- /UN global brand bar -->
               
@@ -82,18 +82,19 @@
                         </button>
 
                         <div class="navbar-brand">
-                            <a href="index.html"><img src="../assets/images/logo.png" class="img-responsive" alt="Logo Image"></a>
+                            <a href="index.html" class="navbar-logo-left"><!--<img src="../assets/images/logo-en-reverse.svg" class="img-responsive" alt="Logo Image">--></a>
+                            <a href="index.html"  class="navbar-logo-right"><span class="navbar-logo-right-top">UN Web TV</span><span class="navbar-logo-right-bottom">Live & On-Demand</span></a>
                         </div><!-- / Logo  -->
 
                     </div>
 
                     <div class="search-container">
                         <form action="/search.html">
-                            <input type="search" placeholder="Search" name="search">
+                        <h2 class="element-invisible">Search the UN Media</h2>
+                            <input type="search" placeholder="Search" name="search" value="" size="10" maxlength="128">
                             <button type="submit"><i class="fas fa-search"></i></button>
                         </form>
-
-                        <a href="#">Advanced Search</a>
+                        <!--<a href="#">Advanced Search</a>-->
                     </div>
                 </div>
             </div>
@@ -104,421 +105,454 @@
         <div class="row">
             <div id="main-menu" class="col-sm-4 col-md-3 collapse width">
                 <nav>
-                    <ul>
-                        <li>
-                            <a class="menu-item-primary" href="schedule.html"><i class="fas fa-calendar"></i><span class="long-name">Live</span> Schedule</a>
-                        </li>
-                        <li>
-                            <a href="#sub-menu-123" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                            <a class="menu-item-primary" href="categories.html"><i class="fas fa-th-list"></i>Categories</a class="menu-item-primary">
-                            <ul id="sub-menu-123" class="collapse">
-                                
-                                <li>
-                                    <a href="#sub-menu-meetings" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                                    <a href="#">Meetings &amp; Events</a>
-                                    <ul id="sub-menu-meetings" class="collapse">
-                                        <li><a href="#">General Assembly</a></li>
-                                        <li><a href="#">Security Council</a></li>
-                                        <li><a href="#">Economic and Social Council</a></li>
-                                        <li><a href="#">International Court of Justice</a></li>
-                                        <li><a href="#">Trusteeship Council</a></li>
-                                        <li><a href="#">Human Rights Council</a></li>
-                                        <li><a href="#">Human Rights Treaty Bodies</a></li>
-                                        <li><a href="#">High Level Events</a></li>
-                                        <li><a href="#">Side Events</a></li>
-                                        <li><a href="#">Conferences</a></li>
-                                        <li><a href="#">Concerts</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#sub-menu-media" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                                    <a href="#">Media</a>
-                                    <ul id="sub-menu-media" class="collapse">
-                                        <li><a href="#">Press Conferences</a></li>
-                                        <li><a href="#">Media Stakeouts</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#sub-menu-news" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                                    <a href="#">News &amp; Features</a>
-                                    <ul id="sub-menu-news" class="collapse">
-                                        <li><a href="#">News Stories</a></li>
-                                        <li><a href="#">Features</a></li>
-                                        <li><a href="#">Messages</a></li>
-                                        <li><a href="#">Interviews</a></li>
-                                        <li><a href="#">Dag Hammarskjöld Library</a></li>
-                                        <li><a href="#">B-Rolls &amp; Compilations</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#sub-menu-officials" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                                    <a href="#">Officials</a>
-                                    <ul id="sub-menu-officials" class="collapse">
-                                        <li><a href="#">Secretary-General</a></li>
-                                        <li><a href="#">Deputy Secretary-General</a></li>
-                                        <li><a href="#">President of the General Assembly</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="menu-item-primary" href="internal.html"><i class="fas fa-shield-alt"></i>UN Staff Portal</a>
-                        </li>
-                        <li class="sep"></li>
+                    <div class="main-menu-item div-hov main-menu-item-first">
+                        <div class="main-menu-item-left">
+                            <a class="main-menu-item-primary-icon" href="schedule.html">
+                                <i class="fas fa-calendar"></i>
+                            </a>
+                        </div>
+                        <div class="main-menu-item-right-short">
+                            <a class="main-menu-item-primary-text main-menu-item-primary-text-short" href="schedule.html">Live Schedule</a>
+                        </div>
+                        <div class="main-menu-item-right">
+                            <a class="main-menu-item-primary-text" href="schedule.html"><span class="long-name">Live</span> Schedule</a>
+                        </div>              
+                    </div>
+                    <div class="main-menu-item div-hov">
+                        <div class="main-menu-item-left">
+                            <a class="main-menu-item-primary-icon" href="schedule.html">
+                                <i class="fas fa-shield-alt"></i>
+                            </a>
+                        </div>
+                        <div class="main-menu-item-right-short">
+                            <a class="main-menu-item-primary-text  main-menu-item-primary-text-short" href="">UN Staff Portal</a>
+                        </div>
+                        <div class="main-menu-item-right">
+                            <a class="main-menu-item-primary-text" href="">UN Staff Portal</a>
+                        </div>              
+                    </div>
+            
+                    <div class="main-menu-item">
+                        
+                        <div class="main-menu-item-right">
+                            <ul>
+                            <!--<li>
+                                <a class="menu-item-primary" href="schedule.html"><i class="fas fa-calendar"></i><span class="long-name">Live</span> Schedule</a>
+                            </li>
+                            
+                            <li>
+                                <a class="menu-item-primary" href="internal.html"><i class="fas fa-shield-alt"></i>UN Staff Portal</a>
+                            </li>-->
+                            <li class="sep"></li>
+                            <li>
+                                <a href="#sub-menu-123" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                <a class="menu-item-primary" href="categories.html"><i class="fas fa-th-list"></i>Categories</a>
+                                <ul id="sub-menu-123" class="collapse">
+                                    
+                                    <li>
+                                        <a href="#sub-menu-meetings" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                        <a href="#">Meetings &amp; Events</a>
+                                        <ul id="sub-menu-meetings" class="collapse">
+                                            <li><a href="#">General Assembly</a></li>
+                                            <li><a href="#">Security Council</a></li>
+                                            <li><a href="#">Economic and Social Council</a></li>
+                                            <li><a href="#">International Court of Justice</a></li>
+                                            <li><a href="#">Trusteeship Council</a></li>
+                                            <li><a href="#">Human Rights Council</a></li>
+                                            <li><a href="#">Human Rights Treaty Bodies</a></li>
+                                            <li><a href="#">High Level Events</a></li>
+                                            <li><a href="#">Side Events</a></li>
+                                            <li><a href="#">Conferences</a></li>
+                                            <li><a href="#">Concerts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#sub-menu-media" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                        <a href="#">Media</a>
+                                        <ul id="sub-menu-media" class="collapse">
+                                            <li><a href="#">Press Conferences</a></li>
+                                            <li><a href="#">Media Stakeouts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#sub-menu-news" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                        <a href="#">News &amp; Features</a>
+                                        <ul id="sub-menu-news" class="collapse">
+                                            <li><a href="#">News Stories</a></li>
+                                            <li><a href="#">Features</a></li>
+                                            <li><a href="#">Messages</a></li>
+                                            <li><a href="#">Interviews</a></li>
+                                            <li><a href="#">Dag Hammarskjöld Library</a></li>
+                                            <li><a href="#">B-Rolls &amp; Compilations</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#sub-menu-officials" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                        <a href="#">Officials</a>
+                                        <ul id="sub-menu-officials" class="collapse">
+                                            <li><a href="#">Secretary-General</a></li>
+                                            <li><a href="#">Deputy Secretary-General</a></li>
+                                            <li><a href="#">President of the General Assembly</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
                             <li><a class="menu-item-secondary" href="about.html">About Us</a></li>
                             <li><a class="menu-item-secondary" href="contact.html">Contact Us</a></li>
                             <li>
-                            <a href="#sub-menu-456" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Lorem</span></i></a>
-                            <a class="menu-item-secondary">Media Sites</a>
-                            <ul id="sub-menu-456" class="collapse">
-                                <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/avlibrary/">Audiovisual Library</a></li>
-                                <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/tv/unifeed/">Unifeed</a></li>
-                                <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/photo/">UN Photo</a></li>
-                                <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/avlibrary/">UN WebTV</a></li>
-                                
-                                
-                                        
-                            </ul>
-                        </li>
-                    </ul>
+                                <a href="#sub-menu-456" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Lorem</span></i></a>
+                                <a class="menu-item-secondary">Media Sites</a>
+                                <ul id="sub-menu-456" class="collapse">
+                                    <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/avlibrary/">Audiovisual Library</a></li>
+                                    <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/tv/unifeed/">Unifeed</a></li>
+                                    <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/photo/">UN Photo</a></li>
+                                    <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/avlibrary/">UN WebTV</a></li>
+                                    
+                                    
+                                            
+                                </ul>
+                            </li>
+                        </ul> 
+                        </div>
+                    </div>
                 </nav>
             </div>
             
             <div id="main-content" class="col">
 
-    <section class="banner single-video-banner">
-        <img src="../assets/images/banner.jpg" class="img-responsive" alt="">
-        <div class="banner-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>24 Hour Live and pre-recorded Programming</h4>
-                        <p>The UN Web TV Channel is available 24 hours a day with selected live programming of United Nations meetings and events as well as with pre-recorded video features and documentaries on various global issues.</p>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                        <a href="http://webtv.un.org/live-now/watch/24-hour-live-and-pre-recorded-programming/">http://webtv.un.org/live-now/watch/24-hour-live-and-pre-recorded-programming/</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="related-video live-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title">
-                <p>Related Videos<span class="border"></span></p>
-            </div>
-
-            <div class="slider-wrapper recently-added">
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
-                    <a href="#" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
-                    <a href="#" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                    <a href="#" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
-                    <a href="#" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
-                    <a href="#" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
-                    <a href="#" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
-                    <a href="#" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                    <a href="#" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
-                    <a href="#" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
-                    <a href="#" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
-                    <a href="#" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                    <a href="#" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
-                    <a href="#" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
-                    <a href="#" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
-                    <a href="#" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                    <a href="#" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                    <a href="#" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
-                    <a href="#" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
-                    <a href="#" class="hover-content">
-                        <img src="../assets/images/play.png" class="img-responsive" alt="">
-                        <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-                <div class="slick-slider">
-                    <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-
-                    <a href="#" class="hover-content">
-                        <p>View More
-                        <span class="border"></span>
-                        </p>
-                    </a>
-                </div><!-- / slider -->
-
-            </div> <!-- / slider wrapper -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="video-metadata">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="panel-group" id="accordion">
-                        <div class="panel panel-default">
-                            <div class="panel-heading" id="headingOne">
-                                <h4 class="panel-title">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                        More Metadata
-                                    </a>
-                                </h4>
+                <section class="banner single-video-banner">
+                    <img src="../assets/images/banner.jpg" class="img-responsive" alt="">
+                    <div class="banner-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4>24 Hour Live and pre-recorded Programming</h4>
+                                    <p>The UN Web TV Channel is available 24 hours a day with selected live programming of United Nations meetings and events as well as with pre-recorded video features and documentaries on various global issues.</p>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                    <a href="http://webtv.un.org/live-now/watch/24-hour-live-and-pre-recorded-programming/">http://webtv.un.org/live-now/watch/24-hour-live-and-pre-recorded-programming/</a>
+                                </div>
                             </div>
+                        </div>
+                    </div>
+                </section>
 
-                            <div id="collapseOne" class="panel-collapse collapse in">
-                                <div class="panel-body">
-                                    <div class="default-editor">
-                                        <h4 style="color: #009edb; ">Scrips and related documents</h4>
-                                        <div class="margin-20"></div>
-                                        <p>SERIES</p>
-                                        <p style="color: #009edb; ">Unifeed</p>
-                                        <div class="margin-20"></div>
-                                        <p>CATEGORY</p>
-                                        <p style="color: #009edb; ">News</p>
-                                        <div class="margin-20"></div>
-                                        <p>TOPICAL SUBJECTS</p>
-                                        <p style="color: #009edb; ">Conflict Stuation, Peace and Security</p> 
-                                        <div class="margin-20"></div>
-                                        <p>GEOGRAPHIC SUBJECTS</p>
-                                        <p style="color: #009edb; ">Iran, United States</p>
-                                        <div class="margin-20"></div>
-                                        <div class="margin-20"></div>
+                <section class="related-video live-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title">
+                            <p>Related Videos<span class="border"></span></p>
+                        </div>
 
-                                        <h4 style="color: #009edb;" >Summary/Shotlist</h4>
-                                        <div class="margin-20"></div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        <div class="margin-20"></div>
+                        <div class="slider-wrapper recently-added">
 
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
-                                        <div class="margin-20"></div>
+                            <div class="slick-slider">
+                                <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
+                                <a href="#" class="hover-content">
+                                    <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                    <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                    <span class="border"></span>
+                                    </p>
+                                </a>
+                            </div><!-- / slider -->
+
+                            <div class="slick-slider">
+                                <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
+                                <a href="#" class="hover-content">
+                                    <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                    <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                    <span class="border"></span>
+                                    </p>
+                                </a>
+                            </div><!-- / slider -->
+
+                            <div class="slick-slider">
+                                <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                <a href="#" class="hover-content">
+                                    <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                    <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                    <span class="border"></span>
+                                    </p>
+                                </a>
+                            </div><!-- / slider -->
+
+                            <div class="slick-slider">
+                                <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
+                                <a href="#" class="hover-content">
+                                    <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                    <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                    <span class="border"></span>
+                                    </p>
+                                </a>
+                            </div><!-- / slider -->
+
+                            <div class="slick-slider">
+                                <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
+                                <a href="#" class="hover-content">
+                                    <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                    <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                    <span class="border"></span>
+                                    </p>
+                                </a>
+                            </div><!-- / slider -->
+
+                            <div class="slick-slider">
+                                <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
+                                <a href="#" class="hover-content">
+                                    <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                    <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                    <span class="border"></span>
+                                    </p>
+                                </a>
+                            </div><!-- / slider -->
+
+                            <div class="slick-slider">
+                                <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
+                                <a href="#" class="hover-content">
+                                    <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                    <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                    <span class="border"></span>
+                                    </p>
+                                </a>
+                            </div><!-- / slider -->
+
+                            <div class="slick-slider">
+                                <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                <a href="#" class="hover-content">
+                                    <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                    <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                    <span class="border"></span>
+                                    </p>
+                                </a>
+                            </div><!-- / slider -->
+
+                            <div class="slick-slider">
+                                <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
+                                <a href="#" class="hover-content">
+                                    <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                    <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                    <span class="border"></span>
+                                    </p>
+                                </a>
+                            </div><!-- / slider -->
+
+                            <div class="slick-slider">
+                                <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
+                                <a href="#" class="hover-content">
+                                    <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                    <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                    <span class="border"></span>
+                                    </p>
+                                </a>
+                            </div><!-- / slider -->
+
+                            <div class="slick-slider">
+                                <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
+                                <a href="#" class="hover-content">
+                                    <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                    <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                    <span class="border"></span>
+                                    </p>
+                                </a>
+                            </div><!-- / slider -->
+
+                            <div class="slick-slider">
+                                <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                <a href="#" class="hover-content">
+                                    <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                    <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                    <span class="border"></span>
+                                    </p>
+                                </a>
+                            </div><!-- / slider -->
+
+                            <div class="slick-slider">
+                                <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
+                                <a href="#" class="hover-content">
+                                    <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                    <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                    <span class="border"></span>
+                                    </p>
+                                </a>
+                            </div><!-- / slider -->
+
+                            <div class="slick-slider">
+                                <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
+                                <a href="#" class="hover-content">
+                                    <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                    <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                    <span class="border"></span>
+                                    </p>
+                                </a>
+                            </div><!-- / slider -->
+
+                            <div class="slick-slider">
+                                <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
+                                <a href="#" class="hover-content">
+                                    <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                    <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                    <span class="border"></span>
+                                    </p>
+                                </a>
+                            </div><!-- / slider -->
+
+                            <div class="slick-slider">
+                                <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                <a href="#" class="hover-content">
+                                    <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                    <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                    <span class="border"></span>
+                                    </p>
+                                </a>
+                            </div><!-- / slider -->
+
+                            <div class="slick-slider">
+                                <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                <a href="#" class="hover-content">
+                                    <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                    <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                    <span class="border"></span>
+                                    </p>
+                                </a>
+                            </div><!-- / slider -->
+
+                            <div class="slick-slider">
+                                <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
+                                <a href="#" class="hover-content">
+                                    <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                    <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                    <span class="border"></span>
+                                    </p>
+                                </a>
+                            </div><!-- / slider -->
+
+                            <div class="slick-slider">
+                                <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
+                                <a href="#" class="hover-content">
+                                    <img src="../assets/images/play.png" class="img-responsive" alt="">
+                                    <p>António Guterres (UN Secretary-General) on Climate Action Summit 2019
+                                    <span class="border"></span>
+                                    </p>
+                                </a>
+                            </div><!-- / slider -->
+
+                            <div class="slick-slider">
+                                <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+
+                                <a href="#" class="hover-content">
+                                    <p>View More
+                                    <span class="border"></span>
+                                    </p>
+                                </a>
+                            </div><!-- / slider -->
+
+                        </div> <!-- / slider wrapper -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="video-metadata">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel-group" id="accordion">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                                    More Metadata
+                                                </a>
+                                            </h4>
+                                        </div>
+
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                                <div class="default-editor">
+                                                    <h4 style="color: #009edb; ">Scrips and related documents</h4>
+                                                    <div class="margin-20"></div>
+                                                    <p>SERIES</p>
+                                                    <p style="color: #009edb; ">Unifeed</p>
+                                                    <div class="margin-20"></div>
+                                                    <p>CATEGORY</p>
+                                                    <p style="color: #009edb; ">News</p>
+                                                    <div class="margin-20"></div>
+                                                    <p>TOPICAL SUBJECTS</p>
+                                                    <p style="color: #009edb; ">Conflict Stuation, Peace and Security</p> 
+                                                    <div class="margin-20"></div>
+                                                    <p>GEOGRAPHIC SUBJECTS</p>
+                                                    <p style="color: #009edb; ">Iran, United States</p>
+                                                    <div class="margin-20"></div>
+                                                    <div class="margin-20"></div>
+
+                                                    <h4 style="color: #009edb;" >Summary/Shotlist</h4>
+                                                    <div class="margin-20"></div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                    <div class="margin-20"></div>
+
+                                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+                                                    <div class="margin-20"></div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="headingTwo">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                                    Request Media asset
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <table class="table">
+                                                    <tr class="tr">
+                                                        <th>TYPE</th>
+                                                        <th>LANGUAGE</th>
+                                                        <th>FORMAT</th>
+                                                        <th>ACQUIRE</th>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><span class="fas fa-video"></span></td>
+                                                        <td>Original</td>
+                                                        <td>SD PAL</td>
+                                                        <td><a href="#" class="btn">login to download</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><span class="fas fa-video"></span></td>
+                                                        <td>Original</td>
+                                                        <td>HD NTSC</td>
+                                                        <td><a href="#" class="btn">login to download</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><span class="fas fa-video"></span></td>
+                                                        <td>Original</td>
+                                                        <td>HD PAL</td>
+                                                        <td><a href="#" class="btn">login to download</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><span class="fas fa-video"></span>
+                                                            <span class="fas fa-microphone-alt"></span></td>
+                                                        <td>English</td>
+                                                        <td>Other Formats</td>
+                                                        <td><a href="#" class="btn">login to download</a></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
-
-                        <div class="panel panel-default">
-                            <div class="panel-heading" id="headingTwo">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                        Request Media asset
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseTwo" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <table class="table">
-                                        <tr class="tr">
-                                            <th>TYPE</th>
-                                            <th>LANGUAGE</th>
-                                            <th>FORMAT</th>
-                                            <th>ACQUIRE</th>
-                                        </tr>
-
-                                        <tr>
-                                            <td><span class="fas fa-video"></span></td>
-                                            <td>Original</td>
-                                            <td>SD PAL</td>
-                                            <td><a href="#" class="btn">login to download</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><span class="fas fa-video"></span></td>
-                                            <td>Original</td>
-                                            <td>HD NTSC</td>
-                                            <td><a href="#" class="btn">login to download</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><span class="fas fa-video"></span></td>
-                                            <td>Original</td>
-                                            <td>HD PAL</td>
-                                            <td><a href="#" class="btn">login to download</a></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><span class="fas fa-video"></span>
-                                                <span class="fas fa-microphone-alt"></span></td>
-                                            <td>English</td>
-                                            <td>Other Formats</td>
-                                            <td><a href="#" class="btn">login to download</a></td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                </section>
 
             </div>
     

@@ -120,9 +120,9 @@
     });
 
     // on filter click
-    $('#schedule-list').mixItUp({
+    // $('#schedule-list').mixItUp({
       
-    });
+    // });
 
     // filter for mobile
     $('#country-list').on('change', function(){
@@ -138,7 +138,7 @@
     if(tab.length > 0){
         var tabLocationTop = tab.offset().top - $(window).scrollTop();
         console.log(tabLocationTop);
-        if(tabLocationTop <= 153 ){
+        if(tabLocationTop <= 140 ){
 
           tab.find('#data-wrapper').addClass('sticky');
         } else {
@@ -150,13 +150,13 @@
     $(window).scroll(function() {
 
         if ($(window).scrollTop() > 0) {
-          $(".header").addClass("sticky");
+          //$(".header").addClass("sticky");
         } 
         else {
-          $(".header").removeClass("sticky");
+          //$(".header").removeClass("sticky");
         }
 
-        if ($(window).scrollTop() > 153) {
+        if ($(window).scrollTop() > 140) {
           $('.date-area').addClass('sticky');
         } 
         else {
