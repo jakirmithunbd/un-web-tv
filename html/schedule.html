@@ -576,7 +576,7 @@
             var first = curr.getDate() - curr.getDay();
             var firstday = (new Date(curr.setDate(first + 1))).toString();
             let k = 0;
-            for (var i = -7; i < 8; i++) {
+            for (var i = -7; i < 12; i++) {
                 li = document.createElement("li");
                 var next = new Date(curr.getTime());
                 next.setDate(first + i);
