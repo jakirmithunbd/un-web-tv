@@ -1978,6 +1978,11 @@ button:hover {
 	padding-top: 0
 }
 
+.banner.single-video-banner {
+	position: inherit;
+	width: 100%;
+}
+
 #calendarImg {
     cursor: pointer
 }
