@@ -1748,11 +1748,12 @@ button:hover {
 
 .live-area .slider-wrapper#featured .slick-slider .popup-featured-img {
 	position: absolute;
-    top: -142px;
+    top: 0;
     width: 500px;
     visibility: hidden;
 	opacity: 0;
 	transition: all .3s ease;
+	z-index: 1024;
 }
 
 .slider-wrapper#featured .slick-slider .popup-featured-img .hover-content {
@@ -1769,7 +1770,7 @@ button:hover {
 .live-area .slider-wrapper .slick-slider:hover .popup-featured-img {
     opacity: 1 !important;
     visibility: visible !important;
-    top: -120px;
+    top: -30% !important;
 }
 
 .live-area .slider-wrapper#featured .slick-slider .popup-featured-img .hover-content p {
