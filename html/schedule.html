@@ -449,7 +449,7 @@
             }, function (mydate) {
 
                 for (let l = 0; l < 15; l++) {
-                    console.log(document.getElementById(l).value)
+                    // console.log(document.getElementById(l).value)
                     document.getElementById(l).onclick = () => {
                         let test = document.getElementsByClassName("mixitup-control-active");
                         test[0].setAttribute("class", " ");
@@ -576,17 +576,17 @@
             var first = curr.getDate() - curr.getDay();
             var firstday = (new Date(curr.setDate(first + 1))).toString();
             let k = 0;
-            for (var i = -7; i < 12; i++) {
+            for (var i = -8; i < 9; i++) {
                 li = document.createElement("li");
                 var next = new Date(curr.getTime());
                 next.setDate(first + i);
                 var data = next.toString().split(" ")
                 li.innerHTML = data[0] + `<b>${data[2] + " " + data[1]}</b>`
                 let currentDate = data[2].charAt(0) == 0 ? "0" + new Date().getDate() : new Date().getDate().toString()
-                if (data[2] == currentDate) {
-                    li.setAttribute("data-filter", `.today`)
-                    li.setAttribute("class", "mixitup-control-active")
-                }
+                // if (data[2] == currentDate) {
+                //     li.setAttribute("data-filter", `.today`)
+                //     li.setAttribute("class", "mixitup-control-active")
+                // }
                 // `${data[1].toLowerCase() + "-" + data[0].toLowerCase() + "-" + data[2].toLowerCase()}`
                 li.setAttribute("id", k)
                 li.setAttribute("data-filter", `date-item-${k}`);
@@ -651,6 +651,14 @@
                 document.getElementById('main').append(val);
             })
         }
+
+        // window.onload{
+        //     $('[data-filter="8"]').addClass('mixitup-control-active');
+        // });
+
+        $(window).on('load', function() {
+            $('[data-filter="date-item-8"]').addClass('mixitup-control-active');
+        })
 
     </script> 
 </body>
