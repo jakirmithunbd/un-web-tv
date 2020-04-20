@@ -3,622 +3,582 @@
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Schedule | UN WEB TV</title>
-    <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" media="all" />
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
-    <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" />
-      <link rel="stylesheet" href="../assets/css/animate.min.css"/>
-    <link rel="stylesheet" href="../assets/css/slick.min.css"/>
-    <link rel="stylesheet" type="text/css" href="../assets/css/main-style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Schedule | UN WEB TV</title>
+        <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" media="all" />
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
+        <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" />
+        <link rel="stylesheet" href="../assets/css/animate.min.css"/>
+        <link rel="stylesheet" href="../assets/css/slick.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../assets/css/main-style.css"/>
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/wow.min.js"></script>
+        <script src="../assets/js/sidr.min.js"></script>
+        <script src="../assets/js/mixitup.min.js"></script>
+        <script src="../assets/js/slick.min.js"></script>
+        <script src="../assets/js/scripts.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
-    
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
     </head>
     <body>
-    
-    <div class="topbar">
-        <div class="container position-relative topbar-max-width">
-            <div id="brand-bar" class="navbar navbar-default" role="navigation"><!-- UN global brand bar -->
-                <div class="container brandbar-header topbar-max-width">
-                    <div class="row">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="col-md-4 position-absolute">
-                            <a class="navbar-brand" href="/en/" style="margin-left: 0;">Welcome to the United Nations</a>
-                        </div><!-- /UN global brand bar -->
-              
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="col-md-8 language-switcher">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#language-switcher">
-                              <span class="sr-only">Toggle navigation</span>
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
+
+        <div class="topbar">
+            <div class="container position-relative topbar-max-width">
+                <div id="brand-bar" class="navbar navbar-default" role="navigation"><!-- UN global brand bar -->
+                    <div class="container brandbar-header topbar-max-width">
+                        <div class="row">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="col-md-4 position-absolute">
+                                <a class="navbar-brand" href="/en/" style="margin-left: 0;">Welcome to the United Nations</a>
+                            </div><!-- /UN global brand bar -->
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="col-md-8 language-switcher">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#language-switcher">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="language-title visible-xs-inline">
+                                    <a href="javascript:void(0)" data-toggle="collapse" data-target="#language-switcher">Language:</a>
+                                </div>
+
+                                <div class="navbar-collapse collapse position-language-switcher" id="language-switcher" style="height:auto">
+                                    <nav role="navigation">    
+                                        <ul class="menu nav">
+                                            <li class="ar leaf first"><a href="/ar/" class="language-link" xml:lang="ar">العربية</a></li>
+                                            <li class="zh-hans leaf"><a href="/zh/" class="language-link" xml:lang="zh-hans">中文</a></li>
+                                            <li class="en leaf"><a href="/en/" class="language-link active" xml:lang="en">English</a></li>
+                                            <li class="fr leaf"><a href="/fr/" class="language-link" xml:lang="fr">Français</a></li>
+                                            <li class="ru leaf"><a href="/ru/" class="language-link" xml:lang="ru">Русский</a></li>
+                                            <li class="es leaf"><a href="/es/" class="language-link" xml:lang="es">Español</a></li>
+                                            <!--    <li class="en leaf last">                           
+                                                    <a href="#" data-target="#" class="dropdown-toggle active" data-toggle="dropdown">Other</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="leaf"><a href="/pt/">Português</a></li>
+                                                            <li class="leaf"><a href="/sw/">Kiswahili</a></li>
+                                                            <li class="leaf "><a href="">Hindi हिंदी</a></li>                                       
+                                                        </ul>
+                                                </li>-->                        
+                                        </ul>                
+                                    </nav>
+                                </div>
+                            </div><!-- /.navbar-collapse -->
+
+                        </div> <!-- /.row -->
+                    </div><!-- /.container -->
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <nav class="navbar">
+                <div class="container topbar-max-width">
+                    <div class="navbar-wrapper">
+                        <div class="navbar-header">
+
+                            <button id="main-menu-toggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+                                <i class="fas"><span class="sr-only">Toggle main menu</span></i>
                             </button>
-                            <div class="language-title visible-xs-inline">
-                                <a href="javascript:void(0)" data-toggle="collapse" data-target="#language-switcher">Language:</a>
+
+                            <div class="navbar-brand">
+                                <a href="index.html" class="navbar-logo-left"><!--<img src="../assets/images/logo-en-reverse.svg" class="img-responsive" alt="Logo Image">--></a>
+                                <a href="index.html"  class="navbar-logo-right"><span class="navbar-logo-right-top">UN Web TV</span><span class="navbar-logo-right-bottom">Live & On-Demand</span></a>
+                            </div><!-- / Logo  -->
+
+                        </div>
+
+                        <div class="search-container">
+                            <form action="/search.html">
+                                <h2 class="element-invisible">Search the UN Media</h2>
+                                <input type="search" placeholder="Search" name="search" value="" size="10" maxlength="128">
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                            <!--<a href="#">Advanced Search</a>-->
+                        </div>
+                    </div>
+                </div>
+            </nav><!-- / navigation  -->
+        </header><!-- / Header Area  -->
+
+        <div class="container-fluid main-content-area">
+            <div class="row">
+                <div id="main-menu" class="col-sm-4 col-md-3 collapse width">
+                    <nav>
+                        <div class="main-menu-item div-hov main-menu-item-first">
+                            <div class="main-menu-item-left">
+                                <a class="main-menu-item-primary-icon" href="schedule.html">
+                                    <i class="fas fa-calendar"></i>
+                                </a>
                             </div>
-                    
-                            <div class="navbar-collapse collapse position-language-switcher" id="language-switcher" style="height:auto">
-                                <nav role="navigation">    
-                                    <ul class="menu nav">
-                                        <li class="ar leaf first"><a href="/ar/" class="language-link" xml:lang="ar">العربية</a></li>
-                                        <li class="zh-hans leaf"><a href="/zh/" class="language-link" xml:lang="zh-hans">中文</a></li>
-                                        <li class="en leaf"><a href="/en/" class="language-link active" xml:lang="en">English</a></li>
-                                        <li class="fr leaf"><a href="/fr/" class="language-link" xml:lang="fr">Français</a></li>
-                                        <li class="ru leaf"><a href="/ru/" class="language-link" xml:lang="ru">Русский</a></li>
-                                        <li class="es leaf"><a href="/es/" class="language-link" xml:lang="es">Español</a></li>
-                                    <!--    <li class="en leaf last">                           
-                                            <a href="#" data-target="#" class="dropdown-toggle active" data-toggle="dropdown">Other</a>
-                                                <ul class="dropdown-menu">
-                                                    <li class="leaf"><a href="/pt/">Português</a></li>
-                                                    <li class="leaf"><a href="/sw/">Kiswahili</a></li>
-                                                    <li class="leaf "><a href="">Hindi हिंदी</a></li>                                       
+                            <div class="main-menu-item-right-short">
+                                <a class="main-menu-item-primary-text main-menu-item-primary-text-short" href="schedule.html">Live Schedule</a>
+                            </div>
+                            <div class="main-menu-item-right">
+                                <a class="main-menu-item-primary-text" href="schedule.html"><span class="long-name">Live</span> Schedule</a>
+                            </div>              
+                        </div>
+                        <div class="main-menu-item div-hov">
+                            <div class="main-menu-item-left">
+                                <a class="main-menu-item-primary-icon" href="schedule.html">
+                                    <i class="fas fa-shield-alt"></i>
+                                </a>
+                            </div>
+                            <div class="main-menu-item-right-short">
+                                <a class="main-menu-item-primary-text  main-menu-item-primary-text-short" href="">UN Staff Portal</a>
+                            </div>
+                            <div class="main-menu-item-right">
+                                <a class="main-menu-item-primary-text" href="">UN Staff Portal</a>
+                            </div>              
+                        </div>
+
+                        <div class="main-menu-item">
+
+                            <div class="main-menu-item-right">
+                                <ul>
+                                    <!--<li>
+                                        <a class="menu-item-primary" href="schedule.html"><i class="fas fa-calendar"></i><span class="long-name">Live</span> Schedule</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a class="menu-item-primary" href="internal.html"><i class="fas fa-shield-alt"></i>UN Staff Portal</a>
+                                    </li>-->
+                                    <li class="sep"></li>
+                                    <li>
+                                        <a href="#sub-menu-123" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                        <a class="menu-item-primary" href="categories.html"><i class="fas fa-th-list"></i>Categories</a>
+                                        <ul id="sub-menu-123" class="collapse">
+
+                                            <li>
+                                                <a href="#sub-menu-meetings" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                                <a href="#">Meetings &amp; Events</a>
+                                                <ul id="sub-menu-meetings" class="collapse">
+                                                    <li><a href="#">General Assembly</a></li>
+                                                    <li><a href="#">Security Council</a></li>
+                                                    <li><a href="#">Economic and Social Council</a></li>
+                                                    <li><a href="#">International Court of Justice</a></li>
+                                                    <li><a href="#">Trusteeship Council</a></li>
+                                                    <li><a href="#">Human Rights Council</a></li>
+                                                    <li><a href="#">Human Rights Treaty Bodies</a></li>
+                                                    <li><a href="#">High Level Events</a></li>
+                                                    <li><a href="#">Side Events</a></li>
+                                                    <li><a href="#">Conferences</a></li>
+                                                    <li><a href="#">Concerts</a></li>
                                                 </ul>
-                                        </li>-->                        
-                                    </ul>                
-                                </nav>
+                                            </li>
+                                            <li>
+                                                <a href="#sub-menu-media" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                                <a href="#">Media</a>
+                                                <ul id="sub-menu-media" class="collapse">
+                                                    <li><a href="#">Press Conferences</a></li>
+                                                    <li><a href="#">Media Stakeouts</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#sub-menu-news" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                                <a href="#">News &amp; Features</a>
+                                                <ul id="sub-menu-news" class="collapse">
+                                                    <li><a href="#">News Stories</a></li>
+                                                    <li><a href="#">Features</a></li>
+                                                    <li><a href="#">Messages</a></li>
+                                                    <li><a href="#">Interviews</a></li>
+                                                    <li><a href="#">Dag Hammarskjöld Library</a></li>
+                                                    <li><a href="#">B-Rolls &amp; Compilations</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#sub-menu-officials" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
+                                                <a href="#">Officials</a>
+                                                <ul id="sub-menu-officials" class="collapse">
+                                                    <li><a href="#">Secretary-General</a></li>
+                                                    <li><a href="#">Deputy Secretary-General</a></li>
+                                                    <li><a href="#">President of the General Assembly</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="menu-item-secondary" href="about.html">About Us</a></li>
+                                    <li><a class="menu-item-secondary" href="contact.html">Contact Us</a></li>
+                                    <li>
+                                        <a href="#sub-menu-456" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Lorem</span></i></a>
+                                        <a class="menu-item-secondary">Media Sites</a>
+                                        <ul id="sub-menu-456" class="collapse">
+                                            <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/avlibrary/">Audiovisual Library</a></li>
+                                            <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/tv/unifeed/">Unifeed</a></li>
+                                            <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/photo/">UN Photo</a></li>
+                                            <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/avlibrary/">UN WebTV</a></li>
+
+
+
+                                        </ul>
+                                    </li>
+                                </ul> 
                             </div>
-                        </div><!-- /.navbar-collapse -->
-                  
-                    </div> <!-- /.row -->
-                </div><!-- /.container -->
+                        </div>
+                    </nav>
+                </div>
+
+                <div id="main-content" class="col">
+
+                    <section class="date-area">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="data-wrapper" id="data-wrapper">
+                                        <ul id="ul-for-date">
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="calender-filter-area">
+                        <div class="container">
+                            <div class="row align-center">
+                                <div class="col-md-6 col-custom">
+                                    <div class="calender">
+                                        <a href="#">Subscribe</a>
+                                        <img id="calendarImg" src="../assets/images/Calander_Date_Time_Schedule_Timeline-128.png"
+                                             alt="">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-custom">
+                                    <div class="location">
+                                        <p>location</p>
+                                        <div class="select-wrapper">
+                                            <select name="" class="form-control" id="country-list">
+                                                <option value="all">All</option>
+                                                <option value=".new-york">New York</option>
+                                                <option value=".geneva">Geneva</option>
+                                                <option value=".the-hague">The Hague</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="schedule-wrapper" id="schedule-list">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div id="main-1" class="schedule-item-wrapper"></div>
+                                    <div id="main" class="schedule-item-wrapper">
+                                        <div class="schedule-item mix date-item-0 date-item-1 date-item-2 date-item-3 date-item-4 date-item-5 date-item-6 date-item-7 date-item-14 date-item-13 date-item-15 today new-york"
+                                             id="feb-sat-01">
+
+                                            <div class="time">
+                                                <h4>9:45pm - 11:30pm</h4>
+                                                <a href="live-single-video.html" class="live-now">Live</a>
+                                            </div>
+
+                                            <div class="image">
+                                                <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
+                                            </div>
+
+                                            <div class="content">
+                                                <h4 style="color: #009edb; margin-bottom: 20px; ">António Guterres (UN
+                                                    Secretary-General) on Climate Action Summit 2019</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item mix date-item-7 date-item-14 date-item-13 date-item-1 date-item-12 date-item-0 date-item-6 date-item-5 date-item-4 date-item-3 date-item-2 date-item-1 today geneva"
+                                             id="feb-wed-12">
+                                            <div class="time">
+                                                <h4>9:45pm - 11:30pm</h4>
+                                            </div>
+
+                                            <div class="image">
+                                                <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
+                                            </div>
+
+                                            <div class="content">
+                                                <h4 style="color: #009edb; margin-bottom: 20px; ">António Guterres (UN
+                                                    Secretary-General) on Climate Action Summit 2019</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item date-item-7 date-item-14 date-item-6 date-item-11 date-item-5 date-item-4 date-item-3 date-item-2 date-item-1 date-item-3 date-item-16 today the-hague" id="feb-wed-12">
+
+                                            <div class="time">
+                                                <h4>9:45pm - 11:30pm</h4>
+                                                <a href="live-single-video.html" class="live-now">Live</a>
+                                            </div>
+
+                                            <div class="image">
+                                                <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
+                                            </div>
+
+                                            <div class="content">
+                                                <h4 style="color: #009edb; margin-bottom: 20px; ">António Guterres (UN
+                                                    Secretary-General) on Climate Action Summit 2019</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule-item mix date-item-4 date-item-12 date-item-14 date-item-13 date-item-11 date-item-10 date-item-9 date-item-8 date-item-1 date-item-7 date-item-16 today geneva" id="feb-fri-14">
+
+                                            <div class="time">
+                                                <h4>9:4dsfsdf5pm - 11:30pm</h4>
+                                            </div>
+
+                                            <div class="image">
+                                                <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
+                                            </div>
+
+                                            <div class="content">
+                                                <h4 style="color: #009edb; margin-bottom: 20px; ">António Guterres (UN
+                                                    Secretary-General) on Climate Action Summit 2019</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
             </div>
+
         </div>
-    </div>
-    <header class="header">
-        <nav class="navbar">
-            <div class="container topbar-max-width">
-                <div class="navbar-wrapper">
-                    <div class="navbar-header">
-                        
-                        <button id="main-menu-toggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
-                            <i class="fas"><span class="sr-only">Toggle main menu</span></i>
-                        </button>
-
-                        <div class="navbar-brand">
-                            <a href="index.html" class="navbar-logo-left"><!--<img src="../assets/images/logo-en-reverse.svg" class="img-responsive" alt="Logo Image">--></a>
-                            <a href="index.html"  class="navbar-logo-right"><span class="navbar-logo-right-top">UN Web TV</span><span class="navbar-logo-right-bottom">Live & On-Demand</span></a>
-                        </div><!-- / Logo  -->
-
+        <div class="section-fluid footer-fluid">
+            <footer class="footer-un2">
+                <div class="container topbar-max-width">
+                    <div class="row align-center">
+                        <div class="col-md-12">
+                            <div class="pull-left flip footer-brand">
+                                <a href="https://www.un.org/en/" title="Home">
+                                    <span class="site-name">United Nations</span>
+                                </a>                        
+                            </div>
+                            <div class="pull-right flip social-media" role="navigation"><!-- social media links -->
+                                <h5 class="social-media-heading"><a href="/en/sections/about-website/un-social-media/">Join the conversation:</a></h5>
+                                <ul class="nav list-inline">
+                                    <li class="list-inline-item facebook">
+                                        <a href="http://www.facebook.com/unwebtv">
+                                            <span class="icon-text">facebook</span>
+                                            <span class="social-media-text">unwebtv</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item twitter">
+                                        <a href="http://twitter.com/unwebtv">
+                                            <span class="icon-text">twitter</span>
+                                            <span class="social-media-text">unwebtv</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item youtube">
+                                        <a href="http://www.youtube.com/unitednations">
+                                            <span class="icon-text">youtube</span>
+                                            <span class="social-media-text">United Nations</span>
+                                        </a>
+                                    </li>
+                                    <!--<li class="list-inline-item flickr"><a href="http://www.flickr.com/photos/un_photo/"><span class="icon-text">flickr</span></a></li>
+                                    <li class="list-inline-item instagram"><a href="http://instagram.com/unitednations"><span class="icon-text">instagram</span></a></li>-->
+                                </ul> 
+                            </div>                  
+                        </div>
                     </div>
+                    <div class="row footer-links"><!-- row -->
+                        <div class="divider">
+                        </div><!-- top border -->
+                        <div class="col-md-12">
+                            <div class="pull-right flip"> 
+                                <div id="block-menu-menu-footer-links" class="block block-menu" role="navigation">
+                                    <ul class="nav list-inline">
+                                        <li class="list-inline-item ">
+                                            <a href="site-index.html">A-Z Site Index</a>
+                                        </li>
+                                        <li class="list-inline-item ">
+                                            <a href="disclaimer.html">Interpretation Disclaimer</a>
+                                        </li>
+                                        <li class="list-inline-item ">
+                                            <a href="copy-right.html">Copyright & Use</a>
+                                        </li>
 
-                    <div class="search-container">
-                        <form action="/search.html">
-                        <h2 class="element-invisible">Search the UN Media</h2>
-                            <input type="search" placeholder="Search" name="search" value="" size="10" maxlength="128">
-                            <button type="submit"><i class="fas fa-search"></i></button>
-                        </form>
-                        <!--<a href="#">Advanced Search</a>-->
+                                        <li class="list-inline-item ">
+                                            <a href="privacy-notice.html">Privacy Notice</a>
+                                        </li>
+                                        <li class="list-inline-item ">
+                                            <a href="fraud-alert.html">Fraud Alert</a>
+                                        </li>                       
+                                    </ul> 
+                                </div> 
+                            </div>              
+                        </div>            
                     </div>
                 </div>
-            </div>
-        </nav><!-- / navigation  -->
-    </header><!-- / Header Area  -->
-
-    <div class="container-fluid main-content-area">
-        <div class="row">
-            <div id="main-menu" class="col-sm-4 col-md-3 collapse width">
-                <nav>
-                    <div class="main-menu-item div-hov main-menu-item-first">
-                        <div class="main-menu-item-left">
-                            <a class="main-menu-item-primary-icon" href="schedule.html">
-                                <i class="fas fa-calendar"></i>
-                            </a>
-                        </div>
-                        <div class="main-menu-item-right-short">
-                            <a class="main-menu-item-primary-text main-menu-item-primary-text-short" href="schedule.html">Live Schedule</a>
-                        </div>
-                        <div class="main-menu-item-right">
-                            <a class="main-menu-item-primary-text" href="schedule.html"><span class="long-name">Live</span> Schedule</a>
-                        </div>              
-                    </div>
-                    <div class="main-menu-item div-hov">
-                        <div class="main-menu-item-left">
-                            <a class="main-menu-item-primary-icon" href="schedule.html">
-                                <i class="fas fa-shield-alt"></i>
-                            </a>
-                        </div>
-                        <div class="main-menu-item-right-short">
-                            <a class="main-menu-item-primary-text  main-menu-item-primary-text-short" href="">UN Staff Portal</a>
-                        </div>
-                        <div class="main-menu-item-right">
-                            <a class="main-menu-item-primary-text" href="">UN Staff Portal</a>
-                        </div>              
-                    </div>
-            
-                    <div class="main-menu-item">
-                        
-                        <div class="main-menu-item-right">
-                            <ul>
-                            <!--<li>
-                                <a class="menu-item-primary" href="schedule.html"><i class="fas fa-calendar"></i><span class="long-name">Live</span> Schedule</a>
-                            </li>
-                            
-                            <li>
-                                <a class="menu-item-primary" href="internal.html"><i class="fas fa-shield-alt"></i>UN Staff Portal</a>
-                            </li>-->
-                            <li class="sep"></li>
-                            <li>
-                                <a href="#sub-menu-123" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                                <a class="menu-item-primary" href="categories.html"><i class="fas fa-th-list"></i>Categories</a>
-                                <ul id="sub-menu-123" class="collapse">
-                                    
-                                    <li>
-                                        <a href="#sub-menu-meetings" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                                        <a href="#">Meetings &amp; Events</a>
-                                        <ul id="sub-menu-meetings" class="collapse">
-                                            <li><a href="#">General Assembly</a></li>
-                                            <li><a href="#">Security Council</a></li>
-                                            <li><a href="#">Economic and Social Council</a></li>
-                                            <li><a href="#">International Court of Justice</a></li>
-                                            <li><a href="#">Trusteeship Council</a></li>
-                                            <li><a href="#">Human Rights Council</a></li>
-                                            <li><a href="#">Human Rights Treaty Bodies</a></li>
-                                            <li><a href="#">High Level Events</a></li>
-                                            <li><a href="#">Side Events</a></li>
-                                            <li><a href="#">Conferences</a></li>
-                                            <li><a href="#">Concerts</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#sub-menu-media" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                                        <a href="#">Media</a>
-                                        <ul id="sub-menu-media" class="collapse">
-                                            <li><a href="#">Press Conferences</a></li>
-                                            <li><a href="#">Media Stakeouts</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#sub-menu-news" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                                        <a href="#">News &amp; Features</a>
-                                        <ul id="sub-menu-news" class="collapse">
-                                            <li><a href="#">News Stories</a></li>
-                                            <li><a href="#">Features</a></li>
-                                            <li><a href="#">Messages</a></li>
-                                            <li><a href="#">Interviews</a></li>
-                                            <li><a href="#">Dag Hammarskjöld Library</a></li>
-                                            <li><a href="#">B-Rolls &amp; Compilations</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#sub-menu-officials" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Categories</span></i></a>
-                                        <a href="#">Officials</a>
-                                        <ul id="sub-menu-officials" class="collapse">
-                                            <li><a href="#">Secretary-General</a></li>
-                                            <li><a href="#">Deputy Secretary-General</a></li>
-                                            <li><a href="#">President of the General Assembly</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a class="menu-item-secondary" href="about.html">About Us</a></li>
-                            <li><a class="menu-item-secondary" href="contact.html">Contact Us</a></li>
-                            <li>
-                                <a href="#sub-menu-456" role="button" data-toggle="collapse"><i class="fas fa-angle-down"><span class="sr-only">Toggle more Lorem</span></i></a>
-                                <a class="menu-item-secondary">Media Sites</a>
-                                <ul id="sub-menu-456" class="collapse">
-                                    <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/avlibrary/">Audiovisual Library</a></li>
-                                    <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/tv/unifeed/">Unifeed</a></li>
-                                    <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/photo/">UN Photo</a></li>
-                                    <li><a class="menu-item-secondary" href="https://www.unmultimedia.org/avlibrary/">UN WebTV</a></li>
-                                    
-                                    
-                                            
-                                </ul>
-                            </li>
-                        </ul> 
-                        </div>
-                    </div>
-                </nav>
-            </div>
-            
-            <div id="main-content" class="col">
-
-               <section class="date-area">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="data-wrapper" id="data-wrapper">
-                                    <ul id="ul-for-date">
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="calender-filter-area">
-                    <div class="container">
-                        <div class="row align-center">
-                            <div class="col-md-6 col-custom">
-                                <div class="calender">
-                                    <a href="#">Subscribe</a>
-                                    <img id="calendarImg" src="../assets/images/Calander_Date_Time_Schedule_Timeline-128.png"
-                                        alt="">
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-custom">
-                                <div class="location">
-                                    <p>location</p>
-                                    <div class="select-wrapper">
-                                        <select name="" class="form-control" id="country-list">
-                                            <option value="all">All</option>
-                                            <option value=".new-york">New York</option>
-                                            <option value=".geneva">Geneva</option>
-                                            <option value=".the-hague">The Hague</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="schedule-wrapper" id="schedule-list">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div id="main-1" class="schedule-item-wrapper"></div>
-                                <div id="main" class="schedule-item-wrapper">
-                                    <div class="schedule-item mix date-item-0 date-item-1 date-item-2 date-item-3 date-item-4 date-item-5 date-item-6 date-item-7 date-item-14 date-item-13 today new-york"
-                                        id="feb-sat-01">
-
-                                        <div class="time">
-                                            <h4>9:45pm - 11:30pm</h4>
-                                            <a href="live-single-video.html" class="live-now">Live</a>
-                                        </div>
-                                        
-                                        <div class="image">
-                                            <img src="../assets/images/slide-1.jpg" class="img-responsive" alt="">
-                                        </div>
-
-                                        <div class="content">
-                                            <h4 style="color: #009edb; margin-bottom: 20px; ">António Guterres (UN
-                                                Secretary-General) on Climate Action Summit 2019</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="schedule-item mix date-item-7 date-item-14 date-item-13 date-item-1 date-item-12 date-item-0 date-item-6 date-item-5 date-item-4 date-item-3 date-item-2 date-item-1 today geneva"
-                                        id="feb-wed-12">
-                                        <div class="time">
-                                            <h4>9:45pm - 11:30pm</h4>
-                                        </div>
-
-                                        <div class="image">
-                                            <img src="../assets/images/slide-2.jpg" class="img-responsive" alt="">
-                                        </div>
-
-                                        <div class="content">
-                                            <h4 style="color: #009edb; margin-bottom: 20px; ">António Guterres (UN
-                                                Secretary-General) on Climate Action Summit 2019</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="schedule-item date-item-7 date-item-14 date-item-6 date-item-5 date-item-4 date-item-3 date-item-2 date-item-1 date-item-3 today the-hague" id="feb-wed-12">
-
-                                        <div class="time">
-                                            <h4>9:45pm - 11:30pm</h4>
-                                            <a href="live-single-video.html" class="live-now">Live</a>
-                                        </div>
-
-                                        <div class="image">
-                                            <img src="../assets/images/slide-3.jpg" class="img-responsive" alt="">
-                                        </div>
-
-                                        <div class="content">
-                                            <h4 style="color: #009edb; margin-bottom: 20px; ">António Guterres (UN
-                                                Secretary-General) on Climate Action Summit 2019</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="schedule-item mix date-item-4 date-item-12 date-item-14 date-item-13 date-item-11 date-item-10 date-item-9 date-item-8 date-item-1 date-item-7 today geneva" id="feb-fri-14">
-
-                                        <div class="time">
-                                            <h4>9:4dsfsdf5pm - 11:30pm</h4>
-                                        </div>
-
-                                        <div class="image">
-                                            <img src="../assets/images/slide-4.jpg" class="img-responsive" alt="">
-                                        </div>
-
-                                        <div class="content">
-                                            <h4 style="color: #009edb; margin-bottom: 20px; ">António Guterres (UN
-                                                Secretary-General) on Climate Action Summit 2019</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-            </div>
-    
+            </footer>
         </div>
 
-    </div>
-    <div class="section-fluid footer-fluid">
-        <footer class="footer-un2">
-            <div class="container topbar-max-width">
-                <div class="row align-center">
-                    <div class="col-md-12">
-                        <div class="pull-left flip footer-brand">
-                            <a href="https://www.un.org/en/" title="Home">
-                                <span class="site-name">United Nations</span>
-                            </a>                        
-                        </div>
-                        <div class="pull-right flip social-media" role="navigation"><!-- social media links -->
-                            <h5 class="social-media-heading"><a href="/en/sections/about-website/un-social-media/">Join the conversation:</a></h5>
-                            <ul class="nav list-inline">
-                                <li class="list-inline-item facebook">
-                                    <a href="http://www.facebook.com/unwebtv">
-                                        <span class="icon-text">facebook</span>
-                                        <span class="social-media-text">unwebtv</span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item twitter">
-                                    <a href="http://twitter.com/unwebtv">
-                                        <span class="icon-text">twitter</span>
-                                        <span class="social-media-text">unwebtv</span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item youtube">
-                                    <a href="http://www.youtube.com/unitednations">
-                                        <span class="icon-text">youtube</span>
-                                        <span class="social-media-text">United Nations</span>
-                                    </a>
-                                    </li>
-                              <!--<li class="list-inline-item flickr"><a href="http://www.flickr.com/photos/un_photo/"><span class="icon-text">flickr</span></a></li>
-                              <li class="list-inline-item instagram"><a href="http://instagram.com/unitednations"><span class="icon-text">instagram</span></a></li>-->
-                            </ul> 
-                        </div>                  
-                    </div>
-                </div>
-                <div class="row footer-links"><!-- row -->
-                    <div class="divider">
-                    </div><!-- top border -->
-                    <div class="col-md-12">
-                        <div class="pull-right flip"> 
-                           <div id="block-menu-menu-footer-links" class="block block-menu" role="navigation">
-                            <ul class="nav list-inline">
-                                <li class="list-inline-item ">
-                                    <a href="site-index.html">A-Z Site Index</a>
-                                </li>
-                                <li class="list-inline-item ">
-                                    <a href="disclaimer.html">Interpretation Disclaimer</a>
-                                </li>
-                                <li class="list-inline-item ">
-                                    <a href="copy-right.html">Copyright & Use</a>
-                                </li>
-                                
-                                <li class="list-inline-item ">
-                                    <a href="privacy-notice.html">Privacy Notice</a>
-                                </li>
-                                <li class="list-inline-item ">
-                                    <a href="fraud-alert.html">Fraud Alert</a>
-                                </li>                       
-                            </ul> 
-                          </div> 
-                        </div>              
-                    </div>            
-                </div>
-            </div>
-        </footer>
-    </div>
+        
+        <script>
+            $(function () {
 
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/wow.min.js"></script>
-    <script src="../assets/js/sidr.min.js"></script>
-    <script src="../assets/js/mixitup.min.js"></script>
-    <script src="../assets/js/slick.min.js"></script>
-    <script src="../assets/js/scripts.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-
-    <script>
-        $(function () {
-
-            $('#calendarImg').daterangepicker({
-                singleDatePicker: true,
-                showDropdowns: false,
-                minYear: 1901,
-                maxYear: parseInt(moment().format('YYYY'), 10)
-            }, function (mydate) {
-
-                for (let l = 0; l < 15; l++) {
-                    // console.log(document.getElementById(l).value)
-                    document.getElementById(l).onclick = () => {
-                        let test = document.getElementsByClassName("mixitup-control-active");
-                        test[0].setAttribute("class", " ");
-                        document.getElementById(l).setAttribute("class", "mixitup-control-active");
-
+                $('#calendarImg').daterangepicker({
+                    singleDatePicker: true,
+                    showDropdowns: false,
+                    minYear: 1901,
+                    maxYear: parseInt(moment().format('YYYY'), 10),
+                    autoApply:true
+                }, function (mydate) {
+                    for (let l = 0; l < 17; l++) {
+                        var mydata = mydate.toString().split(" ");
+                        var reCreateData = mydate.toString();                   
                         let df = document.getElementById(l).innerHTML.toString().split("<b>")
                         let bf = df.toString().split("</b>")
                         let mf = bf.toString().split(",")
                         let gg = mf[1].split(" ")
-                        let scheduleItemContainer = gg[1].toLowerCase() + "-" + mf[0].toLowerCase() + "-" + gg[0].toLowerCase()
-                        document.getElementById(l).setAttribute("data-filter", `.date-item-${l}`);
-                        // console.log(scheduleItemContainer);
-                        document.getElementById('main').innerHTML = document.getElementById('main-1').innerHTML
-                        const listItems = document.getElementById('main').children;
-                        const listArray = Array.from(listItems);
-                        document.getElementById('main').innerHTML = " ";
-                        listArray.filter((item) => {
-                            let match ;
-                        let datafilter = document.getElementById(l).getAttribute('data-filter')
-                        let clas = item.getAttribute('class')
-
-                     match = clas.split(" ").filter((key) => {
-                            if (key == datafilter) {
-                              return    key
-                            }
-                        })
-
-                    return match == datafilter
-                        }).forEach(val => {
-                            document.getElementById('main').append(val);
-                        })
+                         if (mydata[1].toLowerCase() + "-" + mydata[0].toLowerCase() + "-" + mydata[2].toLowerCase() == gg[1].toLowerCase() + "-" + mf[0].toLowerCase() + "-" + gg[0].toLowerCase()) 
+                         {
+                            myFunction(l,reCreateData,1);
+                             break;
+                         }
                     }
-
-
-
-
-
-
-
-                    var mydata = mydate.toString().split(" ");
-                    // var dateUl = document.getElementById("ul-for-date");
-                    // var li
-                    // dateUl.innerHTML = " ";
-                    var curr = new Date; // get current date
-                    var first = curr.getDate() - curr.getDay();
+                })
+            });
+            function myFunction(a,b,optional=0) {
+                
+                    $('#ul-for-date').empty()
+                    var date1;
+                    if(optional==1)
+                    {
+                        date1 = b;
+                    }
+                    else
+                    {
+                        date1=b.replace(/,/g, ' ')
+                    } 
+                    var f = new Date(date1);
+                    var newdate = new Date(date1);
+                    document.getElementById("main-1").style.display = "none";
+                    var dateUl = document.getElementById("ul-for-date");
+                    var li;
+                    dateUl.innerHTML = " ";
+                    var curr = f; // get current date
+                    var first = curr.getDate() ;
                     var firstday = (new Date(curr.setDate(first + 1))).toString();
-                    // let k = 0;
-                    // for (var i = -1; i < 13; i++) {
-                    //     li = document.createElement("li");;
-                    //     var next = new Date(curr.getTime());
-                    //     next.setDate(first + i);
-                    //     var data = next.toString().split(" ");
-                    //     // alert(data);
-                    //     li.innerHTML = data[0] + `<b>${data[2] + " " + data[1]}</b>`
-                    //     let currentDate = data[2].charAt(0) == 0 ? "0" + new Date().getDate() : new Date().getDate().toString()
-                    //     if (mydata[2] == data[2] && mydata[1] == data[1]) {
-                    //         li.setAttribute("data-filter", `.${data[1].toLowerCase() + "-" + data[0].toLowerCase() + "-" + data[2].toLowerCase()}`)
-                    //         li.setAttribute("class", "mixitup-control-active")
-                    //     }
-                    //     li.setAttribute("id", k)
-                    //     dateUl.appendChild(li);
-                    //     k++
-                    // }
+                    let k = 0;
+                    for (var i = -8; i < 9; i++) {
+                        li = document.createElement("li");
+                        var next = new Date(curr.getTime());
+                        next.setDate(first + i);
+                        var data = next.toString().split(" ");
+                        li.innerHTML = data[0] + `<b>${data[2] + " " + data[1]}</b>`;
+                        li.setAttribute("id", k);
+                        li.setAttribute("onclick", "myFunction("+(k)+",'"+data+"')");
+                        li.setAttribute("data-filter", `date-item-${k}`);
+                        dateUl.appendChild(li);
+                        k++; 
+                        setTimeout(200);
+                    }
+                setTimeout(500);
+                $('[data-filter="date-item-8"]').addClass('mixitup-control-active');
+                if(optional==0)
+                {
+                    $('#calendarImg').data('daterangepicker').setStartDate(newdate);
+                    $('#calendarImg').data('daterangepicker').setEndDate("");
+                }
+                setTimeout(200);
+                filterDate(a);
+            }
+        </script>
+        <script>
+            window.onload = () => {
+                document.getElementById("main-1").style.display = "none"
+                document.getElementById("main-1").innerHTML = document.getElementById("main").innerHTML;
+                var dateUl = document.getElementById("ul-for-date");
+                var li
+                dateUl.innerHTML = " ";
+                var curr = new Date; // get current date
+                var first = curr.getDate();
+                var firstday = (new Date(curr.setDate(first + 1))).toString();
+                let k = 0;
+                for (var i = -8; i < 9; i++) {
+                    li = document.createElement("li");
+                    var next = new Date(curr.getTime());
+                    next.setDate(first + i);
+                    var data = next.toString().split(" ");
+                    li.innerHTML = data[0] + `<b>${data[2] + " " + data[1]}</b>`
+                    li.setAttribute("id", k);
+                    li.setAttribute("onclick", "myFunction("+(k)+",'"+data+"')");
+                    li.setAttribute("data-filter", `date-item-${k}`);
+                    dateUl.appendChild(li);
+                    k++;
+                }
+            };
 
-                    let df = document.getElementById(l).innerHTML.toString().split("<b>")
-                    let bf = df.toString().split("</b>")
-                    let mf = bf.toString().split(",")
-                    let gg = mf[1].split(" ")
 
+            document.getElementById("country-list").onchange = () => {
+            
+                document.getElementById('main').innerHTML = document.getElementById('main-1').innerHTML;
+                const listItems = document.getElementById('main').children;
+                const listArray = Array.from(listItems);
+                document.getElementById('main').innerHTML = " ";
+                listArray.filter((item) => {
+                    let match = item.getAttribute('class');
+                    let country = match.split(" ");
+                    if (document.getElementById("country-list").value === "all") {
+                        return item;
+                    }
+                    return document.getElementById("country-list").value === "." + country[country.length - 1];
+                }).forEach(val => {
+                    document.getElementById('main').append(val);
+                    setTimeout(200);
+                });
+            };
 
+            $(window).on('load', function () {
+                $('[data-filter="date-item-8"]').addClass('mixitup-control-active');
+            });
 
-                    if (mydata[1].toLowerCase() + "-" + mydata[0].toLowerCase() + "-" + mydata[2].toLowerCase() == gg[1].toLowerCase() + "-" + mf[0].toLowerCase() + "-" + gg[0].toLowerCase()) {
-
-                        let test = document.getElementsByClassName("mixitup-control-active");
-                        test[0].setAttribute("class", " ");
-                        document.getElementById(l).setAttribute("class", "mixitup-control-active");
-
-                        let scheduleItemContainer = `${mydata[1].toLowerCase() + "-" + mydata[0].toLowerCase() + "-" + mydata[2].toLowerCase()}`;
-                        document.getElementById(l).setAttribute("data-filter", `date-item-${l}`);
-
+            function filterDate(id)
+            {
+            
+             let df = document.getElementById(id).innerHTML.toString().split("<b>")
+                       let bf = df.toString().split("</b>")                        
+                       let mf = bf.toString().split(",")
+                        let gg = mf[1].split(" ")
+                        let scheduleItemContainer = gg[1].toLowerCase() + "-" + mf[0].toLowerCase() + "-" + gg[0].toLowerCase()
                         document.getElementById('main').innerHTML = document.getElementById('main-1').innerHTML
-
                         const listItems = document.getElementById('main').children;
+                        setTimeout(200);
                         const listArray = Array.from(listItems);
                         document.getElementById('main').innerHTML = " ";
                         listArray.filter((item) => {
-                            let match ;
-                        let datafilter = document.getElementById(l).getAttribute('data-filter')
-                        let clas = item.getAttribute('class')
-
-                     match = clas.split(" ").filter((key) => {
-                            if (key == datafilter) {
-                              return    key
-                            }
-                        })
-
-                    return match == datafilter
-                        }).forEach(val => {
-                            document.getElementById('main').append(val);
-                        })
-                        break;
-                    }
-                }
-
-            })
-
-
-        });
-    </script>
-
-
-
-
-
-
-    <script>
-        window.onload = () => {
-            document.getElementById("main-1").style.display = "none"
-            document.getElementById("main-1").innerHTML = document.getElementById("main").innerHTML;
-            var dateUl = document.getElementById("ul-for-date");
-            var li
-            dateUl.innerHTML = " ";
-            var curr = new Date; // get current date
-            var first = curr.getDate() - curr.getDay();
-            var firstday = (new Date(curr.setDate(first + 1))).toString();
-            let k = 0;
-            for (var i = -8; i < 9; i++) {
-                li = document.createElement("li");
-                var next = new Date(curr.getTime());
-                next.setDate(first + i);
-                var data = next.toString().split(" ")
-                li.innerHTML = data[0] + `<b>${data[2] + " " + data[1]}</b>`
-                let currentDate = data[2].charAt(0) == 0 ? "0" + new Date().getDate() : new Date().getDate().toString()
-                // if (data[2] == currentDate) {
-                //     li.setAttribute("data-filter", `.today`)
-                //     li.setAttribute("class", "mixitup-control-active")
-                // }
-                // `${data[1].toLowerCase() + "-" + data[0].toLowerCase() + "-" + data[2].toLowerCase()}`
-                li.setAttribute("id", k)
-                li.setAttribute("data-filter", `date-item-${k}`);
-                dateUl.appendChild(li);
-                k++
-            }
-
-            for (let l = 0; l < 15; l++) {
-                document.getElementById(l).addEventListener('click', () => {
-                    let test = document.getElementsByClassName("mixitup-control-active");
-                    test[0].setAttribute("class", " ");
-                    document.getElementById(l).setAttribute("class", "mixitup-control-active");
-
-                    let df = document.getElementById(l).innerHTML.toString().split("<b>")
-                    let bf = df.toString().split("</b>")
-                    let mf = bf.toString().split(",")
-                    let gg = mf[1].split(" ")
-                    let scheduleItemContainer = gg[1].toLowerCase() + "-" + mf[0].toLowerCase() + "-" + gg[0].toLowerCase()
-                    // document.getElementById(l)
-                    // console.log(scheduleItemContainer);
-                    document.getElementById('main').innerHTML = document.getElementById('main-1').innerHTML
-                    const listItems = document.getElementById('main').children;
-                    const listArray = Array.from(listItems);
-                    document.getElementById('main').innerHTML = " ";
-                    listArray.filter((item) => {
-                        // item.getAttribute('id')
                         let match ;
-                        let datafilter = document.getElementById(l).getAttribute('data-filter')
+                        let datafilter = document.getElementById(id).getAttribute('data-filter')
                         let clas = item.getAttribute('class')
 
                      match = clas.split(" ").filter((key) => {
-                            if (key == datafilter) {
+                    
+                            if (key == datafilter ) {
                               return    key
                             }
                         })
@@ -626,40 +586,11 @@
                     return match == datafilter
 
                     }).forEach(val => {
+                    
                         document.getElementById('main').append(val);
+                        setTimeout(200);
                     })
-                })
             }
-        }
-
-
-        document.getElementById("country-list").onchange = () => {
-            document.getElementById('main').innerHTML = document.getElementById('main-1').innerHTML;
-
-            const listItems = document.getElementById('main').children;
-            const listArray = Array.from(listItems);
-            document.getElementById('main').innerHTML = " ";
-            listArray.filter((item) => {
-                let match = item.getAttribute('class')
-                let country = match.split(" ")
-                // console.log(match,country,document.getElementById("country-list").value)
-                if (document.getElementById("country-list").value == "all") {
-                    return item
-                }
-                return document.getElementById("country-list").value == "." + country[country.length - 1]
-            }).forEach(val => {
-                document.getElementById('main').append(val);
-            })
-        }
-
-        // window.onload{
-        //     $('[data-filter="8"]').addClass('mixitup-control-active');
-        // });
-
-        $(window).on('load', function() {
-            $('[data-filter="date-item-8"]').addClass('mixitup-control-active');
-        })
-
-    </script> 
-</body>
+        </script> 
+    </body>
 </html>
