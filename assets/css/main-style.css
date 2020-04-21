@@ -1744,7 +1744,6 @@ button:hover {
 	opacity: 1;
     height: auto;
     top: inherit;
-    margin: 0;
 }
 
 .live-area .slider-wrapper#featured .slick-slider .popup-featured-img {
@@ -3203,44 +3202,17 @@ select {
 	}
 }
 
-@media only screen and (max-width:1199px) {
+@media only screen and (max-width:1070px) {
 	.date-area .data-wrapper ul li:nth-child(1) {
 		display: none;
 	}
-	.date-area .data-wrapper ul li:nth-child(17) {
+	.date-area .data-wrapper ul li:nth-child(15) {
 		display: none;
 	}
 }
 
-@media only screen and (max-width:1050px) {
+@media only screen and (max-width:935px) {
 	.date-area .data-wrapper ul li:nth-child(2) {
-		display: none;
-	}
-	.date-area .data-wrapper ul li:nth-child(16) {
-		display: none;
-	}
-}
-
-@media only screen and (max-width:920px) {
-	.date-area .data-wrapper ul li:nth-child(3) {
-		display: none;
-	}
-	.date-area .data-wrapper ul li:nth-child(15) {
-		display: none;
-	}
-}
-
-@media only screen and (max-width:920px) {
-	.date-area .data-wrapper ul li:nth-child(3) {
-		display: none;
-	}
-	.date-area .data-wrapper ul li:nth-child(15) {
-		display: none;
-	}
-}
-
-@media only screen and (max-width:660px) {
-	.date-area .data-wrapper ul li:nth-child(4) {
 		display: none;
 	}
 	.date-area .data-wrapper ul li:nth-child(14) {
@@ -3248,9 +3220,8 @@ select {
 	}
 }
 
-
-@media only screen and (max-width:560px) {
-	.date-area .data-wrapper ul li:nth-child(5) {
+@media only screen and (max-width:790px) {
+	.date-area .data-wrapper ul li:nth-child(3) {
 		display: none;
 	}
 	.date-area .data-wrapper ul li:nth-child(13) {
@@ -3258,9 +3229,8 @@ select {
 	}
 }
 
-
-@media only screen and (max-width:430px) {
-	.date-area .data-wrapper ul li:nth-child(6) {
+@media only screen and (max-width:550px) {
+	.date-area .data-wrapper ul li:nth-child(4) {
 		display: none;
 	}
 	.date-area .data-wrapper ul li:nth-child(12) {
@@ -3268,6 +3238,23 @@ select {
 	}
 }
 
+@media only screen and (max-width:420px) {
+	.date-area .data-wrapper ul li:nth-child(5) {
+		display: none;
+	}
+	.date-area .data-wrapper ul li:nth-child(11) {
+		display: none;
+	}
+}
+
+@media only screen and (max-width:310px) {
+	.date-area .data-wrapper ul li:nth-child(6) {
+		display: none;
+	}
+	.date-area .data-wrapper ul li:nth-child(10) {
+		display: none;
+	}
+}
 
 @media only screen and (max-width:1355px) {
 	.page-area.social-media .social-media-wrapper ul li img {
