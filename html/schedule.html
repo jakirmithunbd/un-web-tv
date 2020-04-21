@@ -318,7 +318,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="schedule-item date-item-7 date-item-14 date-item-6 date-item-11 date-item-5 date-item-4 date-item-3 date-item-2 date-item-1 date-item-3 date-item-16 today the-hague" id="feb-wed-12">
+                                        <div class="schedule-item date-item-7 date-item-1 date-item-14 date-item-6 date-item-11 date-item-5 date-item-4 date-item-3 date-item-2  date-item-3 date-item-16 today the-hague" id="feb-wed-12">
 
                                             <div class="time">
                                                 <h4>9:45pm - 11:30pm</h4>
@@ -448,7 +448,7 @@
                     maxYear: parseInt(moment().format('YYYY'), 10),
                     autoApply:true
                 }, function (mydate) {
-                    for (let l = 0; l < 17; l++) {
+                    for (let l = 0; l < 15; l++) {
                         var mydata = mydate.toString().split(" ");
                         var reCreateData = mydate.toString();                   
                         let df = document.getElementById(l).innerHTML.toString().split("<b>")
@@ -485,7 +485,7 @@
                     var first = curr.getDate() ;
                     var firstday = (new Date(curr.setDate(first + 1))).toString();
                     let k = 0;
-                    for (var i = -8; i < 9; i++) {
+                    for (var i = -7; i < 8; i++) {
                         li = document.createElement("li");
                         var next = new Date(curr.getTime());
                         next.setDate(first + i);
@@ -499,18 +499,21 @@
                         setTimeout(200);
                     }
                 setTimeout(500);
-                $('[data-filter="date-item-8"]').addClass('mixitup-control-active');
+                $('[data-filter="date-item-7"]').addClass('mixitup-control-active');
                 if(optional==0)
                 {
                     $('#calendarImg').data('daterangepicker').setStartDate(newdate);
                     $('#calendarImg').data('daterangepicker').setEndDate("");
                 }
                 setTimeout(200);
+                if(a!=7)
                 filterDate(a);
+                
             }
         </script>
         <script>
             window.onload = () => {
+            debugger;
                 document.getElementById("main-1").style.display = "none"
                 document.getElementById("main-1").innerHTML = document.getElementById("main").innerHTML;
                 var dateUl = document.getElementById("ul-for-date");
@@ -520,7 +523,7 @@
                 var first = curr.getDate();
                 var firstday = (new Date(curr.setDate(first + 1))).toString();
                 let k = 0;
-                for (var i = -8; i < 9; i++) {
+                for (var i = -7; i < 8; i++) {
                     li = document.createElement("li");
                     var next = new Date(curr.getTime());
                     next.setDate(first + i);
@@ -536,7 +539,7 @@
 
 
             document.getElementById("country-list").onchange = () => {
-            
+            debugger;
                 document.getElementById('main').innerHTML = document.getElementById('main-1').innerHTML;
                 const listItems = document.getElementById('main').children;
                 const listArray = Array.from(listItems);
@@ -555,7 +558,9 @@
             };
 
             $(window).on('load', function () {
-                $('[data-filter="date-item-8"]').addClass('mixitup-control-active');
+            debugger;
+                $('[data-filter="date-item-7"]').addClass('mixitup-control-active');
+                filterDate(7);
             });
 
             function filterDate(id)

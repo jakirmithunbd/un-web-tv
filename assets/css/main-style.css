@@ -1149,7 +1149,7 @@ button:hover {
 }
 
 .video-wrapper .video {
-	height: 350px;
+	/*height: 350px;*/
     overflow: hidden;
     width: 100%;
     position: relative;
@@ -1406,6 +1406,7 @@ button:hover {
 
 .homepage-live-area {
 	padding-top: 10px;
+	margin-top: -39%;
 }
 
 .homepage-live-area .section-title.flex-display{
@@ -2025,6 +2026,7 @@ button:hover {
     font-weight: 300;
     text-align: center;
     padding: 10px;
+    transition: all .1s ease;
 }
 
 .date-area .data-wrapper ul li b {
@@ -2035,7 +2037,8 @@ button:hover {
 	display: block
 }
 
-.date-area .data-wrapper ul li.active, .date-area .data-wrapper ul li.mixitup-control-active {
+.date-area .data-wrapper ul li.active, .date-area .data-wrapper ul li.mixitup-control-active,
+.date-area .data-wrapper ul li:hover, .date-area .data-wrapper ul li:focus {
 	color: #000;
 	background: #fff
 }
@@ -3170,6 +3173,34 @@ select {
 .search-filter-area .search-filter-sidebar fieldset ul {
 	list-style: none outside;
 	padding: 0;
+}
+
+@media only screen and (min-width:1680px) {
+	.homepage-live-area {
+		margin-top: -46%;
+	}
+}
+
+@media only screen and (max-width:1199px) {
+	.homepage-live-area {
+	    margin-top: -33%;
+	}
+}
+
+@media only screen and (max-width:1024px) {
+	.homepage-live-area {
+	    margin-top: -31%;
+	}
+}
+
+@media only screen and (max-width:991px) {
+	.homepage-live-area {
+	    margin-top: 0;
+	}
+
+	.video-wrapper .video {
+		height: 350px;
+	}
 }
 
 @media only screen and (max-width:1199px) {
