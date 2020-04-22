@@ -1421,6 +1421,11 @@ button:hover {
 	overflow: hidden
 }
 
+.homepage-live-area-bottom {
+	background: #000;
+	position: relative;
+}
+
 .live-area .section-title {
     padding: 40px 0 10px;
 }
@@ -3176,13 +3181,13 @@ select {
 	padding: 0;
 }
 
-@media only screen and (min-width:1680px) {
+@media only screen and (min-width:1367px) {
 	.homepage-live-area {
-		margin-top: -36%;
+		margin-top: -45%;
 	}
 }
 
-@media only screen and (min-width:1920px) {
+@media only screen and (max-width:1366px) {
 	.homepage-live-area {
 		margin-top: -40%;
 	}
@@ -3190,13 +3195,13 @@ select {
 
 @media only screen and (max-width:1199px) {
 	.homepage-live-area {
-	    margin-top: -25%;
+	    margin-top: -35%;
 	}
 }
 
 @media only screen and (max-width:1024px) {
 	.homepage-live-area {
-	    margin-top: -20%;
+	    margin-top: -30%;
 	}
 }
 
