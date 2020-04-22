@@ -1406,7 +1406,9 @@ button:hover {
 
 .homepage-live-area {
 	padding-top: 10px;
-	margin-top: -39%;
+	margin-top: -31%;
+	z-index: 1024;
+    position: relative;
 }
 
 .homepage-live-area .section-title.flex-display{
@@ -3176,19 +3178,25 @@ select {
 
 @media only screen and (min-width:1680px) {
 	.homepage-live-area {
-		margin-top: -46%;
+		margin-top: -36%;
+	}
+}
+
+@media only screen and (min-width:1920px) {
+	.homepage-live-area {
+		margin-top: -40%;
 	}
 }
 
 @media only screen and (max-width:1199px) {
 	.homepage-live-area {
-	    margin-top: -33%;
+	    margin-top: -25%;
 	}
 }
 
 @media only screen and (max-width:1024px) {
 	.homepage-live-area {
-	    margin-top: -31%;
+	    margin-top: -20%;
 	}
 }
 
